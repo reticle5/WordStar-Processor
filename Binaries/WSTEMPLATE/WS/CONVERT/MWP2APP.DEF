@@ -1,0 +1,63 @@
+*APN WordPerfect2 Mac
+*APR 4.0 4.1.89
+*APT 0
+*API 23
+*EXT ???
+*EXC 2iöp
+*EXI 2iöp
+*PAR 1
+*PRD 0,Mac Printer Family
+*TOG 2, 0
+*CHO LaserWriter Family
+*CHO ImageWriter Family
+*HELP wpfprint.hlp
+*EPD
+*WTI
+*ISI 0
+*OSI 23
+*EXE mwp2conv
+*PAR 1
+*PRD 0,Paper Type
+*TOG 8, 0
+*CHO US Letter
+*CHO US Legal
+*CHO A4 Letter
+*CHO B5 Letter
+*CHO Tabloid
+*CHO Computer Paper
+*CHO International Fanfold
+*CHO NO 10 Envelope
+*HELP wpfpaper.hlp
+*EPD
+*ITW
+*ISI 23
+*OSI 0
+*EXE mwp2conv
+*PAR 5
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,WPF
+*HELP ext.hlp
+*EPD
+*PRD 4,Output File Type
+*TOG 2, 0
+*CHO MacBinary
+*CHO Standard
+*HELP mactype.hlp
+*EPD

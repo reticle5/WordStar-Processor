@@ -1,0 +1,21 @@
+*EXCEPTION_STRINGS 11
+*MESSAGE  Italicized text is only supported when defined as an italic font.
+*MESSAGE  Double underlined text is converted to single underlined text.
+*MESSAGE  Hidden text (comments) are removed during the conversion.
+*MESSAGE  Center aligned paragraphs are converted to left aligned paragraphs.
+*MESSAGE  Left ragged / right justified paragraphs are converted to left aligned paragraphs.
+*MESSAGE  Index functions are not supported by the conversion.
+*MESSAGE  Table of Contents functions are not supported by the conversion.
+*MESSAGE  Margin notes are converted to page image end notes.
+*MESSAGE  In text notes are converted to page image end notes.
+*MESSAGE  Printer binary information is ignored by the conversion.
+*MESSAGE  Merge functions are not supported by the conversion.
+
+*ERROR_STRINGS 6
+*MESSAGE  Could not open input file. 
+*MESSAGE  Could not open output file. 
+*MESSAGE  Internal Token context error. 
+*MESSAGE  Disk Read Error.
+*MESSAGE  Disk Write Error.
+*MESSAGE  This product does not convert files from FFT format (only to FFT).
+

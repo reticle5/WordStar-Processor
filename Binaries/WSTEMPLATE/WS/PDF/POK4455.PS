@@ -1,0 +1,139 @@
+
+%  .bn1 pull letter from upper tray on the Panasonic KX-P4455.
+/tray0ltr {statusdict begin  
+            0 setpapertray letter
+	    /manualfeed false store
+            /trayswitch false store
+          end
+	  /pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the Panasonic KX-P4455.
+/tray1ltr {statusdict begin  
+        1 setpapertray letter
+	/manualfeed false store
+        /trayswitch false store 
+        end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the Panasonic KX-P4455.
+/tray0lgl {statusdict begin  
+        0 setpapertray legal
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the Panasonic KX-P4455.
+/tray1lgl {statusdict begin  
+            1 setpapertray legal
+	    /manualfeed false store
+            /trayswitch false store
+          end
+	  /pgsize 14 inch def} def
+
+%  .bn5 pull #10 envelope from upper tray on the Panasonic KX-P4455.
+/env100   {statusdict begin  
+            0 setpapertray
+	    /manualfeed false store
+	    4.125x9.5envelope
+          end
+	  /pgsize 9.5 inch def} def
+
+%  .bn6 pull #10 envelope from lower tray on the Panasonic KX-P4455.
+/env101   {statusdict begin  
+            1 setpapertray
+	    /manualfeed false store
+	    4.125x9.5envelope
+          end
+	  /pgsize 9.5 inch def} def
+
+%  .bn7 pull letter continuous on the Panasonic KX-P4455.
+/cntltr {statusdict begin letter
+	/manualfeed false def
+        /trayswitch true def 
+        end
+	/pgsize 11 inch def} def
+
+%  .bn8 pull legal continuous on the Panasonic KX-P4455.
+/cntlgl {statusdict begin legal
+	/manualfeed false def
+	/trayswitch true def 
+        end
+	/pgsize 14 inch def} def
+
+%  .bn9 pull A4 from upper tray on the Panasonic KX-P4455.
+/tray1a4 {statusdict begin
+        0 setpapertray a4
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn10 pull A4 from lower tray on the Panasonic KX-P4455.
+/tray2a4 {statusdict begin  
+        1 setpapertray a4
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn11 pull manual a4 on the Panasonic KX-P4455.
+/mana4  {statusdict begin a4
+	/manualfeed true def
+        /trayswitch false def 
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn12 pull DL envelope from upper tray on the Panasonic KX-P4455.
+/envdl0 {statusdict begin 
+        1 setpapertray dl
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 8.25 inch def} def
+
+%  .bn13 pull DL envelope from lower tray on the Panasonic KX-P4455.
+/envdl0 {statusdict begin 
+        1 setpapertray dl
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 8.25 inch def} def
+
+%  .bn14 pull continuous DL envelope on the Panasonic KX-P4455.
+/cntenvdl  {statusdict begin 110x220envelope
+	/manualfeed false def
+	/trayswitch true def 
+        end
+	/pgsize 8.25 inch def} def
+
+%  .bn15 pull continuous #10 envelope on the Panasonic KX-P4455.
+/cntenv10  {statusdict begin 4.125x9.5envelope
+	/manualfeed false def
+	/trayswitch true def 
+        end
+	/pgsize 9.5 inch def} def
+
+%  .bn16 pull #9 envelope from upper tray on the Panasonic KX-P4455.
+/env090   {statusdict begin  
+            0 setpapertray
+	    /manualfeed false store
+	    3.875x8.875envelope
+          end
+	  /pgsize 8.875 inch def} def
+
+%  .bn17 pull #9 envelope from lower tray on the Panasonic KX-P4455.
+/env091   {statusdict begin  
+            1 setpapertray
+	    /manualfeed false store
+	    3.875x8.875envelope
+          end
+	  /pgsize 8.875 inch def} def
+
+%  .bn18 pull continuous #9 envelope on the Panasonic KX-P4455.
+/cntenv9  {statusdict begin 3.875x8.875envelope
+	/manualfeed false def
+	/trayswitch true def 
+        end
+	/pgsize 8.875 inch def} def
+

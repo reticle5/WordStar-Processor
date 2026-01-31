@@ -1,0 +1,23 @@
+*EXCEPTION_STRINGS 10
+*MESSAGE Disk write error
+*MESSAGE Input file could not be opened
+*MESSAGE Output file could not be opened
+*MESSAGE Bad internal string
+*MESSAGE Illegal internal structure - STX
+*MESSAGE Illegal internal structure - DH
+*MESSAGE Illegal internal structure - TITLE
+*MESSAGE Illegal internal structure - TYPE
+*MESSAGE Illegal internal structure - DC
+*MESSAGE Invalid input document
+*ERROR_STRINGS 10
+*MESSAGE Disk write error
+*MESSAGE Input file could not be opened 
+*MESSAGE Output file could not be opened
+*MESSAGE Bad internal string
+*MESSAGE Illegal internal structure - STX
+*MESSAGE Illegal internal structure - DH
+*MESSAGE Illegal internal structure - TITLE
+*MESSAGE Illegal internal structure - TYPE
+*MESSAGE Illegal internal structure - DC
+*MESSAGE Invalid input document
+

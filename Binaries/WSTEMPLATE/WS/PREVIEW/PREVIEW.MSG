@@ -1,0 +1,414 @@
+;WORDSTAR PREVIEW MESSAGE FILE
+
+;SPECIAL CODES USED IN PD MENU ACTION ROUTINES
+
+;NOTE :
+; This code is the high byte of the two byte routine code from the message
+; file MENU= or ITEM= lines. The high byte is indexed into TBL_ACT_CODE and
+; the routine address there is put in A_ITEM_ROUT. The low byte is the return
+; code that is passed out of the menu system to activate the program, this
+; value will be put in A_ITEM_AUX, except when we are activating a new PD
+; menu, then the pointer to the new window structure will be put in A_ITEM_AUX.
+
+; 0 - JUST RETURN CODE
+; 1 - ACTIVATE PD MENU
+; 2 - DON'T DO ANYTHING
+; 3 - GET NEW PAGE TO SKIP TO
+; 4 - GET # OF COPIES TO PRINT
+; 5 - GET ZOOM MOVE
+; 6 - GET RANGE OF PAGES
+
+;RETURN CODES FOR POST MENU ACTION ROUTINES
+
+; 1  - GO TO PAGE
+; 2  - QUIT PROGRAM NOW
+; 3  - EDIT DOCUMENT
+; 4  - TOGGLE GRID
+; 5  - PRINT THIS PAGE
+; 6  - HIDE PULL DOWN MENU & PAUSE
+; 7  - ABORT FILE BACK TO MAIN MENU
+; 8  - PRINT RANGE OF PAGES
+; 9  - VIEW FONTS
+; 10 - ZOOM TO FULL PAGE
+; 11 - ZOOM TO 2X PAGE
+; 12 - ZOOM TO 4X PAGE
+; 13 - ZOOM MOVE
+
+; 14 - GO TO AREA FAST
+; 15 - GO TO AREA FAST
+; 16 - GO TO AREA FAST
+; 17 - GO TO AREA FAST
+; 18 - GO TO AREA FAST
+; 19 - GO TO AREA FAST
+; 20 - GO TO AREA FAST
+; 21 - GO TO AREA FAST
+; 22 - GO TO AREA FAST
+
+; 23 - GO TO FIRST PAGE OF DOC
+; 24 - GO TO LAST PAGE OF DOC
+; 25 - GO TO LAST PAGE
+; 26 - GO TO NEXT PAGE
+
+; 27 - SCAN RANGE OF PAGES
+; 28 - SCAN ENTIRE DOC
+; 29 - PRINT ENTIRE DOC
+
+; 30 - ZOOM LEVEL INCREMENT
+; 31 - ZOOM LEVEL DECREMENT
+
+; 32 - GO GET ZOOM MOVE
+; 33 - GO INTERACTIVE
+
+; 34 ^E - SCROLL UP
+; 35 ^R - SCROLL UP MORE
+; 36 ^S - SCROLL LEFT
+; 37 ^A - SCROLL LEFT MORE
+; 38 ^D - SCROLL RIGHT
+; 39 ^F - SCROLL RIGHT MORE
+; 40 ^X - SCROLL DOWN
+; 41 ^C - SCROLL DOWN MORE
+
+; 42 - FACING PAGES MODE
+; 43 - THUMBNAIL DISPLAY MODE
+; 44 - MULTIPLE PAGE MODE
+
+; 45 - RETURN TO PREV PAGE IN WS/WS2
+; 46 - SWITCH TO BAR MODE <Alt><Space>
+; 47 - SWITCH TO EDIT MODE <Esc>
+
+; 48 - FAX FILES FOR RANGE OF PAGES
+; 49 - FAX FILES FOR ENTIRE DOCUMENT
+
+;BAR MENU DEFINITION
+
+BAR=219,220,221
+
+MENU= G_o To ,,1.0,207
+ITEM= S_pecified Page ... ,,3.1,101
+ITEM= F_irst Page ,,23,123
+ITEM= L_ast Page ,,24,124
+ITEM= N_ext Page ,,26,126
+ITEM= P_revious Page ,,25,125
+
+MENU= V_iew ,,1.0,209
+ITEM= E_ntire Page ,,10,110
+ITEM= F_acing Pages ,,42,142
+ITEM= M_ultiple Pages ,,44,144
+ITEM= T_humbnail Display ,,43,143
+ITEM= 2_x Zoom ,,11,111
+ITEM= 4_x Zoom ,,12,112
+ITEM= A_djust Window ... ,,5.13,113
+
+MENU= O_ptions ,,1.0,210
+ITEM= A_utomatic Scan ,,28,128
+ITEM= S_can Range ... ,,6.27,127
+ITEM= F_ax Files for Entire Document ,,7.49,150
+ITEM= Fax Files for R_ange ... ,,7.48,151
+ITEM= G_rid Display On/Off ,,4,104
+
+MENU= E_xit ,,1.0,208
+ITEM= O_riginal Page ,,45,145
+ITEM= C_urrent Page ,,7,107
+
+;FAST KEY SCAN CODE LOOK UP TABLE
+
+KEYS=
+
+;<Alt> keys
+
+<104,00>=6	; <Alt><F1> HIDE PULL DOWN MENU & PAUSE
+
+<120,00>=7	; <Alt>1 - Return to current page (ws)
+<121,00>=45	; <Alt>2 - Abort to original page (ws)
+<025,00>=5	; <Alt>p - Print Screen Dump (optional with ext. driver)
+
+;<047,22>=7	; <Ctrl>V - Return to current page (ws2000)
+
+<071,55>=32	; <Shift>7 GO TO TL AREA FAST
+<072,56>=32	; <Shift>8 GO TO TC AREA FAST
+<073,57>=32	; <Shift>9 GO TO TR AREA FAST
+<075,52>=32	; <Shift>4 GO TO CL AREA FAST
+<076,53>=32	; <Shift>5 GO TO CC AREA FAST
+<077,54>=32	; <Shift>6 GO TO CR AREA FAST
+<079,49>=32	; <Shift>1 GO TO BL AREA FAST
+<080,50>=32	; <Shift>2 GO TO BC AREA FAST
+<081,51>=32	; <Shift>3 GO TO BR AREA FAST
+
+;WORD STAR DIAMOND
+
+<018,05>=34	; 01205H,^E - SCROLL UP
+<017,23>=34	; 01117H,^W - SCROLL UP
+<019,18>=35	; 01312H,^R - SCROLL UP MORE
+<031,19>=36	; 01F13H,^S - SCROLL LEFT
+<030,01>=37	; 01E01H,^A - SCROLL LEFT MORE
+<032,04>=38	; 02004H,^D - SCROLL RIGHT
+<033,06>=39	; 02106H,^F - SCROLL RIGHT MORE
+<045,24>=40	; 02D18H,^X - SCROLL DOWN
+<044,26>=40	; 02C1AH,^Z - SCROLL DOWN
+<046,03>=41	; 02E03H,^C - SCROLL DOWN MORE
+
+;CURSOR KEYS
+
+<072,00>=34	; - SCROLL UP
+<075,00>=36	; - SCROLL LEFT
+<077,00>=38	; - SCROLL RIGHT
+<080,00>=40	; - SCROLL DOWN
+
+<071,00>=14	; GO TO top left
+<079,00>=22	; GO TO bottom right
+<073,00>=35	; Scroll up big
+<081,00>=41	; Scroll down big
+
+<082,00>=32	; INSERT
+
+<078,43>=30	; + Increment Zoom level
+<074,45>=31	; - Decrement Zoom level
+
+;Control cursor keys
+
+<119,00>=23	; <Ctrl><Home> GO TO FIRST PAGE OF DOC
+<117,00>=24	; <Ctrl><End> GO TO LAST PAGE OF DOC
+<132,00>=25	; <Ctrl><Pg Up> GO TO LAST PAGE
+<118,00>=26	; <Ctrl><Pg Dn> GO TO NEXT PAGE
+
+;ERROR MESSAGES
+
+ERROR=
+
+20=
+20= File not found. 
+20=
+
+21=
+21= Can't display graphic image. 
+21=
+
+22=
+22= File write error. 
+22=
+
+23=
+23= Disk full error. 
+23=
+
+27=
+27= No fonts defined in the FONTID.CTL file. 
+27=
+
+;PROGRAM EXEC. ERROR MESSAGES
+
+28=
+28= Unable to load GRFPIX.EXE. 
+28=
+
+30=
+30= File has wrong extension. 
+30=
+
+31=
+31= New file already exists. 
+31=
+
+32=
+32= Not enough memory to run program. 
+32=
+
+33=
+33= Must have graphic display to run Preview. 
+33=
+
+34=
+34= FONTID.CTL file not found. 
+34=
+
+35=
+35= Building preview font. 
+35=
+
+36=
+36= Invalid or missing external graphics driver program.
+36=
+
+; ** MESSAGES USED FOR FAX **
+
+40=
+40= Can't create subdirectory.
+40=
+
+41=
+41= File creation error.
+41=
+
+42=
+42= User cancelled fax creation.
+42=
+
+43=
+43= Start past end of document.
+43=
+
+44=
+44= Duplicate file prefix. 
+44=
+
+; ** SPECIAL MESSAGES FOR DISPLAY WINDOWS **
+53= Press any key to continue. 
+
+;Messages for getting user input during PD menu
+;NOTE : a 5 digit number will follow these messages
+54= Go to page 
+55= Number of copies to print : 
+56= Start on page 
+57= Stop on page  
+
+; Message for FAX file name:
+58= Enter fax filename (5 letters/ 
+58= numbers) or press Enter for
+58= system-assigned Name:
+
+;Page # message
+;NOTE : The current file name will precede and
+; a 5 digit number will follow this message.
+59= P
+64=F_1_=Help
+; Note: the following line must have either 
+;       an accelerator (_) or a trailing blank for proper spacing.
+65=H_elp
+
+66= Building FAX File 
+
+;Return code help messages start at 100 
+101= - Goes to page number you specify 
+101=
+102= - Quit program now 
+102=
+103= - Edit document 
+104= - Turns gridlines on or off.
+104=   Use to check placement. 
+105= - Print this page
+106= - Escape 
+106=
+107= - Takes you to the page 
+107=   being previewed.
+107=
+108= - Print range of pages 
+108=
+109= - View the available fonts 
+110= - Shows current page 
+110=
+111= - Magnifies current page 2 times
+111=
+112= - Magnifies current page 4 times 
+112=
+113= - Shows a different part of magnified page 
+113=
+114= - Go to area fast 
+115= - Go to area fast 
+116= - Go to area fast 
+117= - Go to area fast 
+118= - Go to area fast 
+119= - Go to area fast 
+120= - Go to area fast 
+121= - Go to area fast 
+122= - Go to area fast 
+
+123= - Goes to first page of document 
+123=
+124= - Goes to last page of document 
+124=
+125= - Goes to previous page 
+125=
+126= - Goes to next page 
+126=
+
+127= - Specify a range of pages to scan. 
+127=
+
+128= - Displays pages in succession,
+128=   first through last. Esc to stop. 
+128=
+
+129= - Print entire document 
+130= - Zoom level increment 
+131= - Zoom level decrement 
+142= - Shows current page and page opposite 142=
+143= - Shows many pages 
+143=
+144= - Shows several pages 
+144=
+145= - Returns you to the page 
+145=   you started from.
+145=
+150= - Make fax (.PCX) files for
+150=   all pages of the document.
+150=
+151= - Specify a range of pages 
+151=   to create fax files for. 
+151=
+
+;Other help messages start at 200 
+; 
+207= - Goes to other pages of the document
+208= - Returns you to editing 
+209= - Lets you change your view of the page(s) 
+210= - Scan doc, make fax files, or use gridlines 
+
+;Help messages for the sub menu functions
+
+212=
+212= The small box shows your current window on the 
+212= magnified page.  Use the keypad's cursor movement
+212= keys (or the WordStar cursor diamond keys) to 
+212= move your view.  To move to a specific area of
+212= the page, press Shift and the appropriate 
+212= keypad key.  You can also move the box using the
+212= mouse. Release the button when box is positioned.
+212= 
+
+213=
+213= Specify a page number.
+213=
+213= Type a page number, click the menu bar buttons, or use cursor
+213= keys on the numeric keypad to increase or decrease the page 
+213= number. PgUp or PgDn increases or decreases the number by 10.
+213=  or  increases or decreases it by 1. 
+213= Press Enter or click the mouse inside the box to accept.
+213=
+
+216=
+216= Enter fax file name (optional).
+216=
+216= You may type the first 5 letters of the file 
+216= names for all fax files created during this 
+216= Preview session.  If you just press Enter, 
+216= or click the mouse inside the box, Preview 
+216= will assign a unique name.
+216=
+
+219=
+219=    Move: Use the cursor keys or the mouse to select a 
+219=          pull-down menu.
+219=    Zoom: Use +/- on the keypad to change the zoom level.  
+219=          Press the Ins key or the right mouse button 
+219=          to adjust the window.
+219=    Quit: Press Alt+1 to go to the page being previewed. 
+219=          Press Alt+2 to return to the starting page.
+
+220=
+220=    Move: Use the cursor keys to go to a different page
+220=          or use the mouse to select a pull-down menu.
+220=    Zoom: Use +/- on the keypad to change the zoom level.
+220=    Quit: Press Alt+1 to go to the page being previewed. 
+220=          Press Alt+2 to return to the starting page.
+
+221=
+221=    Move: Use the cursor keys or click the menu bar 
+221=          buttons to scroll.
+221=    Menu: Use the accelerator keys or mouse to select a menu.
+221=    Zoom: Use +/- on the numeric keypad to change zoom level.
+221=          Press the Ins key or the right mouse button 
+221=          to adjust the window.
+221=    Quit: Press Alt+1 to go to the page being previewed 
+221=          Press Alt+2 to return to the starting page.
+
+

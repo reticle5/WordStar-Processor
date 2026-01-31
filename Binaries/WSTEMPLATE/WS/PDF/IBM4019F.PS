@@ -1,0 +1,136 @@
+
+%  .bn1 pull letter from upper tray on the IBM 4019.
+/ibmul {statusdict begin 0 setpapertray 
+	/letter trayswitch false manualfeed false end
+	/pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the IBM 4019.
+/ibmll {statusdict begin 1 setpapertray 
+	/letter trayswitch false manualfeed false end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the IBM 4019.
+/ibmulg {statusdict begin 0 setpapertray 
+	/legal trayswitch false manualfeed false end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the IBM 4019.
+/ibmllg {statusdict begin 1 setpapertray 
+	/legal trayswitch false manualfeed false end
+	/pgsize 14 inch def} def
+
+%  .bn5 pull letter continuous on the IBM 4019.
+/ibmcl {statusdict begin 0 setpapertray letter
+	/1 setpapertray letter trayswitch true manualfeed false end
+	/pgsize 11 inch def} def
+
+%  .bn6 pull legal continuous on the IBM 4019.
+/ibmclg {statusdict begin 1 setpapertray legal
+	/1 setpapertray legal trayswitch true manualfeed false end
+	/pgsize 14 inch def} def
+
+%  .bn7 pull #10 envelope on the IBM 4019.
+/ibm10e {statusdict begin 2 setpapertray 
+	/4.125x9.5envelope trayswitch false manualfeed false end
+	/pgsize 9.5 inch def} def
+
+%  .bn8 pull euro envelope on the IBM 4019.
+/ibmeure {statusdict begin 2 setpapertray 
+	/110x220envelope trayswitch false manualfeed false end
+	/pgsize 8.75 inch def} def
+
+%  .bn9 pull manual letter on the IBM 4019.
+/ibmmnltr {statusdict begin 3 setpapertray 
+	/letter trayswitch false manualfeed true end
+	/pgsize 11 inch def} def
+
+%  .bn10 pull manual legal on the IBM 4019.
+/ibmmnlgl {statusdict begin 3 setpapertray 
+	/legal trayswitch false manualfeed true end
+	/pgsize 14 inch def} def
+
+%  .bn11 pull #10 envelope on the IBM 4019.
+/ibmmn10 {statusdict begin 4 setpapertray 
+	/4.125x9.5envelope trayswitch false manualfeed true end
+	/pgsize 9.5 inch def} def
+
+%  .bn12 pull A4 from upper tray on the IBM 4019.
+/ibmua4 {statusdict begin 0 setpapertray 
+	/a4 trayswitch false manualfeed false end
+	/pgsize 11.66 inch def} def
+
+%  .bn13 pull A4 from lower tray on the IBM 4019.
+/ibmla4 {statusdict begin 1 setpapertray 
+	/a4 trayswitch false manualfeed false end
+	/pgsize 11.66 inch def} def
+
+%  .bn14 pull manual A4 on the IBM 4019.
+/ibmmna4 {statusdict begin 3 setpapertray 
+	/a4 trayswitch false manualfeed true end
+	/pgsize 11.66 inch def} def
+
+%  .bn15 pull Exec from upper tray on the IBM 4019.
+/ibmuex {statusdict begin 0 setpapertray 
+	/executivepage trayswitch false manualfeed false end
+	/pgsize 10.5 inch def} def
+
+%  .bn16 pull Exec from lower tray on the IBM 4019.
+/ibmlex {statusdict begin 1 setpapertray 
+	/executivepage trayswitch false manualfeed false end
+	/pgsize 10.5 inch def} def
+
+%  .bn17 pull manual Exec on the IBM 4019.
+/ibmmnex {statusdict begin 3 setpapertray 
+	/executivepage trayswitch false manualfeed true end
+	/pgsize 10.5 inch def} def
+
+%  .bn18 pull A5 from upper tray on the IBM 4019.
+/ibmua5 {statusdict begin 0 setpapertray 
+	/a5 trayswitch false manualfeed false end
+	/pgsize 8.26 inch def} def
+
+%  .bn19 pull A5 from lower tray on the IBM 4019.
+/ibmla5 {statusdict begin 1 setpapertray 
+	/a5 trayswitch false manualfeed false end
+	/pgsize 8.26 inch def} def
+
+%  .bn20 pull manual A5 on the IBM 4019.
+/ibmmna5 {statusdict begin 3 setpapertray 
+	/a5 trayswitch false manualfeed true end
+	/pgsize 8.26 inch def} def
+
+%  .bn21 pull B5 from upper tray on the IBM 4019.
+/ibmub5 {statusdict begin 0 setpapertray 
+	/b5 trayswitch false manualfeed false end
+	/pgsize 10.11 inch def} def
+
+%  .bn22 pull B5 from lower tray on the IBM 4019.
+/ibmlb5 {statusdict begin 1 setpapertray 
+	/b5 trayswitch false manualfeed false end
+	/pgsize 10.11 inch def} def
+
+%  .bn23 pull manual B5 on the IBM 4019.
+/ibmmnb5 {statusdict begin 3 setpapertray 
+	/b5 trayswitch false manualfeed true end
+	/pgsize 10.11 inch def} def
+
+%  .bn24 pull 7 3/4 envelope on the IBM 4019.
+/ibm734 {statusdict begin 4 setpapertray 
+	/3.875x7.5envelope trayswitch false manualfeed true end
+	/pgsize 7.5 inch def} def
+
+%  .bn25 pull #9 envelope on the IBM 4019.
+/ibm9 {statusdict begin 4 setpapertray 
+	/3.875x8.875envelope trayswitch false manualfeed true end
+	/pgsize 8.875 inch def} def
+
+%  .bn26 pull C5 envelope on the IBM 4019.
+/ibmc5 {statusdict begin 4 setpapertray 
+	/162x229envelope trayswitch false manualfeed true end
+	/pgsize 9 inch def} def
+
+%  .bn27 pull B5 envelope on the IBM 4019.
+/ibmb5e {statusdict begin 4 setpapertray 
+	/176x250envelope trayswitch false manualfeed true end
+	/pgsize 9.84 inch def} def
+

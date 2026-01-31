@@ -1,0 +1,55 @@
+%!LETTER.PS
+%Sample letterhead
+%
+
+save
+
+/Name-Title { gsave 0 730 moveto (YOUR COMPANY NAME HERE) center grestore } def
+/Addr-Phone { gsave 0 695 moveto (123 Maple Street, Suite 109  \267  Anytown  ST  12345-1234  \267  Tel: \(333\) 333-3333  \267   Fax: \(333\) 444-4444) center grestore } def
+
+/Horzln { gsave 50 715 moveto .01 setlinewidth 0 setgray 520 0 rlineto stroke grestore } def
+/Hzln { 531 0 rlineto -531 -1.5 rmoveto } def
+
+/Border { gsave .01 setlinewidth 0 setgray 40 30 translate
+        0 735 moveto 540 0 rlineto 0 -735 rlineto -540 0 rlineto closepath
+        1.5 -1.5 rmoveto 537 0 rlineto 0 -732 rlineto -537 0 rlineto closepath
+        1.5 -1.5 rmoveto 534 0 rlineto 0 -729 rlineto -534 0 rlineto closepath
+        1.5 -1.5 rmoveto 531 0 rlineto 0 -726 rlineto -531 0 rlineto closepath
+        0 -90 rmoveto 4 {Hzln} repeat stroke grestore } def
+
+/White-bx { gsave 1 setgray -4.5 0 rlineto 0 4.5 rlineto 4.5 0 rlineto
+             closepath gsave fill grestore 0 setgray stroke grestore } def 
+
+/White-bx-lp { gsave .01 setlinewidth 0 setgray 40 30 translate
+                4.5 730.5 moveto White-bx 535.5 0 rmoveto White-bx
+                0 -730.5 rmoveto White-bx -535.5 0 rmoveto White-bx
+                0 636 rmoveto White-bx 535.5 0 rmoveto White-bx grestore } def
+ 
+/width 612 def  %define width
+/center { dup stringwidth pop width exch sub 2 div 0 rmoveto show } def
+ 
+/makeoutlinedict 7 dict def              %Routine to define an outline font
+/MakeOutlineFont { makeoutlinedict begin
+  /uniqueid exch def /strokewidth exch def /newfontname exch def
+  /basefontname exch def /basefontdict basefontname findfont def
+  /numentries basefontdict maxlength 1 add def basefontdict/UniqueID known not
+  { /numentries numentries 1 add def } if
+  /outfontdict numentries dict def basefontdict { exch dup /FID ne
+  { exch outfontdict 3 1 roll put} {pop pop} ifelse } forall
+  outfontdict /FontName newfontname put outfontdict/PaintType 2 put
+  outfontdict/StrokeWidth strokewidth put outfontdict/UniqueID uniqueid put
+  newfontname outfontdict definefont pop end } def
+  /Helvetica/Helvetica-Outline1 1000 85 div
+  /Helvetica findfont dup/UniqueID known
+  {/UniqueID get 1 add} {pop 1} ifelse MakeOutlineFont
+
+/Header-Text
+ { gsave /Helvetica-Outline1 findfont 18 scalefont setfont Name-Title Horzln
+         /Helvetica findfont 9 scalefont setfont Addr-Phone grestore } def
+
+gsave 0 0 translate Header-Text Border White-bx-lp grestore
+
+%showpage
+restore
+
+

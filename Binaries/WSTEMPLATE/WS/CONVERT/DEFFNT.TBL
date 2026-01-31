@@ -1,0 +1,464 @@
+mwrd4
+MacWord4
+macdf.tbl
+mwpf
+MacWordPerfect
+macdf.tbl
+mwp2
+MacWordPerfect2
+macdf.tbl
+mwrt
+MacWrite II
+macdf.tbl
+rtf
+RTF
+macdf.tbl
+m11
+Mass-11
+1
+0,0,0
+Default
+0,0,0
+xy
+XyWrite
+1
+0,0,0
+Default
+0,0,0
+nb
+NotaBene
+1
+0,0,0
+Default
+0,0,0
+ws33
+WordStar
+wsdf.tbl
+ws34
+WordStar
+wsdf.tbl
+ws4
+WordStar
+wsdf.tbl
+ws5
+WordStar
+wsdf.tbl
+mma2
+Multimate
+mmdf.tbl
+mm36
+Multimate
+mmdf.tbl
+mm40
+Multimate
+mmdf.tbl
+txt
+DW2/3 (TXT)
+dcadf.tbl
+dw4
+DW4 (DOC)
+dcadf.tbl
+sm
+Samna
+1
+0,0,0,4
+Default
+0,0,0
+wm
+WordMarc
+1
+0,0,0
+Default
+0,0,0
+wmc
+WordMarc Plus
+1
+0,0,0
+Default
+0,0,0
+wpf
+WordPerfect
+8
+0,0,0
+Font 1
+0,1,0
+Font 2
+0,2,0
+Font 3
+0,3,0
+Font 4
+0,4,0
+Font 5
+0,5,0
+Font 6
+0,6,0
+Font 7
+0,7,0
+Font 8
+0,0,0
+wpf5
+WordPerfect5.0
+1
+0,0,0
+Default
+0,0,0
+wp51
+WordPerfect5.1
+1
+0,0,0
+Default
+0,0,0
+rft
+DCA/RFT
+dcadf.tbl
+iasc
+Intell ASCII
+1
+0,0,0
+Default
+0,0,0
+wsda
+WordStar Data
+1
+0,0,0
+Default
+0,0,0
+sasc
+Standard ASCII
+1
+0,0,0
+Default
+0,0,0
+tw
+TotalWord
+1
+0,0,0
+Default
+0,0,0
+dif
+Navy DIF
+1
+0,0,0
+Default
+0,0,0
+smt
+SmartWare II
+41
+0,0,0
+standard
+0,1,0
+draft
+0,2,0
+quality
+0,3,0
+dingbat1
+0,4,0
+dingbat2
+0,5,0
+l-graphic
+0,6,0
+b-graphic
+0,7,0
+gothic
+0,8,0
+monospaced
+0,9,0
+symbol
+0,10,0
+greek
+0,11,0
+small-caps
+0,12,0
+serif
+0,13,0
+sans-serif
+0,14,0
+script
+0,15,0
+Symbol
+0,16,0
+Correspondence
+0,17,0
+Letter Gothic
+0,18,0
+Line Printer
+0,19,0
+Memo
+1,0,0
+Prestige
+1,1,0
+Proportional Courier NLQ
+1,2,4
+Proportional Draft
+1,3,4
+Proportional NLQ
+1,4,4
+Proportional Prestige NLQ
+1,5,4
+Proportional Roman NLQ
+1,6,4
+Proportional San Serif NLQ
+1,7,4
+Times Roman
+1,8,0
+ITC Zapf Dingbats
+1,9,0
+ITC Zapf Chancery
+1,10,0
+ITC Avant Garde Gothic
+1,11,0
+ITC Bookman
+1,12,0
+ITC Garamond
+1,13,0
+ITC Korinna
+1,14,0
+Courier
+1,15,0
+Helvetica-Narrow
+1,16,0
+Helvetica-Condensed
+1,17,0
+Helvetica
+1,18,0
+Palatino
+1,19,0
+New Century Schoolbook
+2,0,0
+Times
+0,0,0
+pro1
+Prof Write 1
+1
+0,0,0
+Default
+0,0,0
+pro2
+Prof Write 2
+1
+0,0,0
+Default
+0,0,0
+pfsa
+PFS:Write A
+1
+0,0,0
+Default
+0,0,0
+pfsb
+PFS:Write B
+1
+0,0,0
+Default
+0,0,0
+pfsc
+PFS:Write C
+1
+0,0,0
+Default
+0,0,0
+fc
+First Choice
+1
+0,0,0
+Default
+0,0,0
+fc3
+First Choice 3
+1
+0,0,0
+Default
+0,0,0
+wa
+Writing Asst
+1
+0,0,0
+Default
+0,0,0
+iwp
+WangIWP
+1
+0,0,0
+Default
+0,0,0
+dx
+DX
+1
+0,0,0
+Default
+0,0,0
+vw
+Volkswriter 3
+4
+0,0,0
+FONT1
+0,1,0
+FONT2
+0,2,0
+FONT3
+0,3,0
+FONT4
+0,0,0
+msw
+Microsoft Word
+mswdf.tbl
+msw5
+MS Word 5
+mswdf.tbl
+fft
+DCA/FFT
+dcadf.tbl
+ws2
+WordStar 2000
+8
+0,0,0
+NON PS 10
+0,1,0
+NON PS 12
+0,2,0
+NON PS 17
+0,3,0
+NON PS 20
+0,4,0
+NON PS 5
+0,5,0
+NON PS 6
+0,6,0
+PROPORTIONAL
+0,7,0
+PROP EXPANDED
+0,0,0
+spt
+Sprint
+1
+0,0,0
+Default
+0,0,0
+smtdb
+Smart DB
+1
+0,0,0
+Default
+0,0,0
+wkdb
+Works SS/DB
+1
+0,0,0
+Default
+0,0,0
+dedb
+DataEase
+1
+0,0,0
+Default
+0,0,0
+fwdb
+Framework III
+1
+0,0,0
+Default
+0,0,0
+pxdb
+Paradox 3.x
+1
+0,0,0
+Default
+0,0,0
+dbdb
+dBase III & IV
+1
+0,0,0
+Default
+0,0,0
+pps
+PFS Plan
+1
+0,0,0
+Default
+0,0,0
+sc5s
+Supercalc 5
+1
+0,0,0
+Default
+0,0,0
+ebls
+Enable SS/DB
+1
+0,0,0
+Default
+0,0,0
+smtss
+Smart SS
+1
+0,0,0
+Default
+0,0,0
+xls
+MicrosoftExcel
+1
+0,0,0
+Default
+0,0,0
+qtr
+BorlandQuattro
+1
+0,0,0
+Default
+0,0,0
+wk3
+Lotus 123 3.x
+1
+0,0,0
+Default
+0,0,0
+wks
+Lotus 123 2.x
+1
+0,0,0
+Default
+0,0,0
+vpp
+VP Planner 3D
+1
+0,0,0
+Default
+0,0,0
+mtss
+Mosaic Twin
+1
+0,0,0
+Default
+0,0,0
+qadb
+Q&A DB
+1
+0,0,0
+Default
+0,0,0
+fcss
+FirstChoice SS
+1
+0,0,0
+Default
+0,0,0
+fcdb
+FirstChoice DB
+1
+0,0,0
+Default
+0,0,0
+rbsdb
+R:BASE
+1
+0,0,0
+Default
+0,0,0
+rfxdb
+Reflex
+1
+0,0,0
+Default
+0,0,0
+
+

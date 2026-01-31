@@ -1,0 +1,91 @@
+*APN WordStar 2000
+*APR 2.00 12/8/86
+*APT 0
+*API 53
+*EXT ???
+*EXC 
+*EXI 
+*PAR 7
+*PRD 0,PDF File Name
+*STRP 66,
+*PRF PRINTER_DESCRIPTION
+*HELP ws2fn.hlp
+*EPD
+*PRD 1,Line Number
+*STRP 25,%LINE
+*PRF HIDDEN
+*HELP 
+*EPD
+*PRD 2,Page Number
+*STRP 25,%PAGE
+*PRF HIDDEN
+*HELP 
+*EPD
+*PRD 3,Date
+*STRP 25,%DATE
+*PRF HIDDEN
+*HELP 
+*EPD
+*PRD 4,Time
+*STRP 25,%TIME
+*PRF HIDDEN
+*HELP 
+*EPD
+*PRD 5,Filename
+*STRP 25,%FILENAME
+*PRF HIDDEN
+*HELP 
+*EPD
+*PRD 6,Number
+*STRP 25,%N
+*PRF HIDDEN
+*HELP 
+*EPD
+*WTI
+*ISI 23
+*OSI 0
+*EXE ws2conv
+*ITW
+*ISI 0
+*OSI 23
+*EXE ws2conv
+*PAR 6
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,WS2
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 10, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*CHO 0
+*CHO 1
+*CHO 2
+*CHO 3
+*CHO 4
+*HELP wordwrap.hlp
+*EPD

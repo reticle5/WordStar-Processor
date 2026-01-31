@@ -1,0 +1,65 @@
+
+%  .bn1 pull letter from upper tray on the DEC 2250.
+/tray1ltr
+{
+	statusdict begin false setduplexmode 2 setpapertray end
+	userdict begin letter end
+	/pgsize 11 inch def
+} def
+
+%  .bn2 pull letter from lower tray on the DEC 2250.
+/tray2ltr 
+{
+	statusdict begin false setduplexmode 1 setpapertray end
+	userdict begin letter end
+	/pgsize 11 inch def
+} def
+
+%  .bn3 pull legal from upper tray on the DEC 2250.
+/tray1lgl 
+{
+	statusdict begin false setduplexmode 2 setpapertray end
+	userdict begin legal end
+	/pgsize 14 inch def
+} def
+
+%  .bn4 pull legal from lower tray on the DEC 2250.
+/tray2lgl 
+{
+	statusdict begin false setduplexmode 1 setpapertray end
+	userdict begin legal end
+	/pgsize 14 inch def
+} def
+
+%  .bn5 pull #10 envelope on the DEC 2250.
+/envelope 
+{
+	statusdict begin false setduplexmode 3 setpapertray end
+	userdict begin 4.125x9.5 end
+	/pgsize 9.5 inch def
+} def
+
+%  .bn6 pull manual letter on the DEC 2250.
+/manltr 
+{
+	statusdict begin false setduplexmode 0 setpapertray end
+	userdict begin letter end
+	/pgsize 11 inch def
+} def
+
+%  .bn7 pull manual legal on the DEC 2250.
+/manlgl 
+{
+	statusdict begin false setduplexmode 0 setpapertray end
+	userdict begin legal end
+	/pgsize 11 inch def
+} def
+
+%  .bn8 pull manual envelope on the DEC 2250.
+/manenv 
+{
+	statusdict begin false setduplexmode 0 setpapertray end
+	userdict begin 4.125x9.5 end
+	/pgsize 9.5 inch def
+} def
+

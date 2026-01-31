@@ -1,0 +1,93 @@
+
+%  .bn1 pull letter from upper tray on the Brother HL-10PS.
+/tray0ltr {statusdict begin 1 setpapertray /manualfeed false def end
+	   userdict begin letter end
+	   /pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the Brother HL-10PS.
+/tray1ltr {statusdict begin 2 setpapertray /manualfeed false def end
+	userdict begin letter end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the Brother HL-10PS.
+/tray0lgl {statusdict begin 1 setpapertray /manualfeed false def end
+	userdict begin legal end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the Brother HL-10PS.
+/tray1lgl {statusdict begin 2 setpapertray /manualfeed false def end
+	userdict begin legal end
+	/pgsize 14 inch def} def
+
+%  .bn5 pull #10 envelope from upper tray on the Brother HL-10PS.
+/env100   {statusdict begin 1 setpapertray /manualfeed false def end
+	userdict begin com10envelope end
+	/pgsize 9.5 inch def} def
+
+%  .bn6 pull #10 envelope from lower tray on the Brother HL-10PS.
+/env101   {statusdict begin 2 setpapertray /manualfeed false def end
+	userdict begin com10envelope end
+  	/pgsize 9.5 inch def} def
+
+%  .bn7 pull letter manual on the Brother HL-10PS.
+/manltr 
+{statusdict begin /manualfeed true def end
+       userdict begin letter end
+       /pgsize 11 inch def } def
+
+%  .bn8 pull legal manual on the Brother HL-10PS.
+/manlgl 
+{statusdict begin /manualfeed true def end
+       userdict begin legal end
+       /pgsize 14 inch def } def
+
+%  .bn9 pull A4 from upper tray on the Brother HL-10PS.
+/tray1a4 {statusdict begin 1 setpapertray /manualfeed false def end
+	userdict begin a4 end
+	/pgsize 11.6 inch def} def
+
+%  .bn10 pull A4 from lower tray on the Brother HL-10PS.
+/tray2a4 {statusdict begin 2 setpapertray /manualfeed false def end
+	userdict begin a4 end
+	/pgsize 11.6 inch def} def
+
+%  .bn11 pull manual a4 on the Brother HL-10PS.
+/mana4  {statusdict begin /manualfeed true def end
+	userdict begin a4 end
+	/pgsize 11.6 inch def} def
+
+%  .bn12 pull DL envelope from upper tray on the Brother HL-10PS.
+/envdl0 {statusdict begin 1 setpapertray /manualfeed false def end
+	userdict begin dlenvelope end
+	/pgsize 8.25 inch def} def
+
+%  .bn13 pull DL envelope from lower tray on the Brother HL-10PS.
+/envdl0 {statusdict begin 2 setpapertray /manualfeed false def end
+	userdict begin dlenvelope end
+	/pgsize 8.25 inch def} def
+
+%  .bn14 pull manual DL envelope on the Brother HL-10PS.
+/manenvdl  {statusdict begin /manualfeed true def end
+        userdict begin dlenvelope end
+	/pgsize 8.25 inch def} def
+
+%  .bn15 pull manual #10 envelope on the Brother HL-10PS.
+/manenv10  {statusdict begin /manualfeed true def end
+	userdict com10envelope end
+	/pgsize 9.5 inch def} def
+
+%  .bn16 pull #9 envelope from upper tray on the Brother HL-10PS.
+/env090   {statusdict begin 1 setpapertray /manualfeed false def end
+	  userdict begin monarcenvelope end
+	  /pgsize 8.875 inch def} def
+
+%  .bn17 pull #9 envelope from lower tray on the Brother HL-10PS.
+/env091   {statusdict begin 2 setpapertray /manualfeed false def end
+	  userdict begin monarcenvelope end
+	  /pgsize 8.875 inch def} def
+
+%  .bn18 pull manual #9 envelope on the Brother HL-10PS.
+/manenv9  {statusdict begin /manualfeed true def end
+	userdict begin monarcenvelope end
+	/pgsize 8.875 inch def} def
+

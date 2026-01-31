@@ -1,0 +1,73 @@
+*APN Volkswriter
+*APR 1.00 6/15/86
+*APT 0
+*API 23
+*EXT ???
+*EXC
+*EXI
+*WTI
+*ISI 0
+*OSI 23
+*EXE vwconv
+*PAR 1
+*PRD 0,Input File Type
+*TOG 2, 0
+*CHO Base Document
+*CHO Merge File
+*PRF HIDDEN
+*HELP merge.hlp
+*EPD
+*ITW
+*ISI 23
+*OSI 0
+*EXE vwconv
+*PAR 8
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*PRF
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,VW
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 5, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+*PRD 6,Printer Type
+*STRP 3,3
+*HELP vwpr.hlp
+*EPD
+*PRD 7,Line Spacing Support
+*TOG 3, 2
+*CHO Support with line spacing changes
+*CHO Support with lines per inch changes
+*CHO Support with a combination of spacing and lines per inch
+*PRF HIDDEN
+*HELP vwls.hlp
+*EPD
+

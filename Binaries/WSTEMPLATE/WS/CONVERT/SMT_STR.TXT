@@ -1,0 +1,19 @@
+*EXCEPTION_STRINGS 0
+
+*ERROR_STRINGS 15
+*MESSAGE  Unexpected EOF encountered.
+*MESSAGE  Invaild headers in the section.
+*MESSAGE  Invaild footers in the section.
+*MESSAGE  Invaild smart section record.
+*MESSAGE  Invaild section size.
+*MESSAGE  Input file could not be opened.
+*MESSAGE  Invalid smart document.
+*MESSAGE  Invalid font token encountered.
+*MESSAGE  Invaild odd header size.
+*MESSAGE  Invaild even header size.
+*MESSAGE  Invaild odd footer size.
+*MESSAGE  Invaild even footer size.
+*MESSAGE  Invaild note size.
+*MESSAGE  Invalid file format and may be caused by reading.
+*MESSAGE  Invalid column format.
+

@@ -1,0 +1,5 @@
+*EXCEPTION_STRINGS 0
+
+*ERROR_STRINGS 1
+*MESSAGE  Not a valid Mass 11 file.
+

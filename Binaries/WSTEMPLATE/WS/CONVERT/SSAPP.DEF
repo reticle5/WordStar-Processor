@@ -1,0 +1,107 @@
+*APN Intell ASCII
+*APR 2.00 1/20/86
+*APT 0
+*API 13
+*EXT ???
+*EXC
+*EXI
+*WTI
+*OSI 13
+*ISI 0
+*EXE ssconv
+*PAR 13
+*PRD 0,Default Tabstop Settings
+*STRP 60,9,17,25,33,41,49,57,65,73,81
+*HELP tabstops.hlp
+*EPD
+*PRD 1,Page Length (lines)
+*STRP 2,66
+*HELP pagelnth.hlp
+*EPD
+*PRD 2,1st Page Header Length (lines)
+*STRP 2,0
+*HELP hdr1lnth.hlp
+*EPD
+*PRD 3,1st Page Footer Length (lines)
+*STRP 2,0
+*HELP ftr1lnth.hlp
+*EPD
+*PRD 4,Subsequent Pages Header Length (lines)
+*STRP 2,0
+*HELP hdrxlnth.hlp
+*EPD
+*PRD 5,Subsequent Pages Footer Length (lines)
+*STRP 2,0
+*HELP ftrxlnth.hlp
+*EPD
+*PRD 6,Left Hot Zone Width (0-7)
+*STRP 1,2
+*HELP lhzwidth.hlp
+*EPD
+*PRD 7,Right Hot Zone Width (0-7)
+*STRP 1,0
+*HELP rhzwidth.hlp
+*EPD
+*PRD 8,Default Print Margin
+*STRP 2,10
+*HELP prntmrgn.hlp
+*EPD
+*PRD 9,Check for Line Spacing Changes?
+*TOG 2, 1
+*CHO NO
+*CHO YES
+*HELP lschange.hlp
+*EPD
+*PRD 10,Minimum Right Margin
+*STRP 2,40
+*HELP minrmrgn.hlp
+*EPD
+*PRD 11,Check for Centered Lines?
+*TOG 2, 1
+*CHO NO
+*CHO YES
+*HELP center.hlp
+*EPD
+*PRD 12,Tabstop Determination Method
+*TOG 2, 0
+*CHO Scan the text to generate tabstop information.
+*CHO Use the Default Tabstop Settings.
+*HELP tsd.hlp
+*EPD
+*ITW
+*OSI 0
+*ISI 13
+*EXE ssconv
+*PAR 6
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,ASC
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Character Attribute Support
+*TOG 2, 0
+*CHO Do not support Bold/Underline/Overstrike attributes
+*CHO Support Bold/Underline/Overstrike with Backspace character
+*HELP cas.hlp
+*EPD
+

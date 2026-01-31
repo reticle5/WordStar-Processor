@@ -1,0 +1,35 @@
+*EXCEPTION_STRINGS 16
+*MESSAGE  Unknown line alignment value -- Ignored
+*MESSAGE  Line spacing change inside of the subdocument -- Ignored
+*MESSAGE  Page break inside of the subdocument -- Ignored
+*MESSAGE  Print on/off -- Ignored
+*MESSAGE  Binary token -- Ignored
+*MESSAGE  Automatic numbering -- Ignored
+*MESSAGE  Conditional page -- Ignored
+*MESSAGE  Merge functions -- Ignored
+*MESSAGE  Hot zone -- Ignored
+*MESSAGE  Font change -- Ignored
+*MESSAGE  Suppress page characteristics -- Ignored
+*MESSAGE  Page number format -- Ignored
+*MESSAGE  Note options -- Ignored
+*MESSAGE  Center page -- Ignored
+*MESSAGE  Pause print -- Ignored
+*MESSAGE  Unknown DNF token -- Ignored
+
+*ERROR_STRINGS 15
+*MESSAGE  Unexpected character found before STX.
+*MESSAGE  Illegal character in DNF string.
+*MESSAGE  Disk write error.
+*MESSAGE  Unexpected EOF before end of the token reached.
+*MESSAGE  Output file could not be opened.
+*MESSAGE  Log or Diagnostic file could not be opened.
+*MESSAGE  Invalid use of the token.
+*MESSAGE  Work file could not be opened for writing.
+*MESSAGE  Input file could not be opened.
+*MESSAGE  Outputing character before file was opened.
+*MESSAGE  File end before subdocument end.
+*MESSAGE  Undefine token inside of Document Header.
+*MESSAGE  Could not open temporary file.
+*MESSAGE  Unknown token found.
+*MESSAGE  Input file could not be opened.
+

@@ -1,0 +1,135 @@
+
+%  .bn1 pull letter from upper tray on the TI/Sharp.
+/tray1ltr {statusdict begin  
+            0 setpapertray
+            /manualfeed false store
+            /trayswitch false store
+            letter
+          end
+          /pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the TI/Sharp.
+/tray2ltr {statusdict begin  
+            1 setpapertray 
+            /manualfeed false store
+            /trayswitch false store
+            letter
+          end
+          /pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the TI/Sharp.
+/tray1lgl {statusdict begin  
+            0 setpapertray 
+            /manualfeed false store
+            /trayswitch false store
+            legal
+          end
+          /pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the TI/Sharp.
+/tray2lgl {statusdict begin  
+            1 setpapertray
+            /manualfeed false store
+            /trayswitch false store
+          end
+          /pgsize 14 inch def} def
+
+%  .bn5 pull #10 envelope on the TI/Sharp.
+/envelope {statusdict begin  
+            2 setpapertray
+            /manualfeed false store
+            4.125x9.5envelope
+          end
+          /pgsize 9.5 inch def} def
+
+%  .bn6 pull manual letter on the TI/Sharp.
+/manltr {statusdict begin
+          /manualfeed true store
+          letter
+        end
+        /pgsize 11 inch def} def
+
+%  .bn7 pull manual legal on the TI/Sharp.
+/manlgl {statusdict begin
+          /manualfeed true store
+          /trayswitch false store 
+          legal
+        end
+        /pgsize 14 inch def} def
+
+%  .bn8 pull manual envelope on the TI/Sharp.
+/manenv {statusdict begin 
+          /manualfeed true store
+          /trayswitch false store 
+          4.125x9.5envelope
+        end
+        /pgsize 9.5 inch def} def
+
+%  .bn9 pull letter continuous on the TI/Sharp.
+/cntltr {statusdict begin
+          /manualfeed false store
+          /trayswitch true store 
+          letter
+        end
+        /pgsize 11 inch def} def
+
+%  .bn10 pull legal continuous on the TI/Sharp.
+/cntlgl {statusdict begin
+          /manualfeed false store
+          /trayswitch true store 
+          legal
+        end
+        /pgsize 14 inch def} def
+
+%  .bn11 pull A4 from upper tray on the TI/Sharp.
+/tray1a4 {statusdict begin
+           0 setpapertray
+           /manualfeed false store
+           /trayswitch false store 
+           a4
+         end
+         /pgsize 11.6 inch def} def
+
+%  .bn12 pull A4 from lower tray on the TI/Sharp.
+/tray2a4 {statusdict begin  
+           1 setpapertray
+           /manualfeed false store
+           /trayswitch false store 
+           a4
+         end
+         /pgsize 11.6 inch def} def
+
+%  .bn13 pull A4 continuous on the TI/Sharp.
+/cnta4  {statusdict begin
+	  /manualfeed false store
+	  /trayswitch true store 
+          a4
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn14 pull manual a4 on the TI/Sharp.
+/mana4  {statusdict begin
+          /manualfeed true store
+          /trayswitch false store 
+          a4
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn15 pull DL envelope on the TI/Sharp.
+/envdl {statusdict begin 
+         2 setpapertray 
+         /manualfeed false store
+         /trayswitch false store 
+         110x220envelope
+       end
+       /pgsize 8.25 inch def} def
+
+%  .bn16 pull manual DL envelope on the TI/Sharp.
+/manenvdl {statusdict begin
+            /manualfeed true store
+            /trayswitch false store 
+            110x220envelope
+          end
+          /pgsize 8.25 inch def} def
+
+

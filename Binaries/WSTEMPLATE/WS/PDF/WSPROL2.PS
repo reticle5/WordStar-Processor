@@ -1,0 +1,322 @@
+%!PS-Adobe-2.0
+%%Creator: WordStar Release 6.0 B
+%%Pages: (atend)
+%%EndComments
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Print pages side-by-side 
+%
+/twoupprep {
+
+   48.6 792 translate
+   270 rotate
+   .65 .65 scale
+
+   /left true def
+
+   /oldshowpage /showpage load def
+
+   /showpage {
+      left not { gsave oldshowpage grestore } if
+      left
+      {
+         /left false def
+	 609.2308 0 translate
+      }
+      {
+         /left true def
+	 -609.2308 0 translate
+      } ifelse
+   } def
+
+   /endpage {
+      restore 
+   } def
+
+   /cleanup {
+      left not { gsave oldshowpage grestore } if
+   } def
+
+} def
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+/Ulgap 2 def				% underline gap
+
+/inch {72 mul} bind def
+/inches {72 mul} bind def
+
+/endpage where not
+	{ /endpage { restore } bind def } { pop } ifelse
+
+/cleanup where not
+	{ /cleanup { } def } { pop } ifelse
+
+/resetvars
+{
+	/bw 4 inch def			% box width
+	/bh 4 inch def			% box height
+	/bt 1.5 def			% box edge thickness
+	/bg 3 def			% nested box gap
+	/Ulgap 2 def			% underline gap
+	/pgsize 11 inch def		% for page orientation
+} bind def
+
+% show a segment
+%
+/N	% Str Xs Ys
+{
+	moveto
+	show
+} bind def
+
+% awidthshow a segment
+%
+/S	% Cx 0 32 Ax 0 Str Xs Ys
+{
+	moveto
+	awidthshow
+} bind def
+
+% awidthshow a segment with underline
+%
+/SU	% Thik -Drop Cx 0 32 Ax 0 Str Xs Ys Xe
+{
+	10 1 roll
+	2 copy
+	13 2 roll
+	dup
+	10 1 roll
+	moveto
+	awidthshow
+	dup
+	5 1 roll
+	add
+	moveto
+	setlinewidth
+	add
+	gsave
+	   lineto
+	   stroke
+	grestore
+} bind def
+
+% underline whitespace
+%
+/WU	% Xe Ye Xs Ys Thik
+{
+	setlinewidth
+	moveto
+	lineto
+	currentpoint
+	stroke
+	moveto
+} bind def
+
+% double underline whitespace
+%
+/WDU	% Xe Ye Xs Ys Thik
+{
+	5 copy
+	WU			% draw the first line 
+	gsave
+	   0 1 index
+	   Ulgap add
+	   neg translate	% translate: 0 -(Thik+Ulgap) 
+	   			% Xe Ye Xs Ys Thik
+	   WU			% draw the second line
+	grestore
+} bind def
+
+% awidthshow a segment with double underline
+%
+/SDU	% Thik -Drop Cx 0 32 Ax 0 Str Xs Ys Xe
+{
+	10 1 roll
+	dup
+	10 1 roll
+	2 copy
+	14 2 roll
+	moveto
+	awidthshow
+	dup
+	4 1 roll
+	add
+	2 copy
+	moveto				% move to ul position
+	4 -1 roll
+	dup
+	setlinewidth
+	dup
+	7 1 roll
+	sub
+	Ulgap sub
+	6 2 roll
+	add
+	gsave				% cp saved before ul
+	   lineto			% draw upper ul
+	   Ulgap add
+	   neg
+	   0 exch rmoveto
+	   lineto			% draw lower ul
+	   stroke			% show lines
+	grestore			% restore cp
+} bind def
+
+% move with underline
+%
+/MU	% Xdest
+{
+	currentpoint
+	exch
+	pop
+	lineto
+	currentpoint
+	stroke
+	moveto
+} bind def
+
+% move with double underline
+%
+/MDU	% Xdest Thik
+{
+	currentpoint
+	3 -1 roll
+	dup
+	5 1 roll
+	sub
+	Ulgap sub
+	4 2 roll
+	currentpoint
+	exch
+	pop
+	lineto
+	currentpoint
+	stroke
+	moveto
+	neg
+	Ulgap sub
+	0 exch
+	gsave
+	   rmoveto
+	   lineto
+	   stroke
+	grestore
+} bind def
+
+% strikeout a char
+%
+/Strike		% (-) Ax Ci Ci+1
+{
+	pop pop
+	dup
+	2 index exch
+	currentpoint
+	pop
+	add
+	exch
+	Xs Ys moveto
+	show
+	dup
+	Ys moveto
+	/Xs exch def
+} bind def
+
+% kshow with strikeout
+%
+/SX		% (-) Ax Str Xs Ys
+{
+	moveto
+	currentpoint
+	/Ys exch def
+	/Xs exch def
+	{Strike} exch
+	kshow
+	currentpoint	% for SXU
+	pop		% for SXU
+	/Xe exch def	% for SXU
+	pop
+	Xs Ys moveto
+	show
+} bind def
+
+% kshow with strikeout and underline
+%
+/SXU		% Thik -Drop (-) Ax Str Xs Ys
+{
+	2 copy
+	7 1 roll
+	9 1 roll
+	SX
+	add
+	Xe exch
+	dup
+	4 1 roll
+	5 2 roll
+	WU
+} bind def	
+
+% Reencode font encoding vector for a standard font
+%
+% do so only for fonts which have StandardEncoding
+/RV	% FontName
+{
+	dup findfont begin
+	currentdict dup length dict begin
+		{ %forall
+			1 index /FID ne {def} {pop pop} ifelse
+		} forall
+		/FontName exch def
+		Encoding StandardEncoding eq
+		{%if	% only reencode if the current encoding IS StandardEncoding
+			/Encoding IBMenc def
+		}if
+		currentdict dup end end
+	/FontName get exch definefont pop
+} bind def
+
+/IBMenc StandardEncoding 256 array copy def
+
+%%EndProlog
+
+%%BeginSetup
+
+twoupprep		% prepare for two-up printing
+
+% initialize the IBMenc reencoding vector
+%
+0 [  7	/bullet
+    20	/paragraph /section
+   128	/Ccedilla /udieresis /eacute /acircumflex /adieresis /agrave
+	/aring /ccedilla /ecircumflex /edieresis /egrave /idieresis 
+	/icircumflex /igrave /Adieresis /Aring /Eacute /ae /AE 
+	/ocircumflex /odieresis /ograve /ucircumflex /ugrave /ydieresis
+	/Odieresis /Udieresis /oslash /sterling /Oslash 
+   159	/florin /aacute /iacute /oacute /uacute /ntilde /Ntilde /ordfeminine
+	/ordmasculine /questiondown /registered /logicalnot 
+   173	/exclamdown /guillemotleft /guillemotright 
+   181	/Aacute /Acircumflex /Agrave /copyright   
+   189	/cent /yen
+   198	/atilde /Atilde
+   207	/currency
+   210	/Ecircumflex /Edieresis /Egrave /dotlessi /Iacute /Icircumflex
+	/Idieresis
+   222	/Igrave
+   224	/Oacute /germandbls /Ocircumflex /Ograve /otilde /Otilde
+   233	/Uacute /Ucircumflex /Ugrave
+   238	/macron /acute
+   247	/cedilla /ring /dieresis /dotaccent ]
+	 { %forall
+		dup type /nametype eq 
+		{ %ifelse
+			IBMenc 2 index 2 index put
+			pop 1 add
+		}{ %else
+			exch pop
+		} ifelse
+	  } forall
+pop
+
+%%EndSetup
+
+

@@ -1,0 +1,515 @@
+256
+0,0,0
+(0)    Chicago
+0,1,0
+(1)    Application Font
+0,2,0
+(2)    New York
+0,3,0
+(3)    Geneva
+0,4,0
+(4)    Monaco
+0,5,0
+(5)    Venice
+0,6,0
+(6)    London
+0,7,0
+(7)    Athens
+0,8,0
+(8)    San Francisco
+0,9,0
+(9)    Toronto
+0,10,0
+(10)
+0,11,0
+(11)   Cairo
+0,12,0
+(12)   Los Angeles
+0,13,0
+(13)   Zapf Dingbats
+0,14,0
+(14)   Bookman Light
+0,15,0
+(15)   Helvetica Narrow
+0,16,0
+(16)   Palatino Roman
+0,17,0
+(17)   American Med Typewr
+0,18,0
+(18)   Zapf Chancery Itali
+0,19,0
+(19)   Souvenir Light
+1,0,0
+(20)   Times
+1,1,0
+(21)   Helvetica
+1,2,0
+(22)   Courier
+1,3,0
+(23)   Symbol
+1,4,0
+(24)   Mobile
+1,5,0
+(25)
+1,6,0
+(26)   Lubalin graph
+1,7,0
+(27)   Benguiat Book
+1,8,0
+(28)   Friz Quadrata
+1,9,0
+(29)   Glypha
+1,10,0
+(30)   Machine
+1,11,0
+(31)   Optima
+1,12,0
+(32)
+1,13,0
+(33)   Avant Garde Book
+1,14,0
+(34)   New Century Roman S
+1,15,0
+(35)
+1,16,0
+(36)
+1,17,0
+(37)
+1,18,0
+(38)
+1,19,0
+(39)
+2,0,0
+(40)
+2,1,0
+(41)
+2,2,0
+(42)
+2,3,0
+(43)
+2,4,0
+(44)
+2,5,0
+(45)
+2,6,0
+(46)
+2,7,0
+(47)
+2,8,0
+(48)
+2,9,0
+(49)
+2,10,0
+(50)
+2,11,0
+(51)
+2,12,0
+(52)
+2,13,0
+(53)
+2,14,0
+(54)
+2,15,0
+(55)
+2,16,0
+(56)
+2,17,0
+(57)
+2,18,0
+(58)
+2,19,0
+(59)
+3,0,0
+(60)
+3,1,0
+(61)
+3,2,0
+(62)
+3,3,0
+(63)
+3,4,0
+(64)
+3,5,0
+(65)
+3,6,0
+(66)
+3,7,0
+(67)
+3,8,0
+(68)
+3,9,0
+(69)
+3,10,0
+(70)
+3,11,0
+(71)
+3,12,0
+(72)
+3,13,0
+(73)
+3,14,0
+(74)
+3,15,0
+(75)   Szwajcarskie
+3,16,0
+(76)
+3,17,0
+(77)
+3,18,0
+(78)
+3,19,0
+(79)
+4,0,0
+(80)   Sip Helvetica
+4,1,0
+(81)   Triangle Helvetica
+4,2,0
+(82)   Slant Helvetica
+4,3,0
+(83)   Random Helvetica
+4,4,0
+(84)   Line Helvetica
+4,5,0
+(85)   Inline Helvetica
+4,6,0
+(86)   Grid Helvetica
+4,7,0
+(87)   Gray Scale Helvetic
+4,8,0
+(88)   Fountain Helvetica
+4,9,0
+(89)   Diamond Helvetica
+4,10,0
+(90)   Circle Helvetica
+4,11,0
+(91)   Burst Helvetica
+4,12,0
+(92)   Slant Times
+4,13,0
+(93)   Gray Scale Times
+4,14,0
+(94)   Zip Times
+4,15,0
+(95)   Burst Times
+4,16,0
+(96)   Inline Times
+4,17,0
+(97)   Grid Times
+4,18,0
+(98)   Random Times
+4,19,0
+(99)   Diamond Times
+5,0,0
+(100)  Circle Times
+5,1,0
+(101)  Line Times
+5,2,0
+(102)  Triangle Times
+5,3,0
+(103)  Fountain Times
+5,4,0
+(104)
+5,5,0
+(105)
+5,6,0
+(106)
+5,7,0
+(107)
+5,8,0
+(108)
+5,9,0
+(109)
+5,10,0
+(110)  Czasy Flake
+5,11,0
+(111)
+5,12,0
+(112)
+5,13,0
+(113)
+5,14,0
+(114)
+5,15,0
+(115)
+5,16,0
+(116)
+5,17,0
+(117)
+5,18,0
+(118)
+5,19,0
+(119)
+6,0,0
+(120)
+6,1,0
+(121)
+6,2,0
+(122)
+6,3,0
+(123)
+6,4,0
+(124)
+6,5,0
+(125)
+6,6,0
+(126)
+6,7,0
+(127)
+6,8,0
+(128)  Acropolis
+6,9,0
+(129)  Avant Garde Book Ob
+6,10,0
+(130)  Avant Garde Demi
+6,11,0
+(131)  Avant Garde Demo Ob
+6,12,0
+(132)  Bookman Light Itali
+6,13,0
+(133)  Bookman Demi
+6,14,0
+(134)  Bookman Demi Italic
+6,15,0
+(135)  Courier Oblique
+6,16,0
+(136)  Courier Bold
+6,17,0
+(137)  Courier Bold Obliqu
+6,18,0
+(138)  Helvetica Oblique
+6,19,0
+(139)  Helvetica Bold
+7,0,0
+(140)  Helvetica Bold Obli
+7,1,0
+(141)  Narrow Helvetica Ob
+7,2,0
+(142)  Narrow Helvetica Bo
+7,3,0
+(143)  Helvetica Narrow Bo
+7,4,0
+(144)  New Century Schoolb
+7,5,0
+(145)  New Century Schoolb
+7,6,0
+(146)  New Century Schoolb
+7,7,0
+(147)  Palatino Italic
+7,8,0
+(148)  Palatino Bold
+7,9,0
+(149)  Palatino Bold Itali
+7,10,0
+(150)  Times Italic
+7,11,0
+(151)  Times Bold
+7,12,0
+(152)  Times Bold Italic
+7,13,0
+(153)  American Typewriter
+7,14,0
+(154)  Benguiat Bold
+7,15,0
+(155)  Friz Quadrata Bold
+7,16,0
+(156)  Garamond Light
+7,17,0
+(157)  Garamond Light Italic
+7,18,0
+(158)  Garamond Bold
+7,19,0
+(159)  Garamond Bold Italic
+8,0,0
+(160)  Glypha Oblique
+8,1,0
+(161)  Glypha Bold
+8,2,0
+(162)  Glypha Bold Oblique
+8,3,0
+(163)  Lubalin Graph Book O
+8,4,0
+(164)  Lubalin Graph Demi
+8,5,0
+(165)  Lubalin Graph Demi O
+8,6,0
+(166)  Optima Oblique
+8,7,0
+(167)  Optima Bold
+8,8,0
+(168)  Optima Bold Oblique
+8,9,0
+(169)  Souvenir Light Italic
+8,10,0
+(170)  Souvenir Demi
+8,11,0
+(171)  Souvenir Demi Italic
+8,12,0
+(172)  Tiffany Bold Italic
+8,13,0
+(173)  Tiffany Heavy Italic
+8,14,0
+(174)  News Gothic Oblique
+8,15,0
+(175)  News Gothic Bold Obl
+8,16,0
+(176)  Fat Bold Neosho
+8,17,0
+(177)  Helvetica Condensed
+8,18,0
+(178)  Fat Light Neosho
+8,19,0
+(179)  Futura Bold Oblique
+9,0,0
+(180)  Bold Neosho
+9,1,0
+(181)  Light Neosho
+9,2,0
+(182)  Galliard Bold
+9,3,0
+(183)  Galliard Bold Itali
+9,4,0
+(184)  Galliard Italic
+9,5,0
+(185)  Galliard Roman
+9,6,0
+(186)  Goudy Bold
+9,7,0
+(187)  Goudy Bold Italic
+9,8,0
+(188)  Goudy Italic
+9,9,0
+(189)  Universe Cond. Ligh
+9,10,0
+(190)  Helvetica Cond. Lig
+9,11,0
+(191)  Helvetica Cond. Bol
+9,12,0
+(192)  Helvetica Cond. Lig
+9,13,0
+(193)  Helvetica Light
+9,14,0
+(194)  Korinna Bold
+9,15,0
+(195)  Korinna Kursiv Bold
+9,16,0
+(196)  Korinna Kursiv Regu
+9,17,0
+(197)  Korinna
+9,18,0
+(198)  Melior Bold
+9,19,0
+(199)  Melior Bold Italic
+10,0,0
+(200)  Melior Italic
+10,1,0
+(201)  Melior
+10,2,0
+(202)  New Baskerville Bol
+10,3,0
+(203)  New Baskerville Bol
+10,4,0
+(204)  New Baskerville Ita
+10,5,0
+(205)  New Baskerville Rom
+10,6,0
+(206)  Trump Medieval Bold
+10,7,0
+(207)  Trump Medieval Bold
+10,8,0
+(208)  Trump Medieval Ital
+10,9,0
+(209)  Trump Medieval
+10,10,0
+(210)  Helvetica Condensed
+10,11,0
+(211)  Helvetica Condensed
+10,12,0
+(212)  Helvetica Light
+10,13,0
+(213)  Universe Cond. Obli
+10,14,0
+(214)  Universe Cond. Bold
+10,15,0
+(215)  Sans Serif Demi Ita
+10,16,0
+(216)  Sans Serif Bold
+10,17,0
+(217)  Sans Serif Bold Ita
+10,18,0
+(218)  Futura Light Obliqu
+10,19,0
+(219)  Sans Serif Extra Bo
+11,0,0
+(220)  Thames
+11,1,0
+(221)  Monterey Medium
+11,2,0
+(222)  Hudson
+11,3,0
+(223)  Cheltenham Roman
+11,4,0
+(224)  Cheltenham Bold
+11,5,0
+(225)  Cheltenham Italic
+11,6,0
+(226)  Cheltenham Bold Ita
+11,7,0
+(227)  Franklin Gothic
+11,8,0
+(228)  Franklin Gothic Dem
+11,9,0
+(229)  Franklin Gothic Hea
+11,10,0
+(230)  Prestige Elite
+11,11,0
+(231)  Prestige Elite Bold
+11,12,0
+(232)  Century Old Style R
+11,13,0
+(233)  Century Old Style B
+11,14,0
+(234)  Century Old Style I
+11,15,0
+(235)  Letter Gothic
+11,16,0
+(236)  Letter Gothic Bold
+11,17,0
+(237)  Orator
+11,18,0
+(238)  Helvetica Condensed
+11,19,0
+(239)  Helvetica Condensed
+20,0,0
+(240)  Tipe Thin Font
+20,1,0
+(241)  Helvetica Black
+20,2,0
+(242)  Helvetica Black Obl
+20,3,0
+(243)  Fat Bookman
+20,4,0
+(244)  Park Avenue
+20,5,0
+(245)  Fat Schoolbook
+20,6,0
+(246)  Thin Palatino
+20,7,0
+(247)  Fat Palatino
+20,8,0
+(248)
+20,9,0
+(249)  MacPaint Icon Font
+20,10,0
+(250)  FullPaint Icon Font
+20,11,0
+(251)  Franklin Gothic Obl
+20,12,0
+(252)  Franklin Gothic Dem
+20,13,0
+(253)  Sofa Font
+20,14,0
+(254)  MacDraw Icon Font
+20,15,0
+(255)  Micro Dingbats
+0,3,0
+

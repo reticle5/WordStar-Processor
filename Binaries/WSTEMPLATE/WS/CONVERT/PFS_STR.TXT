@@ -1,0 +1,16 @@
+*EXCEPTION_STRINGS 0
+
+*ERROR_STRINGS 12
+*MESSAGE  Header Footer work file could not be opened for writing.
+*MESSAGE  File end before subdocument end.
+*MESSAGE  Footnote work file could not be opened for writing.
+*MESSAGE  Intermediate work file could not be opened for writing.
+*MESSAGE  Output file open failure.
+*MESSAGE  General conversion error.
+*MESSAGE  Column work file could not be opened for writing.
+*MESSAGE  Unable to allocate memory
+*MESSAGE  Input file open failure. 
+*MESSAGE  The input file is not a valid DCA/RFT file.
+*MESSAGE  The input file is not a valid DisplayWrite 3 (TXT) file.
+*MESSAGE  Unexpected End of File.
+

@@ -1,0 +1,17 @@
+*ERROR_STRINGS 0
+
+*EXCEPTION_STRINGS 13
+*MESSAGE  Double underlining has been converted to single underlining.
+*MESSAGE  Centered page has been converted to left align page.
+*MESSAGE  Reverse image text has been converted to regular text.
+*MESSAGE  Time stamping ignored.
+*MESSAGE  Line numbering ignored.
+*MESSAGE  Italicized text has been converted to regular text.
+*MESSAGE  Printer control code ignored.
+*MESSAGE  Columns converted to block paragraphs on separate pages.
+*MESSAGE  Table of contents ignored: converted as regular text.
+*MESSAGE  Font outside Volkswriter font range: convered to default font.
+*MESSAGE  Shoadow print text converted to bolded text.
+*MESSAGE  ..CMD command ignored.
+*MESSAGE  Character tab converted to page image.
+

@@ -1,0 +1,18 @@
+>Sample Menu
+Documents,     /k=":c{enter}{F3}\doc{enter}{F7}{enter}"
+<------ Inset -------
+Inset,         c:
+               cd \ws\inset
+               inset
+               pf ~d~p
+Remove Inset,  c:
+               cd \ws\inset
+   	       ri
+               pf ~d~p
+<------ Other -------
+Lotus,         c:
+               cd \lotus
+               123
+               pf ~d~p
+Quit,          /m=quitmenu.pf
+

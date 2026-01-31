@@ -1,0 +1,77 @@
+*APN WordMarc
+*APR 4.1 1984
+*APT 0
+*API 22
+*EXT ???
+*PAR 2
+*PRD 0,Typestyles Support
+*TOG 2, 1
+*CHO Not Supporting Typestyles Changes
+*CHO Supporting Typestyles Changes
+*PRF HIDDEN
+*HELP 
+*EPD
+*PRD 1,Type of Printers
+*TOG 2, 1
+*CHO Postscript Printers
+*CHO HP Laser Printers
+*PRF HIDDEN
+*HELP wmprt.hlp
+*EPD
+*WTI
+*ISI 22
+*OSI 0
+*EXE wmconv
+*ITW
+*ISI 0
+*OSI 22
+*EXE wmconv
+*PAR 8
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,WM
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 5, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+*PRD 6,Versions
+*TOG 2, 0
+*CHO Wordmarc Composer
+*CHO WordMarc Composer Plus
+*PRF HIDDEN
+*HELP version.hlp
+*EPD
+*PRD 7,Typestyles Directory
+*STRP 65,
+*PRF HIDDEN
+*HELP wm_tpsty.hlp
+*EPD
+

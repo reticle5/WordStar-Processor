@@ -1,0 +1,50 @@
+*APN Samna
+*APR 3.32 9.22.83
+*APT 0
+*API 22
+*EXT ???
+*WTI
+*ISI 22
+*OSI 0
+*EXE smconv
+*ITW
+*ISI 0
+*OSI 22
+*EXE smconv
+*PAR 6
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,SAM
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 5, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+

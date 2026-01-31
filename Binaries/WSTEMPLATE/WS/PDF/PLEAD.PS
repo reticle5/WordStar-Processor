@@ -1,0 +1,53 @@
+%! PLEAD.PS (WordStar October 17, 1991 Mark Hennessy)
+%
+
+% Newline: double line spacing, decrements 24/72 (72 is 1")
+/newline
+{currentpoint 24 sub
+exch pop 18
+exch moveto} def
+
+% Str: Length of string is 2
+/str
+{2 string} def
+
+newpath
+
+% Set first vertical line page offset at 52/72.
+52 72 moveto
+
+% Draw first vertical line:
+% 72/72 from bottom of page to 720/72 from bottom of page at 52/72 page offset.
+52 720 lineto
+stroke
+
+% Set second vertical line page offset at 54/72.
+54 72 moveto
+
+% Draw second vertical line:
+% 72/72 from bottom of page to 720/72 from bottom of page at 54/72 page offset.
+54 720 lineto
+stroke
+
+% Set third vertical line page offset at 542/72.
+542 72 moveto
+
+% Draw third vertical line:
+% 72/72 from bottom of page to 720/72 from bottom of page at 542/72 page offset.
+542 720 lineto
+stroke
+
+% Set text page offset at 18/72 and text first line at 708/72.
+18 708 moveto
+
+% Select a Courier font at 12 point.
+/Courier findfont
+12 scalefont
+setfont
+
+% Do a FOR LOOP 27 times at single step. Convert numeric to a string and
+% call "newline".
+1 1 27 {str cvs show newline} for
+
+%end
+

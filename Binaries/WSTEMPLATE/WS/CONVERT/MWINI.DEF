@@ -1,0 +1,14 @@
+Page length   :11   : This is the page length in inches
+Page width    :8.5  : This is the page width in inches
+Start	      :-1   : Starting page number (-1) for standard
+Top margin    :1    : This is top margin in inches
+Bottom margin :1    : This is bottom margin in inches
+Left margin   :1.25 : This is left margin in inches
+Right margin  :1.25 : This is right margin in inches
+RHTop	      :0.5  : This is running head position from top
+RHBottom      :0.5  : This is running head position from bottom
+Columns       :1    : This is the number of columns
+Column gap    :0.5  : Intercolumn gap
+CodePage      :437  : This is the codepage to be used going to DCA
+DecimalChar   :"."  : Decimal alignment character enclosed in ""
+

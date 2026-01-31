@@ -1,0 +1,43 @@
+
+%  Letter-sized paper from the slot
+/ltr1 {statusdict begin /manualfeed false def end   	%%.bn1
+       userdict begin letter end
+       /pgsize 11 inch def } def
+
+%  Legal 
+/lgl1 {statusdict begin /manualfeed false def end     	%%.bn2
+       userdict begin legal end
+       /pgsize 14 inch def } def
+
+%  #10 envelope
+/env10 {statusdict begin /manualfeed false def end     %%.bn3
+       userdict begin 4.125x9.5envelope end
+       /pgsize 9.5 inch def } def
+
+%  #9 envelope %%requires landscape
+/env9 {statusdict begin /manualfeed false def end     	%%.bn4
+        userdict begin 3.875x7.5envelope end
+        /pgsize 7.5 inch def } def
+
+% a4 paper
+/a4paper {statusdict begin /manualfeed false def end     	%%.bn5
+       userdict begin a4 end
+       /pgsize 11.69 inch def } def
+
+% b5 paper
+/b5paper {statusdict begin /manualfeed false def end     	%%.bn6
+       userdict begin b5 end
+       /pgsize 9.84 inch def } def
+
+% 162x229mm envelope
+/env162 {statusdict begin /manualfeed false def end     	%%.bn7
+       userdict begin 162x229envelope end
+       /pgsize 9.02 inch def } def
+
+% 110x220mm envelope
+/env110 {statusdict begin /manualfeed false def end     	%%.bn8
+       userdict begin 110x220envelope end
+       /pgsize 8.66 inch def } def
+
+
+

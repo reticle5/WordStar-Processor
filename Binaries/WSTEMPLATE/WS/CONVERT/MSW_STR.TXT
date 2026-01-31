@@ -1,0 +1,25 @@
+*EXCEPTION_STRINGS 0
+*ERROR_STRINGS 22
+*MESSAGE Unexpected value encountered while processing a multi-byte token.
+*MESSAGE Cannot read a dnf character while copying a running head.
+*MESSAGE Cannot write out a character. Check available disk space.
+*MESSAGE Unexpected EOF encountered while looking ahead for alignment.
+*MESSAGE Cannot read a character.
+*MESSAGE Cannot open output file.
+*MESSAGE Can't open main document text file. 
+*MESSAGE Can't open subdocument text file.
+*MESSAGE Can't open main document character format file.
+*MESSAGE Can't open subdocument character format file.
+*MESSAGE Can't open main document paragraph format file.
+*MESSAGE Can't open subdocument paragraph format file.
+*MESSAGE Can't open main document page table file.
+*MESSAGE Can't open subdocument page table file.
+*MESSAGE Can't open main document section properties file.
+*MESSAGE Can't open subdocument section properties file.
+*MESSAGE Can't open main document section table file.
+*MESSAGE Can't open subdocument section table file.
+*MESSAGE Can't open internal code file.
+*MESSAGE Can't open temporary (columns) internal code file.
+*MESSAGE Columns out of sync.  Can't recover.
+*MESSAGE Not a valid Word file
+

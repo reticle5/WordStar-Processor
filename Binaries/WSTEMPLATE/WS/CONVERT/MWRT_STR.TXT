@@ -1,0 +1,10 @@
+*EXCEPTION_STRINGS 0
+
+*ERROR_STRINGS 6
+*MESSAGE  Unexpected EOF encountered.
+*MESSAGE  Insufficient memory.
+*MESSAGE  Invalid switch option.
+*MESSAGE  Output file could not be opened.
+*MESSAGE  Incorrect file MacWrite II file format.
+*MESSAGE  Work file could not be opened.
+

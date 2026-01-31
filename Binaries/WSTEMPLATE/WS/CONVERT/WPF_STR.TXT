@@ -1,0 +1,48 @@
+*EXCEPTION_STRINGS 39
+*MESSAGE  Math function BEGIN MATH MODE -- Ignored
+*MESSAGE  Block Protect -- Ignored
+*MESSAGE  Cancel word Hyphenation -- Ignored
+*MESSAGE  Page number column -- Ignored
+*MESSAGE  Index function -- Ignored
+*MESSAGE  Table of contents / Lists Definition -- Ignored
+*MESSAGE  Math Function END COLUMN MODE -- Ignored
+*MESSAGE  Line Numbering -- Ignored
+*MESSAGE  Math function MATH COLUMNS DEFINITION -- Ignored
+*MESSAGE  Math function NEGATIVE NUMBER -- Ignored
+*MESSAGE  Paragraph number -- Ignored
+*MESSAGE  Hyphenation Off -- Ignored
+*MESSAGE  Italics Off -- Ignored
+*MESSAGE  Table of Contents / Lists End Mark -- Ignored
+*MESSAGE  Outline Off -- Ignored
+*MESSAGE  Redline Off -- Ignored
+*MESSAGE  Reverse Video Off -- Ignored
+*MESSAGE  Shadow Off -- Ignored
+*MESSAGE  Widow/Orphan Off -- Ignored
+*MESSAGE  Hyphenation On -- Ignored
+*MESSAGE  Italics On -- Ignored
+*MESSAGE  Table of Contents / Lists Begin Mark -- Ignored
+*MESSAGE  Outline On -- Ignored
+*MESSAGE  Redline On -- Ignored
+*MESSAGE  Reverse Video On -- Ignored
+*MESSAGE  Shadow On -- Ignored
+*MESSAGE  Widow/Orphan ON -- Ignored
+*MESSAGE  Automatic paragraph numbering definition -- Ignored
+*MESSAGE  Automatic paragraph number -- Ignored
+*MESSAGE  Automatic paragraph function -- Ignored
+*MESSAGE  Page Number position -- Ignored
+*MESSAGE  Set Bin number -- Ignored
+*MESSAGE  Pre 4.08 WordPerfect margin release -- Ignored
+*MESSAGE  Tab After Right Margin -- Ignored
+*MESSAGE  Math Function  -- Ignored
+*MESSAGE  Table of Authorities -- Ignored
+*MESSAGE  Table Of Contents placement code -- Ignored
+*MESSAGE  Pre 4.08 WordPerfect indent function -- Ignored
+*MESSAGE  Merge Function -- Ignored
+
+*ERROR_STRINGS 5
+*MESSAGE  From WPF : ERROR -- Cannot open input file 
+*MESSAGE  From WPF : ERROR -- Not enough memory available to store the line
+*MESSAGE  From WPF : ERROR -- Bad WordPerfect document
+*MESSAGE  From WPF : ERROR -- Footnote work file could not be opened
+*MESSAGE  From WPF : ERROR -- Indent without a tab stop
+

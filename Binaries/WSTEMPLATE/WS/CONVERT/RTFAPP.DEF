@@ -1,0 +1,68 @@
+*APN RTF
+*APR Version 1
+*APT 0
+*API 26
+*EXT ???
+*EXC 
+*EXI 
+*WTI
+*ISI 0
+*OSI 26
+*EXE rtfconv
+*ITW
+*ISI 26
+*OSI 0
+*EXE rtfconv
+*PAR 10
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,RTF
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Output Character Set
+*TOG 3, 1
+*CHO ANSI
+*CHO IBM PC Extended ASCII
+*CHO Macintosh
+*HELP rtfchar.hlp
+*EPD
+*PRD 6,Document Margin Method
+*TOG 2, 0
+*CHO Scan First Page for Widest Margins
+*CHO User Defined Margins
+*HELP rtfmarg.hlp
+*EPD
+*PRD 7,Document Left Margin
+*STRP 4,0.0 
+*HELP rtflmarg.hlp
+*EPD
+*PRD 8,Document Right Margin
+*STRP 4,7.5 
+*HELP rtfrmarg.hlp
+*EPD
+*PRD 9,RTF Version Number
+*TOG 2, 1
+*CHO Version 0
+*CHO Version 1
+*HELP rtfver.hlp
+*EPD

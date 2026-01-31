@@ -1,0 +1,53 @@
+*APN MS Word 4(Mac)
+*APR 4.0 4.1.89
+*APT 0
+*API 23
+*EXT ???
+*WTI
+*ISI 23
+*OSI 0
+*EXE mwrdconv
+*ITW
+*ISI 0
+*OSI 23
+*EXE mwrdconv
+*PAR 7
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,MSW
+*HELP ext.hlp
+*EPD
+*PRD 4,Default Tab Width
+*STRP 20,.5 in.
+*HELP msdeftab.hlp
+*EPD
+*PRD 5,Printer
+*TOG 3, 1
+*CHO ImageWriter
+*CHO LaserWriter
+*CHO LaserWriter II
+*HELP mswprint.hlp
+*EPD
+*PRD 6,Output File Type
+*TOG 2, 0
+*CHO MacBinary
+*CHO Standard
+*HELP mactype.hlp
+*EPD
+

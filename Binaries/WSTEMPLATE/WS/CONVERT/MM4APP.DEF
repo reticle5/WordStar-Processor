@@ -1,0 +1,124 @@
+*APN MultiMate 4.0
+*APR 3.0 10.15.87
+*APT 0
+*API 18
+*EXT DOX
+*EXC
+*EXI
+*PAR 5
+*PRD 0,System Print Command - Page
+*STRP 15,&page&
+*PRF HIDDEN
+*HELP mmsyscmd.hlp
+*EPD
+*PRD 1,System Print Command - Last Page
+*STRP 15,&lpage&
+*PRF HIDDEN
+*HELP mmsyscmd.hlp
+*EPD
+*PRD 2,System Print Command - Document
+*STRP 15,&doc&
+*PRF HIDDEN
+*HELP mmsyscmd.hlp
+*EPD
+*PRD 3,System Print Command - Date
+*STRP 15,&date&
+*PRF HIDDEN
+*HELP mmsyscmd.hlp
+*EPD
+*PRD 4,System Print Command - Time
+*STRP 15,&time&
+*PRF HIDDEN
+*HELP mmsyscmd.hlp
+*EPD
+*WTI
+*ISI 18
+*OSI 0
+*EXE mmconv
+*ITW
+*ISI 0
+*OSI 18
+*EXE mmconv
+*PAR 13
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined File Extension
+*TOG 1, 0
+*CHO DOX
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 5, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+*PRD 6,Author Field
+*STRP 20,
+*PRF HIDDEN
+*HELP mmauthor.hlp
+*EPD
+*PRD 7,Comment Field
+*STRP 66,
+*PRF HIDDEN
+*HELP mmcomnt.hlp
+*EPD
+*PRD 8,Output file type
+*TOG 3, 2
+*CHO MultiMate Advantage II ( ver 1.0 )
+*CHO MultiMate ( versions thru 3.60 )
+*CHO MultiMate 4.0
+*PRF HIDDEN
+*HELP mmvers.hlp
+*EPD
+*PRD 9,Printer Action Table (PAT)
+*STRP 8,TTYCRLF
+*HELP mmpat.hlp
+*EPD
+*PRD 10,Sheet Feeder Action Table (SAT)
+*STRP 8,
+*PRF HIDDEN
+*HELP mmsat.hlp
+*EPD
+*PRD 11,Character Width Table (CWT)
+*STRP 8,
+*PRF HIDDEN
+*HELP mmcwt.hlp
+*EPD
+*PRD 12,Document Default Pitch
+*TOG 9, 3
+*CHO 1	(5 chars/inch)
+*CHO 2	(6 chars/inch)
+*CHO 3	(8.5 chars/inch)
+*CHO 4	(10 chars/inch)
+*CHO 5	(12 chars/inch)
+*CHO 6	(13.2 chars/inch)
+*CHO 7	(15 chars/inch)
+*CHO 8	(16.5 chars/inch)
+*CHO 9	(17.6 chars/inch)
+*HELP mmpitch.hlp
+*EPD
+

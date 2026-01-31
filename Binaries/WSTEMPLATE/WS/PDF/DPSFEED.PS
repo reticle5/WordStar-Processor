@@ -1,0 +1,62 @@
+
+%  .bn1 pull from internal tray on the dp 1260.
+/dpi 
+{
+	statusdict begin 0 setpapertray end
+} def
+
+%  .bn2 pull from lower option tray on the dp 1260.
+/dpl 
+{
+	statusdict begin 2 setpapertray end
+} def
+
+%  .bn3 pull from upper option tray on the dp 1260.
+/dpu 
+{
+	statusdict begin 1 setpapertray end
+} def
+
+%  .bn4 pull from envelope tray on the the dp 1260.
+/dpe 
+{
+	statusdict begin 3 setpapertray end
+} def
+
+%  .bn5 pull letter from manual tray on the dp 1260.
+/dpml 
+{
+	statusdict begin 4 setpapertray end userdict begin letter end 
+	/pgsize 11 inch def
+} def
+
+%  .bn6 pull legal from manual tray on the dp 1260.
+/dpmlg 
+{
+	statusdict begin 4 setpapertray end userdict begin legal end 
+	/pgsize 14 inch def
+} def
+
+%  .bn7 pull A4 from manual tray on the dp 1260.
+/dpma4 
+{
+	statusdict begin 4 setpapertray end userdict begin A4 end 
+	/pgsize 11.69 inch def
+} def
+
+%  .bn8 output stack face down on the dp 1260.
+/dpfd 
+{
+	usertime 20000 add {dup usertime lt { pop exit } if} loop
+	statusdict begin 0 setoutputtray end
+	usertime 20000 add {dup usertime lt { pop exit } if} loop
+} def
+
+%  .bn9 output stack face up on the dp 1260.
+/dpfu 
+{
+	usertime 20000 add {dup usertime lt { pop exit } if} loop
+	statusdict begin 1 setoutputtray end
+	usertime 20000 add {dup usertime lt { pop exit } if} loop
+} def
+

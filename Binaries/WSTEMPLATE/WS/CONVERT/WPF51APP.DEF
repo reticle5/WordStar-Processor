@@ -1,0 +1,70 @@
+*APN WordPerfect 5.1
+*APR 5.00 1/20/86
+*APT 0
+*API 13
+*EXT ???
+*EXC
+*EXI
+*PAR 1
+*PRD 0,Printer Definition File
+*STRP 66,
+*PRF PRINTER_DESCRIPTION
+*HELP wpf_prs.hlp
+*EPD
+*WTI
+*ISI 13
+*OSI 0
+*EXE wpf5conv
+*ITW
+*ISI 0
+*OSI 13
+*EXE wpf5conv
+*PAR 7
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,WP5
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 3,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 10, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*CHO 0
+*CHO 1
+*CHO 2
+*CHO 3
+*CHO 4
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+*PRD 6,WordPerfect Release
+*TOG 2, 1
+*CHO Release 5.0
+*CHO Release 5.1
+*PRF HIDDEN
+*HELP ufr.hlp
+*EPD
+

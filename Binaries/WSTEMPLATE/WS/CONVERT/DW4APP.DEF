@@ -1,0 +1,76 @@
+*APN DW4 (DOC)
+*APR 1.00 1989
+*APT 0
+*API 20
+*EXT ???
+*EXC
+*EXI
+*PAR 1
+*PRD 0,DCA File Type
+*TOG 3, 2
+*CHO RFT
+*CHO DW3/TXT
+*CHO DW4/DOC
+*PRF HIDDEN
+*HELP dcatype.hlp
+*EPD
+*WTI
+*ISI 20
+*OSI 0
+*EXE dcaconv
+*ITW
+*ISI 0
+*OSI 20
+*EXE dcaconv
+*PAR 8
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,DOC
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,7C
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 5, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+*PRD 6,Line Spacing Support
+*TOG 3, 2
+*CHO Support with line spacing changes
+*CHO Support with line density changes
+*CHO Support with a combination of spacing and line density
+*PRF HIDDEN
+*HELP dcals.hlp
+*EPD
+*PRD 7,Soft Return Replacement Method
+*TOG 2, 1
+*CHO Convert to Hard Returns.
+*CHO Keep as Soft Returns.
+*PRF HIDDEN
+*HELP dcasr.hlp
+*EPD
+

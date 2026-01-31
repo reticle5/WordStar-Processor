@@ -1,0 +1,9 @@
+*EXCEPTION_STRINGS 0
+
+*ERROR_STRINGS 5
+*MESSAGE  Error opening the main input file.  
+*MESSAGE  Error allocating memory for conversion.
+*MESSAGE  Error opening a temporary input work file
+*MESSAGE  Error opening a temporary output work file.
+*MESSAGE  Error wrong file type - do not fast save.
+

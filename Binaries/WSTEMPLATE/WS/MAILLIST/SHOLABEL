@@ -1,0 +1,45 @@
+.df wslist.dta
+.pl  1.00"
+.mt   .00"
+.mb   .00"
+.hm   .00"
+.fm   .00"
+.poo  .00"
+.poe  .00"
+.lm   .00"
+.rm  3.50"
+.uj off
+.ul on
+.sv A=LL
+.sv B=LLL
+.sv C=LLLLL
+.sv D=LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+.rv x, number, full-name, first, mi, last, Mr-Ms, title
+.rv company, addr1, addr2, city, state, zip, country
+.rv phone1, date, Jr-MD, user1, phone2, user2, x, user3
+.rv remark1, remark2, remark3, ymd
+.sv name1 = &first& &mi& &last&
+.if &name1& = " "
+.sv name1 = &title&
+.ei
+.if &company& <> ""
+.sv name2 = &company/D&
+.el
+.sv name2 = &name1&
+.sv name1 = ""
+.ei
+.if &addr2& <> ""
+.sv addr3 = &city&, &state& &zip/C&
+.sv addr4 = &country/D&
+.el
+.sv addr2 = &city&, &state& &zip/C&
+.sv addr3 = &country/D&
+.sv addr4 = ""
+.ei
+&name1/D&
+&name2/D&
+&addr1/D&
+&addr2/D&
+&addr3/D&
+&addr4/D&
+

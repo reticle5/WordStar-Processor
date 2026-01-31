@@ -1,0 +1,109 @@
+*SNM S t a r  E x c h a n g e
+*SRL 5.0
+*NMA 66
+*MTB
+*MTE
+*DIAF file.dia
+*DIAL 0
+*LOGF file.log
+*LOGL 0
+*DSP 0
+*CTRL E3D49C91
+*LRU 44 ,33 ,37
+*PAR 6
+*PRD 0,System Work Area Directory
+*STRP 65,
+*HELP sysdir.hlp
+*EPD
+*PRD 1,Keyboard Type
+*TOG 3, 0
+*CHO US/Group1
+*CHO Norwegian/Danish
+*CHO Hebrew
+*HELP fltrpar.hlp
+*EPD
+*PRD 2,Character Filter File
+*STRP 65,
+*HELP tf_file.hlp
+*EPD
+*PRD 3,Spreadsheet Delimiter
+*TOG 3, 1
+*CHO Tabs
+*CHO Commas
+*CHO Spaces
+*HELP ssdlim.hlp
+*EPD
+*PRD 4,Spreadsheet Top Margin
+*STRP 15,1 inch
+*HELP sstop.hlp
+*EPD
+*PRD 5,Spreadsheet Bottom Margin
+*STRP 15,1 inch
+*HELP ssbot.hlp
+*EPD
+*APD Auto Translate,at,atapp.def,1998,BF
+*APD Standard ASCII,sasc,ascapp.def,1998,BA
+*APD Intell ASCII,iasc,ssapp.def,1998,BA
+*APD DCA/FFT,fft,fftapp.def,1998,BT
+*APD DCA/RFT,rft,rftapp.def,1008,BA
+*APD DW2/3 (TXT),txt,txtapp.def,1009,BA
+*APD DW4 (DOC),dw4,dw4app.def,1036,BA
+*APD DX,dx,dxapp.def,1021,BA
+*APD First Choice,fc,pfcapp.def,1017,BA
+*APD First Choice 3,fc3,pfc3app.def,1058,BA
+*APD Mass-11,m11,m11app.def,1031,BA
+*APD MS Word 4,msw,mswapp.def,1000,BA
+*APD MS Word 5,msw5,msw5app.def,1001,BA
+*APD MultiMate Adv 2,mma2,mma2app.def,1007,BA
+*APD MultiMate 3.6,mm36,mm36app.def,1006,BA
+*APD MultiMate 4.0,mm40,mm4app.def,1039,BA
+*APD Navy DIF,dif,difapp.def,1019,BA
+*APD Nota Bene,nb,nbapp.def,1998,BA
+*APD PFS:Write A,pfsa,pfsaapp.def,1012,BA
+*APD PFS:Write B,pfsb,pfsbapp.def,1013,BA
+*APD PFS:Write C,pfsc,pfscapp.def,1998,BA
+*APD Prof Write 1,pro1,pw1app.def,1014,BA
+*APD Prof Write 2,pro2,pw2app.def,1015,BA
+*APD RTF,rtf,rtfapp.def,1028,BA
+*APD Samna,sm,smapp.def,1011,BA
+*APD SmartWare II,smt,smtapp.def,1010,BA
+*APD Volkswriter,vw,vwapp.def,1020,BA
+*APD WangIWP,iwp,iwpapp.def,1025,BA
+*APD Writing Asst,wa,iwaapp.def,1016,BA
+*APD WordMarc,wm,wmapp.def,1018,BA
+*APD WordMarc Plus,wmc,wmcapp.def,1018,BA
+*APD WordPerfect,wpf,wpfapp.def,1023,BA
+*APD WordPerfect 5.0,wpf5,wpf5app.def,1005,BA
+*APD WordPerfect 5.1,wp51,wpf51app.def,1038,BA
+*APD WordStar 3.31,ws33,ws33app.def,1998,UX
+*APD WordStar 3.4,ws34,ws34app.def,1998,UX
+*APD WordStar 4.0,ws4,ws4app.def,1003,UX
+*APD WordStar 5-7,ws5,ws5app.def,1002,UX
+*APD WordStar 2000,ws2,ws2app.def,1004,UX
+*APD WordStar Data,wsda,wsdapp.def,1998,UT
+*APD XyWrite,xy,xyapp.def,1033,BA
+*APD MS Word 4(Mac),mwrd4,mwrd4app.def,1030,BA
+*APD WordPerfect(Mac),mwpf,mwpfapp.def,1035,BA
+*APD WordPerfect2 Mac,mwp2,mwp2app.def,1059,BA
+*APD MacWrite II,mwrt,mwrtapp.def,1032,BA
+*APD Lotus 123 2.x,wks,wksss.def,1400,BF
+*APD Lotus 123 3.x,wk3,wk3ss.def,1403,BF
+*APD Enable SS/DB,ebls,enabless.def,1406,BF
+*APD First Choice SS,fcss,fcss.def,1414,BF
+*APD Microsoft Excel,xls,xlss.def,1405,BF
+*APD Mosaic Twin,mtss,mtwss.def,1409,BF
+*APD PFS Plan,pps,pfspss.def,1413,BF
+*APD Borland Quattro,qtr,qtrss.def,1411,BF
+*APD SmartWare SS,smtss,smtss.def,1404,BF
+*APD Supercalc 5,sc5s,sc5ss.def,1410,BF
+*APD VP Planner 3D,vpp,vppss.def,1408,BF
+*APD DataEase,dedb,dataedb.def,1205,BF
+*APD dBase III & IV,dbdb,dbasedb.def,1201,BF
+*APD First Choice DB,fcdb,fcdb.def,1214,BF
+*APD Framework III,fwdb,framedb.def,1203,BF
+*APD Paradox 3.x,pxdb,pxdb.def,1206,BF
+*APD Q&A DB,qadb,qadb.def,1208,BF
+*APD R:BASE,rbsdb,rbsdb.def,1210,BF
+*APD Reflex,rfxdb,rfxdb.def,1209,BF
+*APD SmartWare DB,smtdb,smtdb.def,1200,BF
+*APD Works SS/DB,wkdb,worksdb.def,1204,BF

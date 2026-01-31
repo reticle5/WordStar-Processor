@@ -1,0 +1,53 @@
+*MENU1
+*TOTAL_ENTRIES_AND_MAX_ENTRY_LENGTH 13, 44
+*WINDOW_TITLE FILTER EDITOR OPTIONS
+*KEY_OPTION Enter a new value then press ды
+*KEY_OPTION To scroll use:
+*KEY_OPTION   , , Home, End, PgUp, PgDn
+*KEY_OPTION Use д or д to change entry mode
+*KEY_OPTION F1  = HELP
+*KEY_OPTION F2  = Read in a filter file
+*KEY_OPTION F3  = Save to a filter file
+*KEY_OPTION Esc = Exit Filter Editor
+*NEXT_ENTRY_MAXIMUM_LENGTH 11
+*WINDOW_MESSAGE Converts To
+*NEXT_ENTRY_MAXIMUM_LENGTH 11
+*WINDOW_MESSAGE Input Code
+*SYSTEM_MESSAGE Save File:
+*SYSTEM_MESSAGE Read File:
+*FONT_STRING Typestyles
+*DEF_FONT Best Fit
+*END_OF_MENU
+*MENU2
+*TOTAL_ENTRIES_AND_MAX_ENTRY_LENGTH 12, 70
+*WINDOW_TITLE TYPESTYLE FILTER OPTIONS
+*FONT_STRING Typestyles
+*DEF_FONT Best Fit
+*KEY_OPTION F1 = Help
+*KEY_OPTION F2 = Move cursor between display windows
+*KEY_OPTION F3 = Select highlighted typestyle
+*KEY_OPTION F4 = Restore default filter
+*KEY_OPTION F5 = Restore previously saved filter
+*KEY_OPTION F10 = Save changes to filter
+*KEY_OPTION Use -, -, ,  to move cursor
+*KEY_OPTION ESC = Exit and use filter
+*KEY_OPTION ESC = Exit without storing changes
+*BLANK_LINE
+*NEXT_ENTRY_MAXIMUM_LENGTH 59
+*WINDOW_TITLE_1 AVAILABLE TYPESTYLES
+*NEXT_ENTRY_MAXIMUM_LENGTH 13
+*WINDOW_TITLE_2 Typestyles
+*END_OF_MENU
+*MENU3
+*TOTAL_ENTRY 9
+*SYSTEM_MESSAGE Help File Not Available for this selection
+*SYSTEM_MESSAGE Use the cursor keys to scroll through the help window
+*SYSTEM_MESSAGE Press 'Esc' to exit the Help facility
+*SYSTEM_MESSAGE Generating Filter Table
+*SYSTEM_MESSAGE Generating Font Filter Table
+*SYSTEM_MESSAGE ERROR: COULD NOT LOAD TYPESTYLE INFORMATION
+*SYSTEM_MESSAGE Could not open the file:
+*SYSTEM_MESSAGE WARNING
+*SYSTEM_MESSAGE The filter file contains syntax errors
+*END_OF_MENU
+

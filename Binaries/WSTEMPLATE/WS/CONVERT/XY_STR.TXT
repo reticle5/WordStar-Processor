@@ -1,0 +1,8 @@
+*EXCEPTION_STRINGS 0
+
+*ERROR_STRINGS 4
+*MESSAGE  Successful completion.
+*MESSAGE  Input file could not be opened.
+*MESSAGE  Output file could not be opened.
+*MESSAGE  Unexpected EOF.
+

@@ -1,0 +1,318 @@
+;**************************************
+;Editing the TELMERGE.SYS Control file 
+;**************************************           
+;
+;This file contains control scripts (pretyped command sequences) 
+;for TelMerge telecommunications. By editing these, you can 
+;customize TelMerge for your system and the online services you 
+;use. Your changes take effect when you save this file and start 
+;TelMerge.
+;
+;Make your changes to the appropriate section(s) below:
+;
+;     The SYSTEM section governs the default transmission rate, 
+;     communications port, and other settings for your computer 
+;     and modem. TelMerge uses the settings from this section 
+;     unless others are supplied by a SERVICE script or a .TEL 
+;     file.
+;
+;     The MENU section contains the TelMerge Communications Menu--
+;     the menu of services that appears when you start TelMerge.  
+;     You can edit it to list only the services you use.
+;
+;     The SERVICE section contains log-on scripts for each service 
+;     in the Communications Menu (plus any other scripts you wish 
+;     to store there). Before using a service you must add to its 
+;     script the appropriate phone number, user ID code, 
+;     password, or other information. You get this information 
+;     when you sign up with the service. 
+;
+;The following is a complete list of keywords that can be used in 
+;the TELMERGE.SYS file. See the TelMerge documentation for 
+;definitions.
+;
+;ADDLF  ANSW    APPEND  ATDELA  ATTEN   AUTOLO  BAUD    BITS    CALL    CLS
+;DUPLEX ELSE    EMUL    ENDIF   END     EXIT    FILESE  FILETY  FIRST   FK
+;FULLS  GOTO    GRAPH   HANDSH  HANGCO  HANGUP  HARDC   HOLD    HOST    IFNOT
+;IF     INCLUD  INIT2   INIT    INTERA  IOADDR  IRQ     LABEL   LINEDE  LOGFIL
+;LOGGIN LOGON   MODEM   NETWOR  NUMBER  PARITY  PASSW   PAUSE   PORT    POSTMO
+;PREFIX PREMOD  PRINT   PROMPT  PROTOC  QUIET   SAY     SEND    SERVIC  STOPS
+;SUFFIX TERM    TRY     USEDTR  USER    WAIT
+;
+;
+;***************** 
+; System Section
+;*****************          
+;
+;The following keywords set the basic defaults for your system.  
+;The current settings work for most systems.  If the setting for 
+;any keyword here doesn't match your system's requirements, replace 
+;it with one of the other choices listed for that keyword.
+;
+;Specify the settings that you will use most of the time.  If a 
+;particular service requires different settings, specify them
+;in that service's script.  Settings in a script override settings
+;in the System Section. 
+;
+;NOTE:  Text following "{" or ";" is a comment. TelMerge ignores it.
+
+Modem   HAYES   {Specifies a Hayes Smartmodem.
+                {Other  choices: HAYES2400, DIRECT, ANSWER, ACOUSTIC.
+Port    COM1    {Indicates that the modem is connected to serial port COM1
+                {Other choices:  COM2, COM3, COM4.
+;IOaddr 3F8     {Hexadecimal value for I/O address of Com Port.
+                {Use this to override the default for a Com Port if needed.
+                {Defaults: COM1:3F8, COM2:2F8, COM3:3E8, COM4:2E8.
+                {200 ... 3FF are allowed, but many are not available.
+;IRQ    4       {Hexadecimal value for IRQ (Interrupt Request) of Com Port.
+                {Use this to override the default for a Com Port if needed.
+                {Defaults: COM1:4, COM2:3, COM3:4, COM4:3.
+                {2 ... 7 are allowed, but some are reserved or not available.
+Baud    1200    {Specifies a baud rate of 1200
+                {Other choices:  110, 300, 2400, 4800, 9600.
+Logging ON      {Opens a logfile as soon as you connect to the remote
+                {service.  Both sides of the session are saved in that file.
+                {Other choice:  OFF.
+Print   YES     {Prints incoming information from a session to your
+                {default printer, alternate printer, or a disk file.
+                {YES prints to your default printer.
+                {NO turns printing off.
+                {COM2 or LPT2 direct printing to a different device.
+                {<filename> prints to a disk file.
+LineDelay 2     {Delays specified number of tenths of a second
+                {after sending a line of text.
+                {Current setting is 2/10 second.
+Emulate VT100   {Emulates a mainframe terminal.
+                {Other choices: NONE, VIDTEX (VT52). 
+Graphic NO      {Will not display graphics characters from remote.
+                {Other choice: YES
+;UseDTR YES     {Speeds hang up.  Modem switch must be set to use
+                {DTR, data terminal ready. 
+;Append YES     {Adds logging of current session to the end of the 
+                {old logfile instead of starting a new one for each session.
+                {Other choice: NO.
+;Network TYMNET {Specifies the network you are using (if any) 
+                {Other choices: TELENET, UNINET. 
+;Protocol XMCRC {Specifies a file transfer protocol.  
+                {If you don't include a "Protocol" keyword, 
+                {Xmodem checksum is used.  
+
+;***************
+; Menu Section
+;***************
+;
+;Edit this section if you want to change the list of services on 
+;the TelMerge Communications Menu. If you add a service to the 
+;menu, you must also add a control script to the SERVICE section, 
+;below.
+;
+;While editing the Communications Menu, note that each line to 
+;appear onscreen must begin with the word "Say", and that the 
+;symbol "|" turns onscreen highlighting on or off. The line
+;"Say |NEW| Add new service here" is a template for the next 
+;service you add.  Copy it to the line below, then replace the
+;original line with the name of your new service.  Be sure to 
+;delete the semicolon from the line describing your new service.
+;or it won't appear onscreen.
+
+Say    ||                 |C O M M U N I C A T I O N S    M E N U
+Say 컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+Say
+Say    |CIS| CompuServe Information Service     |ESL| EasyLink by Western Union
+Say
+Say    |ITT| ITT Telex and TIMETRAN             |MCI| MCI Mail 
+Say
+Say    |OAG| Official Airline Guides            |ONT| ONTYME Messaging Service
+Say
+Say    |RCA| RCA Telex and TELEXTRA             |TEL| Another TelMerge User
+Say
+Say    |DIR| Direct Connect Mode                |ANS| Answer mode
+;Say
+;Say    |NEW| Add new service here
+Say
+Say 컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+Say
+Say Enter your selection:
+
+Hold ?3         {Wait for user's selection from keyboard
+                {3 character maximum
+Cls
+Goto !          {Go to the Label that matches selection
+
+
+;******************
+; Service Section
+;******************
+;
+;This section contains log-on scripts for the services on the 
+;Communications Menu. Add the missing information for each service 
+;to the right of its keywords below, delete any scripts you don't 
+;want, or write new scripts of your own. The first script, labeled 
+;"NEW," is a dummy. You can use it as a template for the next 
+;script you write.
+;
+;If you have already created a .TEL file for a service, you can use 
+;WordStar to insert it into this section instead of typing the 
+;script from scratch. Later, you can delete the .TEL file.
+;
+;Whenever you add a script, remember to add its label to the 
+;Communications Menu. You can use a completed script to call a 
+;service, however, even if it isn't on the menu. Simply type its 
+;3-character label at the "Enter your selection:" prompt.
+;
+;You can write scripts to automate much of an online session, for 
+;example, to send or ask for certain information or to make several 
+;calls in succession.  The following keywords are useful for 
+;automating calls (see the "TelMerge" tab section of your manual 
+;for details):
+;
+;CALL                Dials the service now.
+;WAIT word           Awaits this word from the service after 
+;                    logging on.
+;SEND word           Sends this word (or words) to the service.
+;PAUSE secs          Waits this number of seconds.
+;QUIET secs          Waits this number of seconds after remote has 
+;                    finished sending.
+;FILESEND filename   Sends the specified file.
+;LOGGING ON or OFF   Turns logging on or off at this point in 
+;                    session.
+;PRINT ON or OFF     Turns printing on or off at this point in 
+;                    session.
+;HANGUP              Hangs up phone, gets ready for another call.
+;
+;
+;Here are brief descriptions of the keywords used in the scripts 
+;below. For more information about these and other keywords, see 
+;the "TelMerge" tab section of your manual.
+;
+;ANSWERBACK string   Sends your personal ID code in response to a 
+;                    telex WHO ARE YOU request.
+;BAUD rate           Sets the transmission rate for this service.     
+;END                 Ignores subsequent commands in this script.
+;HOSTID string       Issues up to 30 characters as a network's 
+;                    internal "phone number" for the service you 
+;                    are calling. Example: HOSTID CPS
+;INTERACTIVE number  Specifies the phone number of a telex real-
+;                    time system.
+;LABEL string        Characters you will type to start calling this 
+;                    service.
+;LOGFILE filename    Names the file that records an online session. 
+;                    Example: LOGFILE MCI.LOG
+;LOGGING ON or OFF   Turns automatic recording of an online session 
+;                    on or off. 
+;NETWORK name        Telephone network through which to contact 
+;                    this service. (TYMNET, Telenet, UNINET)
+;NUMBER number       Phone number to dial.
+;PASSWORD string     Password required by the service (30 
+;                    characters maximum).
+;SERVICE string      Name of the service you are dialing. Appears 
+;                    in status line while you are connected. (32 
+;                    characters maximum.)
+;USERID string       User identification code required by the 
+;                    service you are using. (30 characters maximum.)
+
+
+Label       NEW
+Service        
+Number         
+Logfile        
+Userid         
+Password       
+End
+
+
+Label       CIS
+Service     CIS
+Number
+Userid
+Password
+Logfile     CIS.LOG
+End
+
+
+Label       ESL
+Service     ESL
+Number
+Userid      {01EasyLinkID UserName Password
+Baud        300
+Logfile     ESL.LOG
+Logging     ON
+End
+
+
+Label       ITT
+Service     ITT
+Number
+Interactive
+Answerback
+Password
+Logfile     ITT.LOG
+Baud        300
+End
+
+
+Label       MCI
+Service     MCI
+Number
+Userid
+Password
+Logfile     MCI.LOG
+End
+
+
+Label       OAG
+Network
+Hostid
+Service     OAG
+Number
+Userid
+Password
+Logfile     OAG.LOG
+Baud        300
+End
+
+
+Label       ONT
+Network     TYMNET
+Hostid
+Service     ONT
+Number
+Userid
+Password
+Logfile     ONT.LOG
+Baud        300
+End
+
+
+Label       RCA
+Service     RCA
+Number
+Interactive
+Answerback
+Password
+Logfile     RCA.LOG
+Baud        300
+End
+
+
+Label       DIR
+Modem       DIRECT
+Service     TelMerge
+End
+
+
+Label       ANS
+Service     TELM
+Modem       ANSWER
+End
+
+; Use this to call another TelMerge user.
+; The F4 "Send" key will allow you to send 
+;   files to the other user with error checking.
+Label       TEL
+Service     TelMerge    
+Logfile     TEL.LOG
+Number
+End
+
+

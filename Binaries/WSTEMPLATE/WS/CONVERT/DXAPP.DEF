@@ -1,0 +1,80 @@
+*APN DX
+*APR ??? ????
+*APT 0
+*API 22
+*EXT ???
+*EXC
+*EXI
+*PAR 2
+*PRD 0,Printer Definition File
+*STRP 66,
+*PRF PRINTER_DESCRIPTION
+*HELP pra.hlp
+*EPD
+*PRD 1,Document Default Pitch
+*TOG 10, 5
+*CHO 5 pt
+*CHO 6 pt
+*CHO 7 pt
+*CHO 8 pt
+*CHO 10 pt
+*CHO 12 pt
+*CHO 14 pt
+*CHO 16 pt
+*CHO 18 pt
+*CHO 24 pt
+*PRF HIDDEN
+*HELP dxpitch.hlp
+*EPD
+*WTI
+*ISI 0
+*OSI 22
+*EXE dxconv
+*ITW
+*ISI 22
+*OSI 0
+*EXE dxconv
+*PAR 7
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,DX
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 5, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+*PRD 6,WPS-PLUS Release Level
+*TOG 3, 2
+*CHO Version 1.04
+*CHO Version 2.0
+*CHO Version 3.0
+*HELP dx_rel.hlp
+*EPD
+

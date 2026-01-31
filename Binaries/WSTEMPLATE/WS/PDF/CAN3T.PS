@@ -1,0 +1,68 @@
+
+%  .bn1 pull letter from upper tray on the Canon LBP8-IIIT/R.
+/tray1ltr {statusdict begin false setduplexmode 2 setpapertray 
+	/letter manualfeed false false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the Canon LBP8-IIIT/R.
+/tray2ltr {statusdict begin false setduplexmode 1 setpapertray 
+	/letter manualfeed false false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the Canon LBP8-IIIT/R.
+/tray1lgl {statusdict begin false setduplexmode 2 setpapertray 
+	/legal manualfeed false false settrayswitch end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the Canon LBP8-IIIT/R.
+/tray2lgl {statusdict begin false setduplexmode 1 setpapertray 
+	/legal manualfeed false false settrayswitch end
+	/pgsize 14 inch def} def
+
+%  .bn5 pull #10 envelope on the Canon LBP8-IIIT/R.
+/envelope {statusdict begin false setduplexmode 3 setpapertray 
+	/com10envelope manualfeed false false settrayswitch end
+	/pgsize 9.5 inch def} def
+
+%  .bn6 pull manual letter on the Canon LBP8-IIIT/R.
+/manltr {statusdict begin false setduplexmode 0 setpapertray 
+	/letter manualfeed true false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn7 pull manual legal on the Canon LBP8-IIIT/R.
+/manlgl {statusdict begin false setduplexmode 0 setpapertray 
+	/legal manualfeed true false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn8 pull manual envelope on the Canon LBP8-IIIT/R.
+/manenv {statusdict begin false setduplexmode 0 setpapertray 
+	/letter manualfeed true false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn9 pull letter continuous on the Canon LBP8-IIIT/R.
+/ltrcnt {statusdict begin false setduplexmode 2 setpapertray letter
+	/1 setpapertray letter settrayswitch true end
+	/pgsize 11 inch def} def
+
+%  .bn10 pull legal continuous on the Canon LBP8-IIIT/R.
+/lglcnt {statusdict begin false setduplexmode 2 setpapertray legal
+	/1 setpapertray legal settrayswitch true end
+	/pgsize 14 inch def} def
+
+%  .bn11 pull A4 from upper tray on the Canon LBP8-IIIT/R.
+/tray1a4 {statusdict begin false setduplexmode 2 setpapertray 
+	/letter manualfeed false false settrayswitch end
+	/pgsize 11.6 inch def} def
+
+%  .bn12 pull A4 from lower tray on the Canon LBP8-IIIT/R.
+/tray2a4 {statusdict begin false setduplexmode 1 setpapertray 
+	/letter manualfeed false false settrayswitch end
+	/pgsize 11.6 inch def} def
+
+%  .bn13 pull manual A4 on the Canon LBP8-IIIT/R.
+/mana4  {statusdict begin false setduplexmode 0 setpapertray 
+	/letter manualfeed true false settrayswitch end
+	/pgsize 11.6 inch def} def
+
+
+

@@ -1,0 +1,42 @@
+
+%  .bn1 pull letter from upper tray on the IBM 4216.
+/ibmul {statusdict begin 2 setpapertray 
+	/letter true setupperpapersize false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the IBM 4216.
+/ibmll {statusdict begin 1 setpapertray 
+	/letter true setlowerpapersize false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the IBM 4216.
+/ibmulg {statusdict begin 2 setpapertray 
+	/legal true setupperpapersize false settrayswitch end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the IBM 4216.
+/ibmllg {statusdict begin 1 setpapertray 
+	/legal true setlowerpapersize false settrayswitch end
+	/pgsize 14 inch def} def
+
+%  .bn5 pull letter continuous on the IBM 4216.
+/ibmcl {statusdict begin 1 setpapertray 
+	/letter true setlowerpapersize 
+	/letter true setupperpapersize true settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn6 pull legal continuous on the IBM 4216.
+/ibmclg {statusdict begin 1 setpapertray 
+	/legal true setlowerpapersize 
+	/legal true setupperpapersize true settrayswitch end
+	/pgsize 14 inch def} def
+
+%  .bn7 pull #10 envelope on the IBM 4216.
+/ibm10e {statusdict begin 3 setpapertray 
+	/4.125x9.5envelope true setenvelopesize false settrayswitch end
+	/pgsize 9.5 inch def} def
+
+%  .bn8 pull euro envelope on the IBM 4216.
+/ibmeure {statusdict begin 3 setpapertray 
+	/102x229envelope true setenvelopesize false settrayswitch end} def
+

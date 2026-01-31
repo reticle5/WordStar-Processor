@@ -1,0 +1,20 @@
+*EXCEPTION_STRINGS 1
+*MESSAGE
+
+*ERROR_STRINGS 15
+*MESSAGE  See Primary Return Code
+*MESSAGE  Illegal occurence of Internal STX token
+*MESSAGE  Illegal occurence of Internal Document Header token.
+*MESSAGE  Illegal occurence of Internal Document Title token.
+*MESSAGE  Illegal occurence of Internal Document Type token.
+*MESSAGE  Illegal occurence of Internal Document Comment token.
+*MESSAGE  ETX token found but not expected in temporary file.
+*MESSAGE  Subdocument End token found but not expected.
+*MESSAGE  Illegal DNF string as part of a token value.
+*MESSAGE  Intermediate file open error.
+*MESSAGE  Intermediate file write error.
+*MESSAGE  Intermediate file read error.
+*MESSAGE  EOF encountered while in subdocument.
+*MESSAGE  Disk write error to output file.
+*MESSAGE  Output file could not be opened.
+

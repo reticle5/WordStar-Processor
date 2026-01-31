@@ -1,0 +1,63 @@
+*APN PFS:Write B
+*APR 1.00 1985
+*APT 0
+*API 20
+*EXT ???
+*WTI
+*ISI 20
+*OSI 0
+*EXE pfsconv
+*ITW
+*ISI 0
+*OSI 20
+*EXE pfsconv
+*PAR 7
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,PFS
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Word Wrap Adjustment
+*TOG 5, 4
+*CHO -4
+*CHO -3
+*CHO -2
+*CHO -1
+*CHO A
+*PRF HIDDEN
+*HELP wordwrap.hlp
+*EPD
+*PRD 6,Versions
+*TOG 8, 5
+*CHO Professional Write - Version 2
+*CHO IBM Writing Assistance
+*CHO PFS: First Choice - Version 2.0
+*CHO Professional Write - Version 1
+*CHO PFS: Write - Version A
+*CHO PFS: Write - Version B
+*CHO PFS: Write - Version C
+*CHO PFS: First Choice - Version 3.0
+*PRF HIDDEN
+*HELP version.hlp
+*EPD
+

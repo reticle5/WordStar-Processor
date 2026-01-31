@@ -1,0 +1,1874 @@
+~filter.hlp
+EDIT CHARACTER FILTER
+
+This parameter allows you to tailor the
+conversion by replacing a specific character
+(or characters) found in the source document
+with any character in the character list.
+
+This option is useful when the destination
+word processor does not contain characters
+supported by the source word processor.
+
+Values in the Input Code column are fixed;
+they represent characters in the source
+document. Values in the Convert To column
+are the replacement characters. These are
+the only values that can be changed. Use the
+Up and Down Arrow keys to scroll through the
+characters. Use the Left and Right Arrow
+keys to move from character to character.
+
+A character can be replaced in one of two
+ways. You may place your cursor on the
+Hex-ASCII number and type the Hex-ASCII num-
+ber that represents the replacement charac-
+ter (see the Hex-ASCII table in Appendix B
+in the SE manual). Or you may use the right
+arrow key to position the highlight on the
+character itself and type the replacement
+character directly.
+
+To retain the changes press the F3 key. To
+exit without changes press the ESC key.
+
+NOTE: This parameter does not apply to
+database and spreadsheet conversions.
+~fntfltr.hlp
+EDITING THE TYPESTYLE FILTER
+
+The typestyle filter allows you to sub-
+stitute typestyles from the original docu-
+ment with any supported typestyle in the
+converted document. This can be beneficial
+when the word processor you are converting
+to doesn't support the same typestyles
+(fonts) that the original word processor
+supports.
+
+The top window displays the list of options.
+The middle left column displays typestyles
+supported by the original word processor.
+The middle right column displays the list of
+corresponding typestyles supported by the
+word processor to which you are converting.
+(This is the default translation.) The
+bottom window displays a list of the
+typestyles from which you select.
+
+To substitute a typestyle, use the DOWN
+ARROW key to move the cursor to highlight
+the original typestyle. Use the F2 key to
+move between the middle and bottom windows.
+With the ARROW keys, highlight the typestyle
+you wish to substitute for the original
+typestyle (the original meaning the value in
+the middle right column). Use the F3 key to
+select it as the new typestyle you will be
+converting to.
+
+To save changes, choose F10. To exit without
+saving changes, choose ESC.
+~autodir.hlp
+AUTOMATIC DIRECTORY ASSISTANCE
+
+Use this option to quickly scan the contents
+of a directory and identify documents to add
+to the queue.
+
+Enter the directory name (with complete
+path).
+
+  To add documents to the queue:
+
+  1) Highlight the document name by moving
+     the cursor to it.
+  2) Press RETURN to add the highlighted
+     document to the queue.
+
+When through selecting documents from this
+directory, press ESC.
+~at.hlp
+AUTO TRANSLATION
+
+There are no parameters for this
+option.
+~center.hlp
+CHECK FOR CENTERED LINES
+
+When this parameter is set to YES,
+the software generates a Line
+Center control code in the trans-
+lated document each time a line in
+the document is centered between
+the columns determined to be the
+left and right margins.
+
+When set at NO, the software does
+not check for centering. A blank
+area preceding a line of text is
+attributed to tabbing or spacing,
+and no center codes are inserted in
+the translated document.
+
+The RETURN key toggles between YES
+and NO.
+
+Default: YES
+~dcals.hlp
+DCA LINE SPACING SUPPORT
+
+DCA provides three ways for users
+to adjust the interline spacing
+(vertical distance from one printed
+line to the next).
+
+The user may either set the "line
+spacing" or the "lines per inch" or
+both. The lines per inch field is
+used by the conversion to calculate
+the exact distance between printed
+lines. The line spacing field can
+be used to modify that distance.
+For example, a line spacing value
+of 2 means the physical distance
+between lines should be doubled.
+
+This parameter allows the user to
+select which of the three methods
+should be used to support interline
+spacing when converting documents
+to DCA.
+
+1. Support with line spacing
+changes.
+
+  If this method is chosen, then
+  documents converted to DCA/RFT
+  will be set to the default 6
+  lines per inch, and changes in
+  interline spacing will be
+  supported with "line spacing"
+  changes.
+
+  Note: Line spacing values can
+  only have the following values
+  0.5, 1.0, 1.5, 2.0 and 3.0 which
+  may result in approximation of
+  the true distance.
+
+2. Support with line density
+changes.
+
+  Choosing this method causes
+  documents converted to DCA/RFT to
+  be set to the default single line
+  spacing and changes in interline
+  spacing will be supported with
+  "lines per inch" changes.
+
+3. Support with a combination of
+spacing and line density.
+
+  This choice causes documents
+  converted to DCA/RFT to use a
+  combination of "line spacing" and
+  "lines per inch" changes to
+  support interline spacing.
+
+  First, an attempt will be made to
+  support with 6 lines per inch and
+  one of the available values for
+  line spacing. If this results in
+  loss of accuracy then single line
+  spacing, with a specific lines
+  per inch change will be used to
+  increase precision.
+
+Default: Support with a combination
+of spacing and line density
+~dcasr.hlp
+SOFT RETURN REPLACEMENT METHOD
+
+In DCA/RFT and TXT, if a line
+contains only a soft return, this
+soft return will be interpreted as
+a hard return during printing and
+pagination. However, in many word
+processors, such soft returns will
+be ignored because it does not have
+a semantic meaning.
+
+This parameter is set up to allow
+you to choose a method of handling
+such soft returns. These soft
+returns can be converted to soft
+returns or hard returns.
+
+Note: In DCA and TXT, soft returns
+and hard returns are called
+"carrier returns" and "required
+carrier returns" respectively.
+
+The RETURN key toggles between
+"Keep as Soft Returns" and "Convert
+to Hard Returns".
+
+Default: Keep as Soft Returns
+~d_left.hlp
+DEFAULT LEFT MARGIN
+
+This parameter is only applicable
+if the "Margin Determination
+Method" parameter is set to "Use
+the user supplied defaults" in
+which case this left margin is
+used, and scanning is not per-
+formed. Choose any value to 999.
+Note: the value chosen must agree
+with the image of the text.
+
+Default: 1
+~d_right.hlp
+DEFAULT RIGHT MARGIN
+
+    This parameter is only
+applicable if the "Margin
+Determination Method" is set to
+"Use the user supplied defaults" in
+which case this Right Margin is
+used, and scanning is not
+performed. Choose any value to
+999.
+
+Default: 65
+~ext.hlp
+USER DEFINED EXTENSION
+
+The User Defined Extension para-
+meter allows you to assign any
+valid DOS extension to the conver-
+ted documents. This parameter works
+in conjunction with the "File
+Naming Method" parameter when its
+value is set to either "Original
+File Name with User Defined
+Extension" or "User Defined File
+Name with User Defined Extension."
+
+An entry here has no effect when
+File Naming Method is set to either
+"Prompt User For Output File Name",
+"Original File Name with Original
+Extension", or "User Defined File
+Name with Original Extension."
+
+A plus sign ("+") can be included
+in the extension if you wish to
+automatically increment the
+extension names with numbers
+starting at 01.
+
+example:
+
+  A+   =    .A01, .A02, .A03, ...
+  +    =    .001, .002, .003, ...
+
+Because DOS allows only three
+characters for a file extension,
+when using the "+" option, the
+extension is limited to one
+character, excluding the "+".
+
+Conversion             Default Ext.
+
+ASCII, Standard                .ASC
+ASCII, Intelligent             .ASC
+DCA/FFT                        .FFT
+DCA/RFT                        .RFT
+DisplayWrite 2 and 3           .TXT
+DisplayWrite 4                 .DOC
+DEC DX                         .DX
+First Choice                   .PFC
+Mass-11                        .M11
+MultiMate 3.6 and Advantage II .DOC
+MultiMate 4.0                  .DOX
+Navy DIF                       .DIF
+Nota Bene                      .NB
+PFS:Write A, B, and C          .PFS
+Professional Write 1 and 2     .PW
+RTF                            .RTF
+Samna                          .SAM
+SmartWare II                   .SMT
+Volkswriter                    .VW
+WANG IWP                       .DOC
+MS Word 4.0 and 5.0            .DOC
+WordMarc and WordMarc Plus     .WM
+WordPerfect                    .WPF
+WordPerfect 5.0 and 5.1        .WP5
+WordStar 3.31 through 7        .WS
+WordStar 2000                  .WS2
+WordStar Data                  .WSD
+Writing Assistant              .IWA
+XyWrite                        .XY
+
+MacIntosh conversions:
+
+Microsoft Word 4.0             .MSW
+MacWrite II                    .MCW
+WordPerfect and WordPerfect 2  .WPF
+
+You cannot alter the following
+extensions:
+
+MultiMate 3.6 and Advantage II .DOC
+MultiMate 4.0                  .DOX
+Wang PC                        .DOC
+~filespec.hlp
+USER DEFINED FILE NAME
+
+The User Defined File Name
+parameter allows you to assign any
+valid DOS name to the converted
+documents. This parameter works in
+conjunction with "2. File Naming
+Method" parameter when its value is
+set to either "User Defined File
+Name with User Defined Extension"
+or "User Defined File Name with
+Original Extension."
+
+An entry here has no effect when
+File Naming Method is set to either
+"Prompt User For Output File Name",
+"Original File Name with User
+Defined Extension", or "Original
+File Name with Original Extension."
+
+To enter a name, type in any valid
+DOS name (up to eight characters)
+and press RETURN.
+
+Note: The plus sign ("+") can be
+included in the file name if you
+wish to automatically increment the
+file names with numbers starting at
+001.
+
+Examples:
+
+  ABC+  =   ABC001, ABC002, ...
+ ABC+X  =   ABC001X, ABC002X, ...
+   +    =   001, 002, 003, ...
+
+Because DOS allows eight characters
+for a file name, when using the
+("+") option, the file name is
+limited to seven characters,
+including the ("+").
+
+Default: "+"
+~fltrpar.hlp
+KEYBOARD TYPE
+
+This parameter has three possible
+values: US/Group1, Norwegian/-
+Danish, or Hebrew, and is deter-
+mined by the type of keyboard being
+used.
+
+You can discard this parameter
+unless you're using an alternate
+keyboard.
+
+Default: US/Group1
+~sysdir.hlp
+SYSTEM WORK AREA DIRECTORY
+
+Determines where the intermediate
+work files are stored during
+translation. Although these are
+erased after each translation, they
+temporarily require approximately 1
+1/2 times the size of the largest
+document that will be converted.
+
+This parameter is important when
+running from a floppy drive, as
+there must be sufficient space for
+the input document files, the
+temporary work files, and the
+converted files all on a single
+floppy disk.
+
+Enter a drive letter or the name of
+an existing directory on the hard
+disk, and press RETURN.
+
+Default: The current drive and
+directory
+~merge.hlp
+INPUT FILE TYPE
+
+This parameter is useful if you
+have a data file from a database
+program that you want to merge
+print using WordStar. When you
+choose "Data File" as your Input
+File Type, Star Exchange converts
+your data file to an ASCII
+comma-delimited file.  (When you
+convert a data file, Star Exchange
+changes the Spreadsheet Delimiter
+parameter from tabs or spaces to
+commas.)
+
+Default value: Document file
+~method.hlp
+FILE NAMING METHOD
+
+This parameter determines how
+translated files are named. The
+RETURN key toggles among five
+possible values:
+
+1.) Original File Name with User
+Defined Extension
+
+  The file name of the source
+  document is assigned to the
+  translated document in the form:
+
+  [Output Directory][Original File
+  Name].[User Defined Extension]
+
+  The "Output Directory" and "User
+  Defined Extension" parameters are
+  also used to build the file name.
+  For example, when a WordStar
+  document named: "LETTER.XYZ" is
+  translated to MultiMate, and the
+  MultiMate parameter values are
+  set to:
+
+  a. File Naming Method = Original
+     File Name with User Defined
+     Extension
+  b. Output Directory = A:
+  c. User Defined Extension = ABC
+
+  the translated file will be saved
+  as: A:\LETTER.ABC
+
+2.) Original File Name with
+Original Extension
+
+  The file name of the source
+  document is assigned to the
+  translated document in the form:
+
+  [Output Directory][Original File
+  Name].[Original Extension]
+
+  For example, when a WordStar
+  document named: "LETTER.ABC" is
+  translated to MultiMate and the
+  MultiMate parameter values are
+  set to:
+
+   a. File Naming Method = Original
+      File Name with Original
+      Extension
+   b. Output Directory = A:
+
+  the translated file will be saved
+  as: A:\LETTER.ABC
+
+3.) User Defined File Name with User
+Defined Extension
+
+  A user selected file name is
+  assigned to the translated
+  document in the form:
+
+  [Output Directory][User Defined
+  File Name].[User Defined
+  Extension]
+
+  The "Output Directory", "User
+  Defined File Name" and "User
+  Defined Extension" parameters are
+  all used to build the file name. 
+  For example, when a WordStar
+  document named "LETTER.ABC" is
+  translated to MultiMate and the
+  MultiMate parameter values are
+  set to:
+
+   a. File Naming Method = User
+      Defined File Name with User
+      Defined Extension
+   b. Output Directory = C:\MMATE
+   c. User Defined File Name = FILE
+   d. User Defined Extension = DOC
+
+  The translated file will be saved
+  as: C:\MMATE\FILE.DOC
+
+4.) User Defined File Name with
+Original Extension
+
+  Only the file extension of the
+  source document is assigned to
+  the translated document in the
+  form:
+
+  [Output Directory][User Defined
+  File Name].[Original Extension]
+
+  For example, when a WordStar
+  document named "LETTER.ABC" is
+  translated to MultiMate and the
+  MultiMate Parameters are set to:
+
+   a.  File Naming Method = User
+       Defined File Name with
+       Original Extension
+   b.  Output Directory = A:
+   c.  User Defined File Name =
+       FILES
+
+  The translated file will be saved
+  as: A:\FILES.ABC
+
+5.) Prompt User for File Name
+
+  As each document is translated,
+  the user is prompted to enter a
+  name. The user must include any
+  desired drive letter or
+  directory, and is responsible for
+  appending any mandatory file
+  extension. For example: ".DOC"
+  when translating to Wang PC or
+  MultiMate 3.6 and ADV 2; ".DOX"
+  when translating to MultiMate
+  4.0.
+
+Default: Original File Name with
+User Defined Extension
+~mmauthor.hlp
+MULTIMATE AUTHOR FIELD
+
+Text entered here appears in the
+Author Field of documents
+translated into MultiMate.
+
+Default: None (No text is entered
+into the Author Field.)
+
+Note: If the word processor you are
+converting from has a corresponding
+author field, that entry will
+overwrite the entry in this
+parameter.
+~mmcomnt.hlp
+MULTIMATE COMMENT FIELD
+
+Text entered here automatically
+appears in the Comment Field of
+documents translated into
+MultiMate.
+
+Original Entry: None (No entry in
+the Comment Field)
+
+NOTE: If the word processor you are
+converting from has a corresponding
+comment field, the parameter will
+pass along that entry, and the
+entry here will be overwritten.
+~mmcwt.hlp
+CHARACTER WIDTH TABLE
+
+The third of the three printer
+tables, the Character Width Table
+(CWT) contains character
+information, such as character
+width and character redefinition,
+that will be sent to your printer.
+
+Enter the name of your Character
+Width Table (up to eight
+characters) and press RETURN.
+
+Default: None (The parameter is
+left blank)
+~mmpat.hlp
+PRINTER ACTION TABLE
+
+The Printer Action Table (PAT) is
+one of three tables that sends
+print information and commands,
+contained in your document, to your
+printer.
+
+PATs contain codes which tell your
+printer how to perform MultiMate
+word processing functions. See your
+MultiMate Printer Guide for
+additional information.
+
+Enter the name of your MultiMate
+Printer Action Table (up to eight
+characters) and press RETURN.
+
+Default: TTYCRLF
+~mmsat.hlp
+SHEET FEEDER ACTION TABLE
+
+One of three printer tables, the
+Sheet Feeder Action Table (SAT)
+contains codes to direct your sheet
+feeder to work with your printer
+and MultiMate.
+
+As with the Printer Action Table,
+the Sheet Feeder Action Table is
+specified on the Document Print
+Options Screen.
+
+Enter the name of your Sheet Feeder
+Action Table (up to 8 characters)
+and press RETURN.
+
+Default: None (The parameter value
+is left blank)
+~mmvers.hlp
+OUTPUT FILE TYPE
+
+Because of the differences in
+function handling (i.e. footers and
+footnotes) between versions of
+MultiMate, this parameter defines
+the type of output MultiMate
+document to produce.
+
+The RETURN key toggles between
+"MultiMate Advantage II version
+1.0" and "MultiMate version 3.6". 
+Choose the version you plan to edit
+and print your documents from.
+
+Default: MultiMate Advantage II
+version 1.0
+~msdeftab.hlp
+DEFAULT TAB WIDTH
+
+Each paragraph in a Microsoft Word
+document has preset tab stops at
+half-inch intervals. The con-
+version allows you to change this
+value. You may enter a new value in
+tenths of an inch (for instance
+".6" or "1.0") or in centimeters
+(for example "1 cm" or "1.5 cm").
+
+To change this value, enter any
+valid measurement unit, and press
+RETURN. When using the centimeter
+measurement unit there must be a
+space between the number and the
+measurement unit "cm".
+
+This parameter affects default tab
+stop settings only; it has no
+effect on manually set tab stops.
+
+Default: .5 in.
+~m_method.hlp
+MARGIN DETERMINATION METHOD
+
+The WordStar conversion allows the
+user to choose one of three methods
+for determining the margins:
+
+1) Scan the text. Scan the image of
+each line, generating statistics,
+and make educated changes to the
+left and right margin. This
+parameter should be used if .RR,
+.LM, and .RM commands are not in
+the WordStar file (true for earlier
+versions of WordStar).
+
+2) Examine dot commands. Uses only
+the information provided by the
+.LM, .RM, and .RR commands for
+determining margin changes.
+
+3) Use the user supplied defaults.
+Use the margin settings supplied by
+the user through the "Default Left
+Margin" and "Default Right Margin"
+parameters.
+
+Default: Scan the text.
+~outdir.hlp
+OUTPUT DIRECTORY
+
+This parameter determines where the
+translated files will be stored. To
+change the current entry, you must
+type the name of an existing drive
+and path (including colon), and
+press RETURN.
+
+For example, the entry:
+
+         C:\DOCS
+
+will cause all translated documents
+to be sent to the subdirectory
+"DOCS".
+
+Default: None (documents are stored
+in the current DOS default
+directory.)
+~q_docs.hlp
+INPUT QUEUE
+
+To add individual documents to the queue,
+type each document name. Include the drive
+letter or directory path unless the logged
+drive/path is identified at the top of the
+queue; then type the document names only.
+You can use the DOS wildcard characters *
+and ? in the document names.
+
+For example:
+
+A:*.*           Queues all documents on the
+                disk in drive A.
+C:\WS\*.*       Queues all documents in the
+                WS directory on drive C.
+
+When you use Auto Translate as one of your
+conversions, the Input Queue is divided into
+two parts. On the left, you type the docu-
+ment names; on the right, Star Exchange
+identifies the source word processors for
+those documents.
+
+To select documents from a directory list-
+ing, press F2 for Automatic Directory As-
+sistance. To delete an entry from the
+queue, press DEL. To translate documents,
+press F10.
+~remdocs.hlp
+DELETING QUEUED DOCUMENTS
+
+To remove individual entries:
+
+   1)  Highlight an entry by moving the 
+       cursor to it.
+
+   2)  Press DEL to delete the highlighted
+       entry from the queue.
+
+To remove all entries from the queue:
+
+   Press ALT and D concurrently.
+
+When through deleting entries, press ESC.
+~sel_conv.hlp
+SYSTEM SETUP (SELECT CONVERSIONS)
+
+Conversion A and Conversion B are the two
+applications between which documents will be
+converted. The direction of the conversion is
+not determined by which application is
+identified as A or B. One of the conversions
+must always be WordStar or WordStar 2000.
+
+To change to different applications, use the
+Up or Down arrow keys to scroll through the
+list of available applications. To select the
+highlighted conversion, press the Left or
+Right arrow key to identify the conversion as
+A or B. To change or view the system
+parameters, press the F2 key.
+
+To change or view the parameters associated
+with conversion A or B, press F3 (Conversion
+A Parameters) or F4 (Conversion B
+Parameters).
+
+If you use Auto Translate to convert docu-
+ments, you don't need to identify the source
+word processors to Star Exchange. When Auto
+Translate is one of the two conversions
+selected, only one option appears on the Main
+Menu: "Translate from Auto Translate to
+WordStar."
+
+To use a Character Filter, press F5. To use a
+Typestyle Filter, press F6.
+~tabstops.hlp
+DEFAULT TAB STOP SETTINGS
+
+When a tab character (hex 0x09) is
+encountered in the document, the
+conversion uses default tab stop
+settings to assign the number of
+blank spaces prefacing the indent-
+ed text.
+
+Default: Every eighth space
+9,17,25,33,41,49,57,65,73,81
+~tf_file.hlp
+CHARACTER FILTER FILE
+
+This parameter is used to specify
+which previously created character
+filter file (if any) to use during
+the translation.
+
+Enter the name of the file,
+including drive and directory on
+which the character filter file
+resides, and press RETURN.
+
+Default: NONE
+~t_method.hlp
+TABSTOP DETERMINATION METHOD
+
+The WordStar conversion allows the
+user to choose one of three methods
+for determining the tabstop
+locations:
+
+1) Scan the text. Scan the image of
+each page, generate statistics
+indicating possible tabstop
+locations, and make educated
+choices about the tabstop locations
+for each page of text. The
+information found in .RR commands
+is not used if this method is
+selected.
+
+2) Examine dot commands. Use only
+the information found in .RR
+commands for determining the
+location of tabstops. The WordStar
+default settings will be used until
+a .RR command is encountered.
+
+3) Use the user supplied defaults.
+Use the settings provided by the
+user in the "Default Tabstops"
+parameter as the tabstops for the
+entire document. Suggested for
+users who use only one set of
+tabstops for the entire document.
+~ufr.hlp
+REPLACEMENT CHARACTER
+
+Valid characters in one word
+processor may not be recognized by
+another.
+
+This parameter defines a character
+to insert in a translated document
+when a character which cannot be
+translated appears in the original.
+When the translated document is
+edited, these characters mark
+locations which might need
+attention.
+
+Type the Hex-ASCII representation
+of the desired replacement
+character, and press RETURN.
+
+Default: 40 (@)
+
+NOTE: For DCA/FFT, DCA/RFT, and
+DisplayWrite 2, 3 (TXT) and 4
+(DOC), the replacement character is
+"7C", the "@" in EBCDIC.
+~wordwrap.hlp
+WORD WRAP ADJUSTMENT
+
+Select a value between -4 and +4 to
+compensate (respectively subtract
+or add to the right margin) for
+word wrapping anomaly that occurs
+among various word processors. This
+adjustment affects only the output
+document generated by the
+conversion.
+
+Default: A (Automatic Adjustment)
+~wpf_prs.hlp
+PRS FILE NAME
+
+The PRS file refers to the Printer
+Description File created by
+WordPerfect 5.0 and 5.1, when you
+installed your printer.
+
+Enter the drive, path, and filename
+of an existing PRS file and press
+RETURN.
+
+NOTE: If there is no PRS file used
+during the translation to or from
+WordPerfect 5.0 and 5.1, the
+conversion will use default values.
+In this case, fonts cannot be
+correctly sent.
+
+Default: None
+~ws2fn.hlp
+PDF FILE NAME
+
+The PDF file refers to the Printer
+Description File created by WordStar
+2000 when you installed your
+printer.
+
+Enter the name of an existing PDF
+file name, and press RETURN.
+
+NOTE: If there is no PDF file used
+during the translation to or from
+WordStar 2000, the conversion will
+use default values. In this case,
+font and line height values created
+during the conversion may not
+correspond to your printer's
+values.
+
+No Default
+~wscu.hlp
+CONTINUOUS UNDERLINING SUPPORT
+
+This parameter defines the method
+the conversion will use when
+supporting continuous underlining. 
+Versions of WordStar 3.31 and
+earlier did not support underlining
+white space. If this parameter is
+set to "Underscore White Space" the
+conversion will replace spaces by
+underscores if continuous
+underlining is on (due to word
+wrapping considerations this is not
+done in paragraphs).
+
+The second choice "Do Not
+Underscore White Space" should be
+selected for continuous
+underlining.
+
+Default: Do Not Underscore White
+Space
+~wsls.hlp
+WORDSTAR LINE SPACING SUPPORT
+
+The WordStar word processor
+provides three ways for users to
+adjust the interline spacing
+(vertical distance from one printed
+line to the next).
+
+The user may either set the "line
+height" or the "line spacing field"
+or both. The line height field is
+used by the word processor to
+calculate the exact distance
+between printed lines. The line
+spacing field can be used to modify
+that distance. For example, a line
+spacing value of 2 means the
+physical distance between lines
+should be doubled.
+
+This parameter allows the user to
+select which of the three methods
+should be used to support interline
+spacing when converting documents
+to WordStar.
+
+1. Support with .LS (line spacing
+changes): If this method is chosen,
+then documents converted to
+WordStar will be set to the default
+6 lines per inch, and changes in
+interline spacing will be supported
+with "line spacing" changes. Note:
+Line spacing values are limited to
+whole number increments
+(1,2,3.....) which may result in
+approximation of the true distance.
+
+2. Support with .LH (line height
+changes): Choosing this method
+causes documents converted to
+WordStar to be set to the default
+single line spacing and changes in
+interline spacing will be supported
+with "lines per inch" changes.
+Note:  Some printers are limited in
+their ability to adjust the lines
+per inch.
+
+3. Support with a combination of .LS
+and .LH changes: This choice causes
+documents converted to WordStar to
+use a combination of "line spacing"
+and "lines per inch" changes to
+support interline spacing.
+
+First, an attempt will be made to
+support with 6 lines per inch and
+one of the available values for
+line spacing. If this results in
+loss of accuracy then single line
+spacing, with a specific lines per
+inch change will be used to
+increase precision.
+
+Default: Support with a combination
+of .LS and .LH changes
+~wsphrb.hlp
+WORDSTAR PHANTOM RUBOUT
+
+Phantom rubout is unique to
+WordStar: there is no direct
+translation available in other word
+processors.
+
+This parameter defines a character
+to insert in a translated document
+when a Phantom Rubout is
+encountered in the WordStar
+original.
+
+Enter the Hex-ASCII representation
+of the desired character.
+
+Default: 52 ("R")
+~wsphsp.hlp
+WORDSTAR PHANTOM SPACE
+
+Phantom space is unique to
+WordStar: there is no direct
+translation available in other word
+processors.
+
+This parameter defines a character
+to insert in a translated document
+when a Phantom Space is encountered
+in the WordStar original.
+
+Enter the Hex-ASCII representation
+of the desired character, and press
+RETURN.
+
+Default: 53 ("S")
+~ws_rel.hlp
+WORDSTAR RELEASE LEVEL
+
+It is necessary to select the
+WordStar release level that you are
+currently using. This is due to
+differences in functionality and
+file format between WordStar
+releases.
+~style.hlp
+STYLE FILE DIRECTORY
+
+The Style File Directory refers to
+the directory where a WORD 5 style
+sheet is stored.
+
+Enter the drive and directory where
+the current document's style sheet
+is located. Do not type the
+stylesheet's name.
+
+NOTE: If there is no Style File
+directory specified the document
+will be converted without the style
+sheet's formatting.
+
+Default: NONE
+~mmpitch.hlp
+DOCUMENT DEFAULT PITCH
+
+This value will be the default
+pitch put into the Print Options
+Menu of the MultiMate document.
+
+Values range from 1 to 9 and will
+be used to calculate the
+positioning of tabstops and margins
+on the MultiMate format lines in
+the document.
+
+Changing the default pitch of a
+MultiMate document after it has
+been converted is not suggested
+since the format lines would then
+have to be manually altered to
+preserve the original layout.
+
+Default: 4 (10 chars/inch)
+~pagelnth.hlp
+PAGE LENGTH
+
+This parameter helps to determine
+where page breaks occur. The
+conversion scans the document
+looking for form feed character. If
+found, a required page break is
+issued. If no form feed is
+encountered within a number of
+lines specified here, a soft page
+break is issued.
+
+Enter the number of physical lines
+per printed page, up to the maximum
+of 99.
+
+Default: 66 (lines per page)
+~hdr1lnth.hlp
+FIRST PAGE HEADER LENGTH
+
+This parameter defines the number
+of lines of header text on the 1st
+page.
+
+For example: The actual text on the
+first page begins on line 8. Line 3
+contains a header. Lines 1, 2 and 4
+through 7 are blank. The entry for
+First Page Header Length should be
+7.
+
+Default: 0 (no top margin, and no
+header on the first page.)
+~ftr1lnth.hlp
+FIRST PAGE FOOTER LENGTH
+
+This parameter defines the number
+of lines of footer text on the 1st
+page.
+
+Enter the number of lines in the
+bottom margin on the first page. 
+This number equals the total page
+length minus the number of the last
+line of text.
+
+For example: The actual text on the
+first page ends on line 58. Blank
+lines and footer text are found on
+lines 59 through 66. The entry for
+First Page Footer Length should be
+8 (66 lines per page minus 58).
+
+Default: 0 (No bottom margin and no
+footer on the first page.)
+~hdrxlnth.hlp
+SUBSEQUENT PAGE HEADER LENGTH
+
+This parameter defines the number
+of lines of header text, starting
+from the 2nd page until the end of
+the document.
+
+The actual page length is indicated
+by the page length option. The
+header length is included in the
+page length.
+
+Default: 0
+~ftrxlnth.hlp
+SUBSEQUENT PAGE FOOTER LENGTH
+
+This parameter defines the number
+of lines of footer text, starting
+from the 2nd page until the end of
+the document.
+
+The actual page length is indicated
+by the page length option. Enter
+the number of lines in the bottom
+margin--the total page length minus
+the line number of the last line of
+text. This number will be constant
+although the text within these
+lines may vary.
+
+Default: 0 (no bottom margin and no
+footers on the 2nd through last
+pages.)
+~lhzwidth.hlp
+LEFT HOT ZONE WIDTH
+
+The entry for this parameter must
+be between 0 and 7.
+
+A right margin change is not issued
+if a line is shorter than the
+specified right margin and falls
+within the specified position of
+the right margin based on the
+surrounding lines.
+
+Default: 2
+~rhzwidth.hlp
+RIGHT HOT ZONE WIDTH
+
+The entry for this parameter must
+be between 0 and 7.
+
+A right margin change is not issued
+if a line extends less than the
+specified number of characters past
+the right margin based on the
+surrounding lines.
+
+Default: 0
+~prntmrgn.hlp
+DEFAULT PRINT MARGIN
+
+For word processing packages which
+support a print margin (different
+from the left margin) the parameter
+passes along a value as the print
+margin for the translated document.
+
+Enter the number of spaces desired
+between the left edge of the page
+and the first print column on the
+page.
+
+Default: 10
+~lschange.hlp
+CHECK FOR LINE SPACING CHANGES
+
+When the conversion encounters a
+pattern of single lines of text
+separated by blank lines, this
+parameter determines whether to
+translate the text exactly as it
+appears in the ASCII document or
+whether to issue a line spacing
+change (and strip out the blank
+lines.)
+
+For example, this text appears to
+be triple spaced:
+
+    single line of text
+       (blank line)
+       (blank line)
+    single line of text
+       (blank line)
+       (blank line)
+    single line of text
+       (blank line)
+       (blank line)
+    single line of text
+       (blank line)
+       (blank line)
+
+Note: At least four repetitions of
+a pattern of text and blank lines
+are required to trigger a line
+spacing change. Otherwise, the
+translated text is single spaced.
+When this parameter is set to NO,
+single line spacing is retained,
+preserving the lines exactly as
+they appear in the document, and
+terminating each with a hard
+carriage return.
+
+Default: YES
+~minrmrgn.hlp
+MINIMUM RIGHT MARGIN
+
+This parameter can be used to tell
+the conversion process what the
+minimum right margin generated by
+the conversion should be. This can
+be very useful in keeping the
+conversion from generating word
+wrapped text on short lines. The
+conversion will never generate a
+right margin (offset including left
+margin) greater than this value.
+
+Default: 40
+~tsd.hlp
+TABSTOP DETERMINATION METHOD
+
+The ASCII conversion allows you to
+choose between two methods for
+determining the tabstop locations:
+
+1) Scan the text to generate tab
+stop information. Scan the image of
+each page, generate statistics
+indicating possible tabstop
+locations, and make educated
+choices about the tabstop locations
+for each page of text.
+
+2) Use the user supplied defaults.
+Use the settings provided by the
+user in the "Default Tabstops"
+parameter as the tabstops for the
+entire document.
+
+Default: Scan the text to generate
+tab stop information
+~cas.hlp
+CHARACTER ATTRIBUTE SUPPORT
+
+The Character Attribute Support
+parameter allows you to determine
+whether bold, underline, and
+strikeout should, for printing
+purposes, be converted to the
+backspace (Hex 08) character.
+
+For example, if the parameter value
+is set to "Support
+Bold/Underline/Strikeout with
+Backspace Character", the ASCII
+document will support bold,
+underline, and strikeout text in
+the following way:
+
+  a.) Bold =
+
+  "character backspace character"
+        "or A backspace A"
+
+  b.) Underline =
+
+  "character backspace underline"
+        "or A backspace _"
+
+  c.) Strikeout =
+
+  "character backspace strikeout"
+        "or A backspace /"
+
+If the parameter value is set to
+"Do Not Support Bold/Underline/-
+Strikeout Attributes, these
+character attributes will not be
+supported in the converted ASCII
+document.
+
+Default: Do Not Support Bold/Under-
+line/Strikeout Attributes
+
+NOTE: When converting FROM ASCII,
+the conversion will support these
+character attributes if they exist
+in the original document as
+explained in the example above.
+~eiedbox.hlp
+                 Document Directory Window
+
+The Document Directory Window displays the name of the
+current directory. To change the current directory, press
+F8 from either the List Window or the Document Window. You
+can use wild cards to specify directory name.
+~eilist.hlp
+                        List Window
+
+The List Window displays the current directory. To move in
+the list of files, use the Home, End, PgUp, PgDn, Up and
+Down arrow keys, or the + or - key on numeric keypad.
+
+To look for a file that starts with a particular letter,
+press the key for that letter.
+
+Subdirectory names in the List Window are displayed in 
+brackets. Highlight the subdirectory and press Enter to
+display the files for that directory.
+~eitxtwn.hlp
+                      Document Window
+
+The Document Window displays the currently selected
+document. To enter the Document Window from the List
+Window, press the Tab key. In Document Window, you can use
+the keys listed below to quickly browse the document.
+
+TO MOVE       USE THIS KEY ³ TO MOVE       USE THIS KEY
+Right         Right Arrow  ³ Left          Left Arrow
+Up            Up Arrow     ³ Down          Down Arrow
+Previous Page PgUp         ³ Next Page     PgDn
+Start Of Line Home         ³ Top Of File   Ctrl-Home
+End Of Line   End          ³ End Of File   Ctrl-End
+
+Use the F2 (Zoom) key to magnify the Document Window. Press
+F2 again to leave Zoom mode.
+~dx_rel.hlp
+DX VERSION
+
+Because of the differences in the
+file format and function handling
+of DEC WPS Plus, this parameter
+allows you to choose which version
+of the word processor is to be
+converted.
+
+The Return key toggles between the
+three possible values:
+
+"Version 1.04",
+"Version 2.0",
+"Version 3.0".
+
+Default: Version 3.0
+~pra.hlp
+DX PDF FILE NAME
+
+This parameter applies only to DEC
+WPS Plus Version 3.0. Enter the
+Printer Definition File (.PRA)
+along with the full path name if it
+is not in the default directory.
+
+Default: none
+~ssdlim.hlp
+SPREADSHEET DELIMITER
+
+This parameter lets you tell Star
+Exchange whether to insert commas,
+tabs, or spaces between columns of
+converted spreadsheet or data files.
+Tabs will help you align the columns
+when you edit the converted file.
+
+Default: Tabs
+~sstop.hlp
+SPREADSHEET TOP MARGIN
+
+This parameter determines the top
+margin of the converted spreadsheet
+when it is loaded into the word
+processor. Enter the value of the
+top margin and the unit of measure
+(cm, in, or inch).
+
+Default: 1 inch
+~ssbot.hlp
+SPREADSHEET BOTTOM MARGIN
+
+This parameter determines the bottom
+margin of the converted spreadsheet
+when it is loaded into the word
+processor. Enter the value of the
+bottom margin and the unit of
+measure (cm, in, or inch).
+
+Default: 1 inch
+~vwpr.hlp
+PRINTER TYPE
+
+This parameter works in conjunction
+with the printer type that will be
+used to print out the converted
+Volkswriter document. The values
+that the parameter can take can be
+any value between 1 and 191, and
+correspond to the first 191 printer
+types available in Volkswriter's
+printer table (see your manual for
+the list of printer types.)
+
+For example, if this parameter is
+set to a value of 17, the
+conversion will send this value to
+the Volkswriter document which will
+be automatically configured to
+print using the Epson FX/SX
+printer.
+
+Default: 3 (any printer)
+~decimal.hlp
+TYPE OF DECIMAL SEPARATORS
+
+This parameter specifies the type of
+decimal separator character to be
+used for alignment of decimal
+aligned text in the output
+document. For standard U.S.
+documents, the period is used as a
+decimal separator. The other
+possible decimal separator which
+may be used is the comma. Choosing
+the incorrect decimal separator
+character may lead to incorrect
+alignment of decimal aligned text
+in the SmartWare II output
+document.
+
+Please also note that setting this
+parameter to the comma will convert
+only those decimal periods used in
+decimal aligned text to commas.
+
+DEFAULT: "." (period)
+~rtfmarg.hlp
+DOCUMENT MARGIN METHOD
+
+RTF documents may have only one set
+of left and right margins which is
+in effect for the entire document.
+RTF documents produced by the
+conversion must translate
+subsequent margin changes as
+indenting changes.
+
+This option lets the user choose
+how the RTF document margins are
+specified. If "Scan First Page for
+the Widest Margins" is chosen, the
+margins for the entire document
+will be the leftmost left margin
+and the rightmost right margin that
+occur on the first page of the
+source document.
+
+If "User Defined Margins" is the
+chosen option, then the RTF
+document will be produced with the
+left and right margins specified by
+the "Document Left Margin" and
+"Document Right Margin" parameters.
+
+Default: Scan First Page for the
+Widest Margins
+~rtfchar.hlp
+OUTPUT CHARACTER SET
+
+The user has the choice of which
+character set will be used in the
+RTF document produced.
+
+Possible choices are the following:
+
+  IBM PC Extended ASCII
+  Apple Macintosh
+  ANSI
+
+Default: IBM PC Extended ASCII
+~rtflmarg.hlp
+DOCUMENT LEFT MARGIN
+
+This will be the left margin of RTF
+documents produced by the conver-
+sion, if the "User Defined Margins"
+option is chosen.
+
+Enter the margin in inches, from
+the left edge of the page.
+Fractions of inches may be
+specified in decimal notation.
+
+Default: 0.0
+~rtfrmarg.hlp
+DOCUMENT RIGHT MARGIN
+
+This will be the right margin of
+RTF documents produced by the
+conversion, if the "User Defined
+Margins" option is chosen.
+
+Enter the margin in inches, from
+the left edge of the page.
+Fractions of inches may be
+specified in decimal notation.
+
+Default: 7.5
+~rtfver.hlp
+RTF VERSION NUMBER
+
+This specifies the type of RTF
+produced by the conversion. Most
+applications understand RTF Version
+1, but some, like WriteNow for the
+Macintosh, require RTF Version 0.
+
+Default: Version 1
+~mactype.hlp
+OUTPUT FILE TYPE
+
+When converting a document to a
+Macintosh format, you can specify
+the Output File Type through this
+parameter. There are two types of
+output files that can be created,
+Standard and MacBinary.
+
+If "Standard" is selected as the
+Output File Type, only the data
+portion (data fork) of the docu-
+ment will be created. This option
+should be used if the created files
+are to be moved to a Mac using the
+Mac "super drive" through Apple
+File Exchange or accessed directly
+through a network.
+
+If "MacBinary" is selected,
+Mac-specific attributes, such as
+the File and Creator type, are
+attached to the document. This
+option should be used if the
+created files are to be moved to a
+Mac using a communications package
+which supports the MacBinary file
+format.
+
+Default: MacBinary
+~mswprint.hlp
+MAC PRINTER TYPE
+
+This parameter should be set to the
+type of printer you are using with
+your Macintosh. You will find this
+parameter important if you are
+creating files with page sizes
+other than US LETTER.
+
+The Return key toggles among these
+three choices:
+
+  "ImageWriter",
+  "LaserWriter",
+  "LaserWriter II".
+
+Default: LaserWriter
+~wpfprint.hlp
+MAC PRINTER FAMILY
+
+This parameter should be set to the
+type of printer you are using with
+your Macintosh. It helps us specify
+alignment with more precision. Your
+two choices are LaserWriter, and
+ImageWriter.
+
+Default: LaserWriter Family
+~wpfpaper.hlp
+MACINTOSH PAPER TYPE
+
+This parameter indicates the type
+or size of paper that was specified
+for your Macintosh when the
+original document was created, such
+as US Letter or US Legal.
+
+Choices :
+  US Letter
+  US Legal
+  A4 Letter
+  B5 Letter
+  Tabloid
+  Computer Paper
+  International Fanfold
+  NO 10 Envelope
+
+Default: US Letter
+~m11dir.hlp
+MASS-11 DIRECTORY
+
+This parameter tells the conversion
+in which directory it can find the
+file M11PRNTR.DAT and the printer
+files (xxx.PRD). These are used, in
+addition to the parameter PRINTER
+ID, to correctly convert fonts
+through the Type- style Filter.
+
+This will usually be your Mass-11
+word processor directory.
+
+Enter a drive letter(plus colon) or
+the name of an existing directory
+on the hard disk, and press RETURN.
+
+Default: The current drive and
+directory.
+~m11prntr.hlp
+PRINTER ID
+
+This is ID that Mass-11 assigned to
+your printer when you installed it.
+This is used in addition to the
+parameter of MASS-11 DIRECTORY to
+correctly convert fonts through the
+Typestyle Filter.
+
+For example: POST most likely is
+the Printer ID for a PostScript
+printer, while a number value could
+be the ID of another printer.
+
+Default: None (The parameter is
+left blank)
+~xydir.hlp
+XYWRITE DIRECTORY
+
+This parameter tells the conversion
+in which directory it can find the
+file STARTUP.INT and the printer
+files (xxx.PRN). These are used to
+get initial default values and to
+correctly convert fonts through the
+Typestyle Filter.
+
+This will usually be your XyWrite
+word processor directory.
+
+Enter a drive letter(plus colon) or
+the name of an existing directory
+on the hard disk, and press RETURN.
+
+Default: The current drive and
+directory.
+~nbdir.hlp
+NOTA BENE DIRECTORY
+
+This parameter tells the conversion
+in which directory it can find the
+file DEFAULT.SET and the printer
+files (xxx.PRN). These are used to
+get initial default values and to
+correctly convert fonts through the
+Typestyle Filter.
+
+This will usually be your Nota Bene
+word processor directory.
+
+Enter a drive letter(plus colon) or
+the name of an existing directory
+on the hard disk, and press RETURN.
+
+Default: The current drive and
+directory.
+~nbprn.hlp
+NOTA BENE PRINTER FILE NAME
+
+This is the PRN file, created by
+Nota Bene during installation, that
+contains the font information for
+the printer being used. If more
+than one PRN file exists for a
+given printer, enter the one that
+contains the Print-Type Table
+information.
+
+Enter the name of the PRN file. Do
+not include the path of the file,
+since the path is taken from the
+Nota Bene Directory parameter.
+
+NOTE: If there is no PRN file used
+during the translation to or from
+Nota Bene, the conversion will use
+default values. In this case, fonts
+cannot be correctly sent.
+
+Default: None (The parameter is
+left blank)
+~nbsls.hlp
+NB SPECIAL LANGUAGE SUPPLEMENT
+
+This parameter tells the conversion
+whether color mode changes, MD#,
+reflect the use of the Special
+Language Supplement of Nota Bene.
+
+The RETURN key toggles between
+"Special Language Supplement Not
+Installed" and "Convert Special
+Language Characters"
+
+Default: Special Language
+Supplement Not Installed
+~wmtpstyl.hlp
+TYPESTYLES SUPPORT
+
+WordMARC lets you create documents
+which, when printed, contain a
+variety of typestyles. If you want
+to convert typestyles to or from
+WordMARC, you must set this
+parameter to "Supporting Typestyles
+Changes".
+
+When "Not Supporting Typestyle
+Changes" is selected, all
+typestyles will be converted to
+Courier 10 pitch.
+
+Default: Supporting Typestyles
+Changes.
+~wmprt.hlp
+TYPE OF PRINTERS
+
+Typestyles are an important
+addition to WordMARC Composer Plus.
+Presently, WordMARC Composer Plus
+supports two major types of
+printers: Postscript and
+Hewlett-Packard laser printers.  
+
+Set this parameter according to
+your printer configuration in the
+WordMARC Composer Plus word
+processor.
+
+Default: HP Laser Printers
+~wmtpdir.hlp
+TYPESTYLES DIRECTORY
+
+During installation of WordMARC,
+two different master.cfg files are
+loaded onto two different
+directories. These files contain
+information on a variety of
+typestyles being supported by
+WordMARC Composer Plus.
+
+If you want to convert documents to
+WordMARC with typestyles support,
+which depends on printer type, you
+must provide a directory path to
+one of the master configuration
+files. Usually the files are loaded
+in the following locations:
+
+\wm\type\hpljet (laser printers)
+\wm\type\post   (Postscript
+                 printers)
+
+Default: The current drive and
+directory.
+~END
+

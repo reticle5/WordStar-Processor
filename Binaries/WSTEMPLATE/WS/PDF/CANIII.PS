@@ -1,0 +1,42 @@
+
+%  .bn1 pull letter from cassette on the Canon LBP8-III.
+/cartltr {statusdict begin  1 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11 inch def} def
+
+%  .bn2 pull manual letter on the Canon LBP8-III.
+/manltr {statusdict begin  0 setpapertray 
+	/letter manualfeed true  end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from cassette on the Canon LBP8-III.
+/cartlgl {statusdict begin  1 setpapertray 
+	/legal manualfeed false  end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull manual legal on the Canon LBP8-III.
+/manlgl {statusdict begin  0 setpapertray 
+	/legal manualfeed true  end
+	/pgsize 11 inch def} def
+
+%  .bn5  pull A4 from cassette on the Canon LBP8-III.
+/carta4 {statusdict begin  1 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11.6 inch def} def
+
+%  .bn6 pull manual A4 on the Canon LBP8-III.
+/mana4  {statusdict begin  0 setpapertray 
+	/letter manualfeed true  end
+	/pgsize 11.6 inch def} def
+
+%  .bn7 pull #10 envelope on the Canon LBP8-III.
+/envelope {statusdict begin  3 setpapertray 
+	/com10envelope manualfeed false  end
+	/pgsize 9.5 inch def} def
+
+%  .bn8 pull manual envelope on the Canon LBP8-III.
+/manenv {statusdict begin  0 setpapertray 
+	/letter manualfeed true  end
+	/pgsize 11 inch def} def
+
+

@@ -1,0 +1,11 @@
+.RP 65000
+.IF &START& <> 1
+.MT 0
+.MB 0
+.OP
+.EI
+.SV START,1
+.DM Line to print?
+.AV "",LINE
+&LINE&
+

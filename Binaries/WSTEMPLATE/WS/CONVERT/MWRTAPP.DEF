@@ -1,0 +1,48 @@
+*APN MacWrite II
+*APR 6.16  .89
+*APT 0
+*API 25
+*EXT ???
+*EXC 
+*EXI 
+*WTI
+*ISI 22
+*OSI 0
+*EXE mwrtconv
+*ITW
+*ISI 0
+*OSI 22
+*EXE mwrtconv
+*PAR 6
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,MCW
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+*PRD 5,Output File Type
+*TOG 2, 0
+*CHO MacBinary
+*CHO Standard
+*HELP mactype.hlp
+*EPD
+

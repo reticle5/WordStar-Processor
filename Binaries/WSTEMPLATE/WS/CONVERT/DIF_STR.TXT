@@ -1,0 +1,4 @@
+*ERROR_STRINGS 2
+*MESSAGE  Input file not in specified directory.
+*MESSAGE
+

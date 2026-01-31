@@ -1,0 +1,55 @@
+*EXCEPTION_STRINGS 47
+*MESSAGE Double Strike -- Supported as bolded text
+*MESSAGE Superscript / Subscript Roll distance (.SR) -- Ignored
+*MESSAGE Word Wrap Toggle (.AW) -- Ignored
+*MESSAGE File Insert command (.FI) -- Ignored
+*MESSAGE Index function -- Ignored
+*MESSAGE Table of contents function -- Ignored
+*MESSAGE Math Functions -- Ignored
+*MESSAGE Fix print head -- Ignored  
+*MESSAGE Bin Select (.BN) -- Ignored
+*MESSAGE Bidirectional Print Toggle (.BP) -- Ignored
+*MESSAGE Clear Screen command (.CS) -- Ignored
+*MESSAGE Display Message command (.DM) -- Ignored
+*MESSAGE Letter Quality command (.LQ) -- Ignored
+*MESSAGE Repeat Print command (.RP) -- Ignored
+*MESSAGE Binary Form Feed definition (.XL) -- Ignored
+*MESSAGE Overstrike Character -- Defaults to dash in WordStar 4
+*MESSAGE Character Width -- Only the last value in a line is supported
+*MESSAGE Reverse Image -- Ignored
+*MESSAGE Vertical Index function -- Ignored
+*MESSAGE Columns -- Supported as separate blocks under correct format
+*MESSAGE Hotzone -- Ignored
+*MESSAGE Center Page -- Ignored
+*MESSAGE Suppress Page Characteristics -- Ignored
+*MESSAGE Automatic Numbering -- Supported as page image
+*MESSAGE Header / Footer -- Only the first 3 lines can be supported in WordStar 4",
+*MESSAGE Header / Footer -- Alternating headers and footers are not available in WordStar 4
+*MESSAGE Notes -- All types of notes are moved to the end of the document
+*MESSAGE Print Control -- Ignored
+*MESSAGE Printer Binary -- Ignored
+*MESSAGE Data File (.DF) -- Not used by the conversion
+*MESSAGE Conditional Merging (.EI) -- Not supported
+*MESSAGE Conditional Merging (.EL) -- Not supported
+*MESSAGE Conditional Merging (.IF) -- Not supported
+*MESSAGE Print Time Format (.PF) -- Ignored
+*MESSAGE Micro Justification (.UJ) -- Ignored
+*MESSAGE Variable Merging (.AV) -- Ignored
+*MESSAGE The .GO command is not supported
+*MESSAGE The .PE command is not supported
+*MESSAGE The .CV command is not supported
+*MESSAGE The .CC command is not supported
+*MESSAGE Date formatting is ignored
+*MESSAGE Definition of variable is ignored
+*MESSAGE List processing ignored
+*MESSAGE List location is ignored
+*MESSAGE Format for line numbering is ignored
+*MESSAGE Time formatting is ignored
+*MESSAGE Variable inserting is ignored
+*ERROR_STRINGS 5
+*MESSAGE Could not open input file.  
+*MESSAGE Could not open output file.
+*MESSAGE Internal Token context error.
+*MESSAGE Disk Read Error.
+*MESSAGE Disk Write Error.
+

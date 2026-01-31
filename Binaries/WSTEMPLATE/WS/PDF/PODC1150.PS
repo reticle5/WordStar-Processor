@@ -1,0 +1,49 @@
+
+%  .bn1 pull letter from cassette on the DEC 1150.
+/cartltr {statusdict begin  1 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11 inch def} def
+
+%  .bn2 pull manual letter on the DEC 1150.
+/manltr 
+{
+	statusdict begin 0 setpapertray end userdict begin letter end 
+	/pgsize 11 inch def
+} def
+
+%  .bn3 pull legal from cassette on the DEC 1150.
+/cartlgl {statusdict begin  1 setpapertray 
+	/legal manualfeed false  end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull manual legal on the DEC 1150.
+/manlgl 
+{
+	statusdict begin 0 setpapertray end userdict begin legal end 
+	/pgsize 14 inch def
+} def
+
+%  .bn5  pull A4 from cassette on the DEC 1150.
+/carta4 {statusdict begin  1 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11.6 inch def} def
+
+%  .bn6 pull manual A4 on the DEC 1150.
+/mana4  
+{
+	statusdict begin 0 setpapertray end userdict begin a4 end 
+	/pgsize 11.6 inch def
+} def
+
+%  .bn7 pull #10 envelope on the DEC 1150.
+/envelope {statusdict begin 1 setpapertray 
+	/com10envelope manualfeed false  end
+	/pgsize 9.5 inch def} def
+
+%  .bn8 pull manual envelope on the DEC 1150.
+/manenv 
+{
+	statusdict begin 0 setpapertray end userdict begin 4.125x9.5 end 
+	/pgsize 9.5 inch def
+} def
+

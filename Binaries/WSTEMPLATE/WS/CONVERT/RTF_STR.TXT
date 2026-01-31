@@ -1,0 +1,8 @@
+*EXCEPTION_STRINGS 0
+
+*ERROR_STRINGS 4
+*MESSAGE  Unexpected EOF Encountered
+*MESSAGE  From RTF : ERROR -- Cannot open input file   
+*MESSAGE  From RTF : ERROR -- Invalid RTF document
+*MESSAGE  From RTF : ERROR -- Invalid RTF document conversion number
+

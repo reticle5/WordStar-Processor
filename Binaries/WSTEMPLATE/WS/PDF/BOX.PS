@@ -1,0 +1,53 @@
+%! BOX.PS
+% A variable-size box: user can set width, height and line thickness.  If a
+% gap is set, then a second box is drawn inside the first; its sides will be
+% the distance of the gap from the outer box.
+%
+save
+
+% box width
+%
+/bw where not
+	{ /bw 2 72 mul def } { pop } ifelse
+
+% box height
+%
+/bh where not
+	{ /bh 7 72 mul def } { pop } ifelse
+
+% box thickness
+%
+/bt where not
+	{ /bt 1.5 def } { pop } ifelse
+
+% box gap
+%
+/bg where not
+	{ /bg 3 def } { pop } ifelse
+
+% set line width and box color
+%
+bt setlinewidth					% set line thickness for edges
+0 setgray					% set shade of gray
+
+% draw outer box
+%
+0 bh neg rlineto				% down
+bw 0 rlineto					% across
+0 bh rlineto					% up
+closepath					% back
+
+%% draw inner box if gap set
+%
+bg 0 gt {
+	bg bg neg rmoveto			% starting point of inner box
+	0 bh neg bg dup add add rlineto	% down
+	bw bg dup add sub 0 rlineto		% across
+	0 bh bg dup add sub rlineto		% up
+	closepath				% back
+} if
+stroke
+
+restore
+
+

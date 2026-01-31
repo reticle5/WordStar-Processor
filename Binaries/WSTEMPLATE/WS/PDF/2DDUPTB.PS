@@ -1,0 +1,53 @@
+
+%  .bn1 pull letter from upper tray on the HP LaserJet IID.
+/tray1ltr {statusdict begin true setduplexmode true settumble 0 setpapertray 
+	/letter manualfeed false false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the HP LaserJet IID.
+/tray2ltr {statusdict begin true setduplexmode true settumble 1 setpapertray 
+	/letter manualfeed false false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the HP LaserJet IID.
+/tray1lgl {statusdict begin true setduplexmode true settumble 0 setpapertray 
+	/legal manualfeed false false settrayswitch end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the HP LaserJet IID.
+/tray2lgl {statusdict begin true setduplexmode true settumble 1 setpapertray 
+	/legal manualfeed false false settrayswitch end
+	/pgsize 14 inch def} def
+
+%  .bn5 pull #10 envelope on the HP LaserJet IID.
+/envelope {statusdict begin true setduplexmode true settumble 2 setpapertray 
+	/com10envelope manualfeed false false settrayswitch end
+	/pgsize 9.5 inch def} def
+
+%  .bn6 pull manual letter on the HP LaserJet IID.
+/tray1ltr {statusdict begin true setduplexmode true settumble 0 setpapertray 
+	/letter manualfeed true false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn7 pull manual legal on the HP LaserJet IID.
+/tray1ltr {statusdict begin true setduplexmode true settumble 0 setpapertray 
+	/legal manualfeed true false settrayswitch end
+	/pgsize 11 inch def} def
+
+%  .bn8 pull manual envelope on the HP LaserJet IID.
+/tray1ltr {statusdict begin true setduplexmode true settumble 0 setpapertray 
+	/letter manualfeed true false settrayswitch end
+	/pgsize 11 inch def} def
+
+
+%  .bn9 pull letter continuous on the HP LaserJet IID.
+/ltrcnt {statusdict begin true setduplexmode true settumble 0 setpapertray letter
+	/1 setpapertray letter settrayswitch true end
+	/pgsize 11 inch def} def
+
+%  .bn10 pull legal continuous on the HP LaserJet IID.
+/lglcnt {statusdict begin true setduplexmode true settumble 1 setpapertray legal
+	/1 setpapertray legal settrayswitch true end
+	/pgsize 14 inch def} def
+
+

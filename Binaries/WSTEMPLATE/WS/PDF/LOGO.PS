@@ -1,0 +1,155 @@
+%!LOGO.PS
+%Sample file generating several variations of a logo
+%
+
+save
+ 
+/thinln { 320 0 rlineto -320 -12 rmoveto } def  %define 1 thinline
+ 
+/thickln { 200 0 rlineto -200 -12 rmoveto } def %define 1 thinline
+ 
+/thinlp { gsave -160 42 moveto                  %thinline loop
+          1 setlinecap 0 setgray 2 setlinewidth
+          8 {thinln} repeat stroke grestore } def
+ 
+/thicklp { gsave -100 42 moveto                 %thickline loop
+           6 setlinewidth 1 setlinecap 0 setgray
+           8 {thickln} repeat stroke grestore } def
+ 
+/horzlns { thinlp thicklp } def                 %horizontal line routine
+ 
+/vertlns {gsave 90 rotate thinlp thicklp grestore } def
+ 
+/circle { gsave .1 setlinewidth newpath         %define circle
+          0 0 70 0 360 arc closepath
+          gsave 1 setgray fill grestore stroke grestore } def
+ 
+/NMMC { gsave                                   %define acronym
+     4 setlinewidth 1 setlinecap 1 setlinejoin 0 setgray -45 -10 moveto
+     0 20 rlineto 10 -20 rlineto 0 20 rlineto 10 -20 rmoveto
+     0 20 rlineto 10 -10 rlineto 10 10 rlineto 0 -20 rlineto 10 0 rmoveto
+     0 20 rlineto 10 -10 rlineto 10 10 rlineto 0 -20 rlineto 10 0 rmoveto
+     0 20 rlineto 10 0 rlineto -10 -20 rmoveto 10 0 rlineto
+     stroke grestore } def
+ 
+/logo {horzlns vertlns circle NMMC } def        %routines which = basic logo
+ 
+/gryln { 2880 0 rlineto -2880 -12 rmoveto } def
+/grylnlp { gsave .01 setlinewidth 0 setgray -1440 42 moveto
+           8 {gryln} repeat stroke grestore } def
+ 
+/whtbx { .1 setlinewidth newpath                %define white filled box
+         -180 180 moveto
+         360 0 rlineto 0 -360 rlineto -360 0 rlineto closepath
+         gsave 1 setgray fill grestore } def
+ 
+/box { .1 setlinewidth newpath                  %define box around logo
+       -172.5 172.5 moveto
+       345 0 rlineto 0 -345 rlineto -345 0 rlineto closepath
+       gsave 1 setgray fill grestore gsave 0 setgray stroke grestore} def
+ 
+/smbx { 0 -105 rlineto 105 0 rlineto        %define 1 small box
+        0 105 rlineto closepath fill } def
+ 
+/4smbx { gsave 0 setgray                    %routine for 4 sm blank boxes
+         gsave -160 160 moveto smbx grestore
+         gsave 55 160 moveto smbx grestore
+         gsave 55 -55 moveto smbx grestore
+         gsave -160 -55 moveto smbx grestore
+     grestore } def
+ 
+/4smbx-gry { gsave .6 setgray               %routine for 4 sm gray boxes
+             gsave -160 160 moveto smbx grestore
+             gsave 55 160 moveto smbx grestore
+             gsave 55 -55 moveto smbx grestore
+             gsave -160 -55 moveto smbx grestore
+             grestore } def
+ 
+/dblbx { gsave box grestore gsave .95 .95 scale box grestore } def
+ 
+/hv8 { /Helvetica findfont 8 scalefont setfont } def
+/hv12x { /Helvetica findfont [ 17 0 0 12 0 0 ] makefont setfont } def
+/hv18x { /Helvetica findfont [ 24 0 0 17 0 0 ] makefont setfont } def
+ 
+/compname { gsave -130 -6 moveto hv18x (N) show hv12x (EW  ) show   %comp title
+     hv18x (M) show hv12x (EXICO  ) show
+     hv18x (M) show hv12x (ICRO  ) show
+     hv18x (C) show hv12x (HIP) show grestore } def
+ 
+/compaddr { gsave -183 -18 moveto                            %company address
+     hv8 (3838 Cortez Plaza, Bld 109   *   Albuquerque NM  00000   *   ) show
+     ( (505) 777-7777   *   FAX: (505) 888-8888) show grestore } def
+ 
+/compinfo { gsave compname grestore gsave compaddr grestore } def
+ 
+/hd-1 { gsave .2 .2 scale grylnlp grestore compinfo } def   %define Header
+ 
+
+10 0 translate 
+ 
+gsave 312 749 translate hd-1               %variation1
+grestore                                   %header1
+ 
+gsave 312 659 translate hd-1               %variation2
+     gsave -255 0 translate .2 .2 scale    %header1 + logo
+          gsave whtbx grestore
+          gsave logo grestore
+     grestore
+grestore
+ 
+gsave 312 569 translate hd-1               %varation3
+     gsave -255 0 translate .2 .2 scale    %header1 + logo + box
+          gsave whtbx grestore
+          gsave box grestore
+          gsave logo grestore
+     grestore
+grestore
+ 
+gsave 312 479 translate hd-1               %variation4
+     gsave -255 0 translate .2 .2 scale    %header1 + logo + box + 4bxs
+          gsave whtbx grestore
+          gsave box grestore
+          gsave 4smbx grestore
+          gsave logo grestore
+     grestore
+grestore
+ 
+gsave 312 389 translate hd-1            %variation5
+     gsave -255 0 translate .2 .2 scale    %header1 + logo + box + 4grayboxes
+          gsave whtbx grestore
+          gsave box grestore
+          gsave 4smbx-gry grestore
+          gsave logo grestore
+     grestore
+grestore
+ 
+gsave 312 299 translate hd-1               %variation6
+     gsave -255 0 translate .2 .2 scale %header1 + logo + dblbx
+          gsave whtbx grestore
+          gsave dblbx grestore
+          gsave logo grestore
+     grestore
+grestore
+ 
+gsave 312 209 translate hd-1               %variation7
+     gsave -255 0 translate .2 .2 scale %header1 + logo + dblbx + 4smbx
+          gsave whtbx grestore
+          gsave dblbx grestore
+          gsave 4smbx grestore
+          gsave logo grestore
+     grestore
+grestore
+ 
+gsave 312 119 translate hd-1               %variation8
+     gsave -255 0 translate .2 .2 scale %header1 + logo + dblbx + 4smgrayboxes
+          gsave whtbx grestore
+          gsave dblbx grestore
+          gsave 4smbx-gry grestore
+          gsave logo grestore
+     grestore
+grestore
+ 
+%showpage
+restore
+
+

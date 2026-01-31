@@ -1,0 +1,64 @@
+*APN Nota Bene
+*APR 3.0 8.1.89
+*APT 0
+*API 24
+*EXT ???
+*PAR 4
+*PRD 0,Nota Bene Directory
+*STRP 65,
+*PRF PRINTER_DESCRIPTION
+*HELP nbdir.hlp
+*EPD
+*PRD 1,File Type
+*TOG 2, 1
+*CHO XyWrite ( versions thru III+ )
+*CHO Nota Bene ( versions thru 3.0 )
+*PRF HIDDEN
+*HELP xyvers.hlp
+*EPD
+*PRD 2,Nota Bene Printer File Name
+*STRP 12,
+*PRF PRINTER_DESCRIPTION
+*HELP nbprn.hlp
+*EPD
+*PRD 3,NB Special Language Supplement
+*TOG 2, 0
+*CHO Special Language Supplement Not Installed
+*CHO Convert Special Language Characters
+*HELP nbsls.hlp
+*EPD
+*WTI
+*ISI 24
+*OSI 0
+*EXE xyconv
+*ITW
+*ISI 0
+*OSI 24
+*EXE xyconv
+*PAR 5
+*PRD 0,Output Directory
+*STRP 65,
+*HELP outdir.hlp
+*EPD
+*PRD 1,File Naming Method
+*TOG 5, 0
+*CHO Original File Name with User Defined Extension
+*CHO Original File Name with Original Extension
+*CHO User Defined File Name with User Defined Extension
+*CHO User Defined File Name with Original Extension
+*CHO Prompt User for Output File Names
+*HELP method.hlp
+*EPD
+*PRD 2,User Defined File Name
+*STRP 8,+
+*HELP filespec.hlp
+*EPD
+*PRD 3,User Defined Extension
+*STRP 3,NB
+*HELP ext.hlp
+*EPD
+*PRD 4,Replacement Character
+*STRP 2,40
+*HELP ufr.hlp
+*EPD
+

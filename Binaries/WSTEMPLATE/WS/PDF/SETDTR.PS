@@ -1,0 +1,7 @@
+0000    % Server Password (zeros, not oh's)
+statusdict begin 25 sccbatch 4 ne exch 9600 ne or
+{serverdict begin exitserver}{pop end stop}ifelse
+statusdict  begin
+25  9600  4  setsccbatch
+end
+

@@ -1,0 +1,58 @@
+
+%  .bn1 pull letter from mp tray on the Canon LBP4.
+/tray1ltr {statusdict begin  0 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11 inch def} def
+
+%  .bn2 pull letter from option tray on the Canon LBP4.
+/tray2ltr {statusdict begin  1 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from mp tray on the Canon LBP4.
+/tray1lgl {statusdict begin  0 setpapertray 
+	/legal manualfeed false  end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from option tray on the Canon LBP4.
+/tray2lgl {statusdict begin  1 setpapertray 
+	/legal manualfeed false  end
+	/pgsize 14 inch def} def
+
+%  .bn5 pull #10 envelope on the Canon LBP4.
+/envelope {statusdict begin  0 setpapertray 
+	/com10envelope manualfeed false  end
+	/pgsize 9.5 inch def} def
+
+%  .bn6 pull manual letter on the Canon LBP4.
+/manltr {statusdict begin  0 setpapertray 
+	/letter manualfeed true  end
+	/pgsize 11 inch def} def
+
+%  .bn7 pull manual legal on the Canon LBP4.
+/manlgl {statusdict begin  0 setpapertray 
+	/legal manualfeed true  end
+	/pgsize 11 inch def} def
+
+%  .bn8 pull manual envelope on the Canon LBP4.
+/manenv {statusdict begin  0 setpapertray 
+	/letter manualfeed true  end
+	/pgsize 11 inch def} def
+
+%  .bn9 pull A4 from mp tray on the Canon LBP4.
+/tray1a4 {statusdict begin  0 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11.6 inch def} def
+
+%  .bn10 pull A4 from option tray on the Canon LBP4.
+/tray2a4 {statusdict begin  1 setpapertray 
+	/letter manualfeed false  end
+	/pgsize 11.6 inch def} def
+
+%  .bn11 pull manual A4 on the Canon LBP4.
+/mana4  {statusdict begin  0 setpapertray 
+	/letter manualfeed true  end
+	/pgsize 11.6 inch def} def
+
+
+

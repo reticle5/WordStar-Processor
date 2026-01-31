@@ -1,0 +1,28 @@
+*EXCEPTION_STRINGS 18
+*MESSAGE  Double underlining has been converted to single underlining
+*MESSAGE  Centered page has been converted to left align page
+*MESSAGE  Reverse image text has been converted to regular text
+*MESSAGE  Time stamping ignored
+*MESSAGE  Line numbering ignored
+*MESSAGE  Italicized text has been converted to regular text
+*MESSAGE  Footnote printed at the end of the document
+*MESSAGE  Printer control code ignored
+*MESSAGE  Font ot pitch change ignored
+*MESSAGE  Page number occurs outside header or footer: converted to PAGE
+*MESSAGE  Date occurs outside header or footer: converted to DATE
+*MESSAGE  Multiple level of superscripting or subscripting ignored
+*MESSAGE  Table of contents ignored: converted to page image
+*MESSAGE  Alternating header or footer printed on last text page
+*MESSAGE  Character tab converted to page image
+*MESSAGE  Linespacing outside DEC range, rounded to nearest equivalent
+*MESSAGE  Math function ignored: text converted as regular text
+*MESSAGE  Printer control block command ignored
+
+*ERROR_STRING 6
+*MESSAGE  Column work file could not be opened for writing.
+*MESSAGE  Footnote work file could not be opened for writing.
+*MESSAGE  Footnote work file could not be opened for reading.
+*MESSAGE  File end before subdocument end.  
+*MESSAGE  Unexpected EOF	    
+*MESSAGE  Normal successful completion.
+

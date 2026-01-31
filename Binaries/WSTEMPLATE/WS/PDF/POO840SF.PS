@@ -1,0 +1,147 @@
+
+%  .bn1 pull letter from upper tray on the Okidata OL840.
+/tray0ltr {statusdict begin  
+            0 setpapertray
+	    /manualfeed false store
+            /trayswitch false store
+	    letter
+          end
+	  /pgsize 11 inch def} def
+
+%  .bn2 pull letter from lower tray on the Okidata OL840.
+/tray1ltr {statusdict begin  
+        1 setpapertray letter
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the Okidata OL840.
+/tray0lgl {statusdict begin  
+        0 setpapertray legal
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the Okidata OL840.
+/tray1lgl {statusdict begin  
+            1 setpapertray
+	    /manualfeed false store
+            /trayswitch false store
+	    legal
+          end
+	  /pgsize 14 inch def} def
+
+%  .bn5 pull #10 envelope from upper tray on the Okidata OL840.
+/env100   {statusdict begin  
+            0 setpapertray
+	    /manualfeed false def
+            com10
+          end
+	  /pgsize 9.5 inch def} def
+
+%  .bn6 pull #10 envelope from lower tray on the Okidata OL840.
+/env101   {statusdict begin  
+            1 setpapertray
+	    /manualfeed false store
+            com10
+          end
+	  /pgsize 9.5 inch def} def
+
+%  .bn7 pull manual letter on the Okidata OL840.
+/manltr {statusdict begin
+	  /manualfeed true store
+	  letter
+        end
+	/pgsize 11 inch def} def
+
+%%  .bn6 pull manual letter on the Okidata OL840.
+%/manltr {statusdict begin letter
+%	/manualfeed true def
+%        /trayswitch false def 
+%        end
+%	/pgsize 11 inch def} def
+
+%  .bn8 pull manual legal on the Okidata OL840.
+/manlgl {statusdict begin legal
+	/manualfeed true def
+        /trayswitch false def 
+        end
+	/pgsize 14 inch def} def
+
+%  .bn9 pull manual envelope on the Okidata OL840.
+/manenv {statusdict begin com10
+	/manualfeed true def
+        /trayswitch false def 
+        end
+	/pgsize 9.5 inch def} def
+
+%  .bn10 pull letter continuous on the Okidata OL840.
+/cntltr {statusdict begin letter
+	/manualfeed false def
+        /trayswitch true def 
+        end
+	/pgsize 11 inch def} def
+
+%  .bn11 pull legal continuous on the Okidata OL840.
+/cntlgl {statusdict begin legal
+	/manualfeed false def
+	/trayswitch true def 
+        end
+	/pgsize 14 inch def} def
+
+%  .bn12 pull A4 from upper tray on the Okidata OL840.
+/tray1a4 {statusdict begin
+        0 setpapertray a4
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn13 pull A4 from lower tray on the Okidata OL840.
+/tray2a4 {statusdict begin  
+        1 setpapertray a4
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn14 pull A4 continuous on the Okidata OL840.
+/cnta4  {statusdict begin a4
+	/manualfeed false def
+	/trayswitch true def 
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn15 pull manual a4 on the Okidata OL840.
+/mana4  {statusdict begin a4
+	/manualfeed true def
+        /trayswitch false def 
+        end
+	/pgsize 11.6 inch def} def
+
+%  .bn16 pull DL envelope from upper tray on the Okidata OL840.
+/envdl0 {statusdict begin 
+        1 setpapertray dl
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 8.25 inch def} def
+
+%  .bn17 pull DL envelope from lower tray on the Okidata OL840.
+/envdl0 {statusdict begin 
+        1 setpapertray dl
+	/manualfeed false def
+        /trayswitch false def 
+        end
+	/pgsize 8.25 inch def} def
+
+%  .bn18 pull manual DL envelope on the Okidata OL840.
+/manenvdl {statusdict begin dl
+	/manualfeed true def
+        /trayswitch false def 
+        end
+	/pgsize 8.25 inch def} def
+
+

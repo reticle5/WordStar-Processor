@@ -1,0 +1,48 @@
+
+%  .bn1 pull letter from upper tray on the Xerox 4045 160.
+/mainlt 
+{
+	statusdict begin 0 setpapertray end
+	userdict begin letter end
+	/pgsize 11 inch def
+} def
+
+%  .bn2 pull letter from lower tray on the Xerox 4045 160.
+/lowerlt {statusdict begin 2 setpapertray end
+	userdict begin letter end
+	/pgsize 11 inch def} def
+
+%  .bn3 pull legal from upper tray on the Xerox 4045 160.
+/mainlg {statusdict begin 0 setpapertray end
+	userdict begin legal end
+	/pgsize 14 inch def} def
+
+%  .bn4 pull legal from lower tray on the Xerox 4045 160.
+/lowerlg {statusdict begin 2 setpapertray end
+	userdict begin legal end
+	/pgsize 14 inch def} def
+
+%  .bn5 pull letter from middle on the Xerox 4045 160.
+/middlelt {statusdict begin 1 setpapertray end
+	userdict begin letter end
+	/pgsize 11 inch def} def
+
+%  .bn6 pull legal from middle on the Xerox 4045 160.
+/middlelg {statusdict begin 1 setpapertray end
+	userdict begin legal end
+	/pgsize 14 inch def} def
+
+%  .bn7 pull A4 from upper on the Xerox 4045 160.
+/maina4 {statusdict begin 0 setpapertray end
+	userdict begin a4 end
+	/pgsize 11.6 inch def} def
+
+%  .bn8 pull A4 from lower on the Xerox 4045 160.
+/lowera4 {statusdict begin 2 setpapertray end
+	userdict begin a4 end
+	/pgsize 11.6 inch def} def
+
+%  .bn9 pull A4 from middle on the Xerox 4045 160.
+/middlea4 {statusdict begin 1 setpapertray end
+	userdict begin a4 end
+	/pgsize 11.6 inch def} def

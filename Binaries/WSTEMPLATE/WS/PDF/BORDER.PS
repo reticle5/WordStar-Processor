@@ -1,0 +1,27 @@
+%!BORDER.PS
+%Sample file that generates 7 x 10 inch border
+%
+
+save
+
+/Border { gsave .01 setlinewidth 0 setgray 40 30 translate
+        0 735 moveto 540 0 rlineto 0 -735 rlineto -540 0 rlineto closepath
+        1.5 -1.5 rmoveto 537 0 rlineto 0 -732 rlineto -537 0 rlineto closepath
+        1.5 -1.5 rmoveto 534 0 rlineto 0 -729 rlineto -534 0 rlineto closepath
+        1.5 -1.5 rmoveto 531 0 rlineto 0 -726 rlineto -531 0 rlineto closepath
+        stroke grestore } def
+
+/White-bx { gsave 1 setgray -4.5 0 rlineto 0 4.5 rlineto 4.5 0 rlineto
+             closepath gsave fill grestore 0 setgray stroke grestore } def 
+
+/White-bx-lp { gsave .01 setlinewidth 0 setgray 40 30 translate
+                4.5 730.5 moveto White-bx 535.5 0 rmoveto White-bx
+                0 -730.5 rmoveto White-bx -535.5 0 rmoveto White-bx
+                grestore } def
+
+gsave 0 0 translate Border White-bx-lp grestore
+
+%showpage
+restore
+
+

@@ -1,0 +1,638 @@
+FILELIST.TXT--This file lists the WordStar files and the directories
+in which they are installed.  The default directories are shown; if
+you specified different directory names in WSSETUP, your names will
+be different.
+
+For WordStar LAN (local area networks), some files are installed in 
+different directories than the single-user version.  These files are
+marked with a plus sign (+), and the differences are explained at 
+the end of each section.
+
+WORDSTAR PROGRAM FILES  (\WS)
+
+ $INDEX.OVR        Index overlay
+ $TOC.OVR          Table of contents overlay
+ A2WSA.EXE         Encodes control codes and IBM extended characters 
+                   for WordStar editing
+ ASC256.PDF        Printer description file for standard ASCII with  
+                   IBM extended characters
+ ASCII.PDF         Printer description file for standard ASCII
+ BOX               WordStar sample file with line and box drawing 
+                   characters
+ CHANGE.OVR        WSCHANGE overlay
+ COPYWS.EXE        Copies and decompresses WordStar files
+ DISPFONT.COM      Executes DISPFONT
+ DISPFONT.OVR      DISPFONT overlay
+ DRAFT.PDF         DRAFT generic printer description file
+ DRIVERA.OVR       Printer driver for print-to-disk PDFs
+ DRIVERN.OVR       Printer driver for nonbackspacing PDFs
+ DRIVERT.OVR       Printer driver for backspacing PDFs
+ FAX.PDF           Printer description file for creating fax files
+ FILELIST.TXT      Lists and describes WordStar files
+ HP-ENV.LST        Prints envelopes for HP LaserJet, LaserJet Plus, 
+                   and trays on right side
+ HP2-ENV.LST       Prints envelopes for HP LaserJet series II and 
+                   center-feed trays
+ HYPMN001.DCT      Hyphenation dictionary for American English
+ KEYBOARD.MRG      Print from keyboard default settings
++LIST.DOC          WordStar sample file
+ LSRFONTS.COM      Executes laser fonts utility
++MAILING.DOC       WordStar sample file
+ PATCHLST.EXE      Shows default patch settings for WordStar
+ PDFEDIT.COM       Executes PDFEDIT.EXE
+ PDFEDIT.EXE       Executes utility to edit PDFs (Printer Description 
+                   Files)
+ PDFEDIT.HLP       PDFEDIT help
+ PECHO.COM         ECHO used in batch file for downloading fonts
++PLAYBILL.DOC      WordStar sample file
++PLAYS.DOC         WordStar sample file
+ PRCHANGE.COM      Installs or customizes printers
++PRINT.TST         WordStar sample file for testing a non-PostScript 
+                   printer
+ PSPRINT.TST       WordStar sample file for testing a PostScript printer
+ README.BAT        Used to view README.TXT
+ README.TXT        Last-minute information about WordStar
++REVIEW.DOC        WordStar sample file
++SHAKE.DOC         WordStar sample file
++SPELL.DOC         WordStar sample file
+ SWITCH.COM        Executes Ctrl/Caps Lock key switcher
+ TABLES2.OVR       Needed to run PRCHANGE, LSRFONTS, and PDFEDIT
+ WINSTALL.EXE      Executes WINSTALL 
+ WINSTALL.HLP      WINSTALL, LSRFONTS, and PDFEDIT help
+ WINSTALL.OVR      WINSTALL overlay
+ WS.DEF            Logitech mouse definition file
+ WS.EXE            Executes WordStar
+ WS4.PDF           WordStar 4.0 conversion printer description file
+ WS.ICO            WordStar 7.0 icon file for Microsoft Windows 3.x
+ WSCG.EXE          Allows you to run Correct Grammar from within 
+                   WordStar
+ WSCHANGE.COM      Executes WSCHANGE
+ WSCHANGE.OVR      WSCHANGE overlay
+ WSDSPCH.OVR       WordStar keystroke dispatch tables
+ WSHELP.OVR        WordStar onscreen help overlay
+ WSHYP001.OVR      Overlay for American English auto-hyphenation
++WSINDEX.XCL       Indexing exclusion list
+ WSMIN.PAT         Patches WordStar for minimum memory configuration
+ WSMSGS.OVR        WordStar messages overlay
+ WSSTYLE.OVR       Paragraph style overlay
+
++ For WordStar LAN, these files are installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+LAN FILES  (\WS\SETUP)  Used only for LAN product installation
+
+ TESTDIR.EXE       Directory test utility
+ USRSETUP.BAT      Batch file for LAN user setup 
+ CFGPATH.EXE       Changes .CFG file path settings
+
+MACRO FILES  (\WS)
+
+ WSC.EXE           Macro compiler
+ WSD.EXE           Macro decompiler
++WSHOTKEY.OVR      Macro hot-key table
+
++ For WordStar LAN, this file is installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+MACRO FILES  (\WS\MACROS)
+
+ BK_BEGIN.WSM      Marks beginning of block
+ BK_COPY.WSM       Copies block
+ BK_DEL.WSM        Deletes block
+ BK_END.WSM        Marks end of block
+ BK_HIDE.WSM       Turns block highlighting on and off
+ BK_MOVE.WSM       Moves block
+ BOLD.WSM          Inserts bold command
+ CENTER.WSM        Inserts centering command
+ DEBUGMAC.WSM      Debugs macro - finds next compiler error
+ DEL_LINE.WSM      Deletes line
+ DEL_WORD.WSM      Deletes word
+ DISPLAY.WSM       Displays command tags
+ DRW_B_L.WSM       Draws bottom left corner (ASCII 192)
+ DRW_B_R.WSM       Draws bottom right corner (ASCII 217)
+ DRW_HORZ.WSM      Draws horizontal line (ASCII 196)
+ DRW_H_DN.WSM      Draws horizontal split down (ASCII 194)
+ DRW_H_UP.WSM      Draws horizontal split up (ASCII 193)
+ DRW_T_L.WSM       Draws top left corner (ASCII 218)
+ DRW_T_R.WSM       Draws top right corner (ASCII 191)
+ DRW_VERT.WSM      Draws vertical line (ASCII 179)
+ DRW_V_L.WSM       Draws vertical split left (ASCII 180)
+ DRW_V_R.WSM       Draws vertical split right (ASCII 195)
+ FIND.WSM          Finds text
+ FIND_NXT.WSM      Finds next occurrence of text
+ FIND_RPL.WSM      Finds and replaces text
+ GOTO_LNL.WSM      Goes left to beginning of line
+ GOTO_LNR.WSM      Goes right to end of line
+ GOTO_PG.WSM       Goes to page
+ LETCLOSE.WSM      Inserts complimentary close to a letter
+ LET_INFO.WSM      Creates response letter to request for information
+ LIST_BUL.WSM      Creates a bulleted list
+ LIST_NUM.WSM      Creates a numbered list
+ MARGIN_L.WSM      Sets left margin 
+ MARGIN_P.WSM      Sets paragraph margin 
+ MARGIN_R.WSM      Sets right margin 
+ MEMO.WSM          Creates a memo
+ NEXT_NUM.WSM      Enters the next number
+ PG_BREAK.WSM      Inserts page break
+ PREVIEW.WSM       Runs Preview
+ REFORMAT.WSM      Reformats paragraph
+ RULER.WSM         Inserts ruler line in text
+ SAVE.WSM          Saves file, continue editing
+ SPL_ALL.WSM       Checks spelling in entire file
+ SPL_WORD.WSM      Checks spelling of word
+ STYLE.WSM         Selects paragraph style
+ TODO.WSM          Creates to do list
+ UNDERLIN.WSM      Inserts underline command
+ UNDO.WSM          Restores last deletion (Undo command)
+ WS6MACRO.EXE      Converts 6.0 and earlier macros to 7.0
+
+SPELLER FILES  (\WS)
+
+ DEFIN001.DCT      Definitions dictionary for American English
++EXCEPT.DCT        Exceptions dictionary for spelling checks
+ PERSONAL.DCC      Personal spelling dictionary (compressed)
++PERSONAL.DCT      Personal spelling dictionary
+ SPLMN001.DCT      Main spelling dictionary for American English
+ THESR001.DCT      Thesaurus dictionary for American English
+ WSSPL001.OVR      Main spelling checker overlay for American English
+ WSTHS001.OVR      Thesaurus dictionary overlay for American English
+
++ For WordStar LAN, these files are installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+PREVIEW AND FAX FILES  (\WS)
+
+ DELCRT.EXE        Deletes .CRT files, .Gn$ files, and .CRT 
+                   subdirectories
++FONTID.CTL        Settings for Preview and fax file creation
+ GRFPIX.EXE        Inset graphics support for Preview
+ PREVIEW.MSG       Message file for Preview 
+ PREVIEW.OVR       Overlay for Preview
+ SHOWPCX.EXE       Displays .PCX fax files
+ VESA1024.WGD      VESA driver for Preview
+
++ For WordStar LAN, this file is installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+*.WSF Files  (\WS)  Screen display fonts for Preview 
+                  
+*.WSF Files for Code Page 437  (\WS)
+
+ COURIER1.WSF      Regular fixed-pitch serif font, code page 437 
+ COURIER2.WSF      Italic fixed-pitch serif font, code page 437 
+ COURIER3.WSF      Bold fixed-pitch serif font, code page 437 
+ COURIER4.WSF      Bold-italic fixed-pitch serif font, code page 437 
+ NPSHLV1.WSF       Regular fixed-pitch sans-serif font, code page 437 
+ NPSHLV2.WSF       Italic fixed-pitch sans-serif font, code page 437 
+ NPSHLV3.WSF       Bold fixed-pitch sans-serif font, code page 437 
+ NPSHLV4.WSF       Bold-italic fixed-pitch sans-serif font, code page 
+                   437 
+ TIMES1.WSF        Regular proportional serif font, code page 437 
+ TIMES2.WSF        Italic proportional serif font, code page 437 
+ TIMES3.WSF        Bold proportional serif font, code page 437 
+ TIMES4.WSF        Bold-italic proportional serif font, code page 437 
+ UNIVERS1.WSF      Regular proportional sans-serif font, code page 437 
+ UNIVERS2.WSF      Italic proportional sans-serif font, code page 437 
+ UNIVERS3.WSF      Bold proportional sans-serif font, code page 437 
+ UNIVERS4.WSF      Bold-italic proportional sans-serif font, code page 
+                   437 
+
+*.WSF Files for Code Page 850  (\WS)
+
+ GOT850R.WSF       Regular Gothic font, code page 850
+ GOT850I.WSF       Italic Gothic font, code page 850
+ GOT850B.WSF       Bold Gothic font, code page 850
+ GOT850J.WSF       Bold-italic Gothic font, code page 850
+
+*.WSF Files for Code Page 850 and PostScript  (\WS)
+
+ COU850R.WSF       Regular Courier font, code page 850 and PostScript
+ COU850I.WSF       Italic Courier font, code page 850 and PostScript
+ COU850B.WSF       Bold Courier font, code page 850 and PostScript
+ COU850J.WSF       Bold-italic Courier font, code page 850 and 
+                   PostScript
+ HEL850R.WSF       Regular Helvetica font, code page 850 and 
+                   PostScript
+ HEL850I.WSF       Italic Helvetica font, code page 850 and PostScript
+ HEL850B.WSF       Bold Helvetica font, code page 850 and PostScript
+ HEL850J.WSF       Bold-italic Helvetica font, code page 850 and 
+                   PostScript
+ TMS850R.WSF       Regular Times font, code page 850 and PostScript
+ TMS850I.WSF       Italic Times font, code page 850 and PostScript
+ TMS850B.WSF       Bold Times font, code page 850 and PostScript
+ TMS850J.WSF       Bold-italic Times font, code page 850 and PostScript
+
+*.WSF Files for PostScript  (\WS)
+
+ AVGARDR.WSF       Regular Avant Garde font, PostScript
+ AVGARDI.WSF       Italic Avant Garde font, PostScript
+ AVGARDB.WSF       Bold Avant Garde font, PostScript
+ AVGARDJ.WSF       Bold-italic Avant Garde font, PostScript
+ BOOKMNR.WSF       Regular Bookman font, PostScript
+ BOOKMNI.WSF       Italic Bookman font, PostScript
+ BOOKMNB.WSF       Bold Bookman font, PostScript
+ BOOKMNJ.WSF       Bold-italic Bookman font, PostScript
+ HELVNAR.WSF       Regular Helvetica Narrow font, PostScript
+ HELVNAI.WSF       Italic Helvetica Narrow font, PostScript
+ HELVNAB.WSF       Bold Helvetica Narrow font, PostScript
+ HELVNAJ.WSF       Bold-italic Helvetica Narrow font, PostScript
+ NEWCNTR.WSF       Regular New Century Schoolbook font, PostScript
+ NEWCNTI.WSF       Italic New Century Schoolbook font, PostScript
+ NEWCNTB.WSF       Bold New Century Schoolbook font, PostScript
+ NEWCNTJ.WSF       Bold-italic New Century Schoolbook font, PostScript
+ PALATNR.WSF       Regular Palatino font, PostScript
+ PALATNI.WSF       Italic Palatino font, PostScript
+ PALATNB.WSF       Bold Palatino font, PostScript
+ PALATNJ.WSF       Bold-italic Palatino font, PostScript
+ SYMBOLR.WSF       Regular Symbol font, PostScript
+ ZAPFCHI.WSF       Italic Zapf Chancery font, PostScript
+ ZAPFDBR.WSF       Regular Zapf Dingbats font, PostScript
+
+GRAPHICS CONVERSION  (\WS\INSET; for WordStar LAN, \WS\OPTIONS)
+
+ CAD.TPF           Font file for converting to .PIX format
+ CVT.RES           Compression table for TIFF format
+ DEFAULT.TPF       Font file for converting to .PIX
+ DXF.PRE           Information on tables, blocks, and sections in .DXF 
+                   format
+ PLOTTER.TPF       Font file for converting to .PIX  
+ SIMPLEX.TPF       Font file for converting to .PIX
+ TOPIX.EXE         Executes graphics conversion filter
+ TOPIX.RES         Message file
++TOPIX.SET         Settings for conversion options
+ TRIPLEX.TPF       Font file for converting to .PIX
+
++ For WordStar LAN, this file is installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+INSET  (\WS\INSET; for WordStar LAN, see the note below the list)
+
+ *.INF             Typestyles that come with Inset
++*.PIX             Sample .PIX files
+ *.PRD             Inset printer drivers (see documentation, Printers 
+                   and Monitors list)
+ ATT.EXE           ATT monitor driver
+ AUTOIN.COM        Starts Inset at DOS prompt and runs a macro that  
+                   you create
+ CAPMSG.TXT        Message file for the capture program
+ CGA.EXE           CGA monitor driver
++CHART             Inset sample file
+ DRIVER.LST        List of printer drivers
+ EGA.EXE           EGA monitor driver
+ EGAMONO.EXE       EGA monochrome monitor driver
+ GENIUS.EXE        Genius monitor driver
++GRAPHICS.DOC      Inset sample file
+ HERC.EXE          Hercules monitor driver
+ HERCHALF.EXE      HALF mode driver for Hercules monitor
+ I20C.EXE          Executes capture-only version of Inset
+ I20F.EXE          Executes full version of Inset
+ I20M.EXE          Executes minimal print-time version of Inset
+ I20S.EXE          Executes the small version of Inset (no graphics 
+                   editing)
+ INF850.EXE        Self-extracting file, nonproportional fonts code 
+                   page 850 
+ INSEDIT.TXT       Inset message file
++INSET.EXE         Executes Inset
+ INSET.HLP         Inset help
+ INSLOAD.TXT       Inset loader message
+ MCGA.EXE          MCGA monitor driver
+ MONO.EXE          Monochrome monitor driver
+ NOMOUSE.COM       Tells Inset that no mouse is installed
+ RI.COM            Removes Inset from memory
+ SETUP.COM         Installs or reinstalls Inset settings
+ TOSHIBA.EXE       Toshiba monitor driver
+ VGA.EXE           VGA monitor driver
++WSILOGO.PCX       Graphics file in .PCX format
+ WYSE.EXE          Wyse monitor driver
+
++ For WordStar LAN, on Novell networks, these files are installed 
+  in the \WS\SETUP\INSET directory to be copied to users' directories;
+  the rest of the files are installed in the \WS\OPTIONS directory. 
+  For all other networks, all the Inset files are installed in the 
+  \WS\SETUP\INSET directory to be copied to users' directories.
+
+MAILLIST FILES  (\WS\OPTIONS)
+
+ ENVELOPE.LST      Prints envelopes on non-page printers
+ HP-ENVMM.LST      Prints envelopes on HP LaserJet or LaserJet Plus
+ HP-LAB3.LST       Prints 3-across labels on laser printer
+ HP2-ENVE.LST      Prints envelopes on HP LaserJet II with automatic 
+                   envelope feeder
+ HP2-ENVM.LST      Prints envelopes on HP LaserJet II with manual feed
++INVNTORY.DEF      Inventory form
+ INVNTORY.DOT      Inventory merge print document with dot commands
++INVNTORY.DTA      Inventory form data file
+ INVNTORY.LST      Prints inventory proof list
++INVNTORY.NDX      Inventory form index
+ LABEL.LST         Prints 3 1/2-by-1-inch one-across labels
+ LABEL3.LST        Prints 3 1/2-by-1-inch 3-across labels
+ LABEL3A           Dot commands for 3-across labels
+ LABELA            Dot commands for continuous labels
+ LABELXL.LST       Prints extra large, 5-by-3-inch one-across labels
+ LABELXLA          Dot commands for extra large labels 
+ LSRLABL3.LST      Prints 3-across labels on HP LaserJet
+ MAILLIST.DOT      Mailing list merge print document with dot commands
+ PHONE.LST         Prints phone list
+ PROOF.LST         Prints proof report
+ ROLODEX.LST       Prints Rolodex cards
+ ROLODEXA          Dot commands for Rolodex cards
+ SHOLABEL          Dot commands for 3 1/2-by-1-inch one-across labels
+ SHOLABL3          Dot commands for 3-across labels 
+ SHOLABLX          Dot commands for extra large, 5-by-3-inch 
+                   one-across labels
+ SHOROLDX          Dot commands for Rolodex cards 
++WSLIST.COM        Executes MailList
++WSLIST.DEF        Mailing list form
++WSLIST.DTA        Mailing list form data file
++WSLIST.NDX        Mailing list form index
++WSLIST.OVR        MailList overlay
+
++ For WordStar LAN, these files are installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+TELMERGE  (\WS\OPTIONS)
+
++TELMERGE.EXE      Executes TelMerge
++TELMERGE.SYS      TelMerge control file
+
++ For WordStar LAN, these files are installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+PROFINDER  (\WS\OPTIONS)
+
+ EXTLIST.PF        List of filename extensions
+ PF.EXE            Executes ProFinder
+ PF.HLP            ProFinder help
+ PFINST.EXE        Installation program
+ QUITMENU.PF       Quit menu
+ USERMENU.PF       User menu
+ USERSYN.PF        Synonym list
+
+STAR EXCHANGE  (\WS\CONVERT)
+
++ATAPP.DEF         Parameter settings for auto translate
+ CONVERT.EXE       Executes Star Exchange
+ CONVERT.OVL       Star Exchange overlay
++DEFFNT.TBL        Typestyle filter information
+ EDITFLTR.EXE      Edit filter (support file for CONVERT.EXE)
+ ENGL4H.RTL        Support file for CONVERT.EXE
++FLTRMENU.DEF      Typestyle filter menu
+ HELP.SCC          Help
+ RTLINKST.COM      Loads conversion .EXE files
+ SCCL4H.RTL        Support file for CONVERT.EXE
++SCCMENU.DEF       Messages and menus
++SCCSETUP.DEF      System setup
+ STNDMGS.TXT       Standard messages
+
+Word Processor Conversion Files  (\WS\CONVERT)
+
++WS33APP.DEF       User-defined parameter settings for WordStar 3.3
++WS34APP.DEF       User-defined parameter settings for WordStar 3.4
++WS4APP.DEF        User-defined parameter settings for WordStar 4
++WS5APP.DEF        User-defined parameter settings for WordStar 5
++WSDAPP.DEF        Creates comma-delimited files for use with 
+                   MailMerge
+ WS_STR.TXT        Conversion-specific messages for WordStar
+ WSDF.TBL          Font table for WordStar conversions
+ WSCONV.EXE        Executes WordStar conversions
+
++WS2APP.DEF        User-defined parameter settings for WordStar 2000
+ WS2_STR.TXT       Conversion-specific messages for WordStar 2000
+ WS2CONV.EXE       Executes WordStar 2000 conversions
+
++ASCAPP.DEF        User-defined parameter settings for standard ASCII
+ ASCCONV.EXE       Executes standard ASCII conversions
+
++SSAPP.DEF         User-defined parameter settings for intelligent 
+                   ASCII 
+ SS_STR.TXT        Conversion specific messages for intelligent ASCII 
+ SSCONV.EXE        Executes intelligent ASCII conversions
+
++RFTAPP.DEF        User-defined parameter settings for RFT
++TXTAPP.DEF        User-defined parameter settings for DisplayWrite 2 & 3
++DW4APP.DEF        User-defined parameter settings for DisplayWrite 4
+ DCA_STR.TXT       Conversion-specific messages for DCA
+ DCADF.TBL         Font table for DCA conversions
+ DCACONV.EXE       Executes DCA conversions
+
++FFTAPP.DEF        User-defined parameter settings for FFT
+ FFT_STR.TXT       Conversion-specific messages for FFT
+ FFTCONV.EXE       Executes FFT conversions
+
++DIFAPP.DEF        User-defined parameter settings for Navy DIF
+ DIF_STR.TXT       Conversion-specific messages for Navy DIF
+ DIFCONV.EXE       Executes Navy DIF conversions
+
++MSWAPP.DEF        User-defined parameter settings for Microsoft Word 4
+ MSW_STR.TXT       Conversion-specific messages for Microsoft Word 4
+ MSWCONV.EXE       Executes Microsoft Word 4 conversions
+
++MSW5APP.DEF       User-defined parameter settings for Microsoft Word 5
++MWINI.DEF         Default parameter settings for Microsoft Word files
+ MSW5_STR.TXT      Conversion-specific messages for Microsoft Word 5
+ MSWDF.TBL         Font table for Microsoft Word 5 conversions
+ MSW5CONV.EXE      Executes Microsoft Word 5 conversions
+
++MM36APP.DEF       User-defined parameter settings for MultiMate 3.6
++MM4APP.DEF        User-defined parameter settings for MultiMate 4
++MMA2APP.DEF       User-defined parameter settings for MultiMate 
+                   Advantage II
+ MM_STR.TXT        Conversion-specific messages for MultiMate
+ MMDF.TBL          Font table for MultiMate conversions
+ MMCONV.EXE        Executes MultiMate conversions
+
++PW1APP.DEF        User-defined parameter settings for Professional 
+                   Write 1
++PW2APP.DEF        User-defined parameter settings for Professional 
+                   Write II
++IWAAPP.DEF        User-defined parameter settings for IBM Writing 
+                   Assistant
++PFCAPP.DEF        User-defined parameter settings for First Choice 1
++PFC3APP.DEF       User-defined parameter settings for First Choice 2
++PFSAAPP.DEF       User-defined parameter settings for PFS:Write A
++PFSBAPP.DEF       User-defined parameter settings for PFS:Write B
++PFSCAPP.DEF       User-defined parameter settings for PFS:Write C
+ PFS_STR.TXT       Conversion-specific messages for PFS:Write 
+ PFSCONV.EXE       Executes PFS:Write conversions
+
++SMAPP.DEF         User-defined parameter settings for Samna
+ SM_STR.TXT        Conversion-specific messages for Samna
+ SMCONV.EXE        Executes Samna conversions
+
++SMTAPP.DEF        User-defined parameter settings for SmartWare II
+ SMT_STR.TXT       Conversion-specific messages for SmartWare II
+ SMTCONV.EXE       Executes SmartWare II conversions
+
++VWAPP.DEF         User-defined parameter settings for Volkswriter
+ VW_STR.TXT        Conversion-specific messages for Volkswriter
+ VWCONV.EXE        Executes Volkswriter conversions
+
++WMAPP.DEF         User-defined parameter settings for WordMarc
++WMCAPP.DEF        User-defined parameter settings for WordMarc Plus
+ WM_STR.TXT        Conversion-specific messages for WordMarc
+ WMCONV.EXE        Executes WordMarc conversions
+
++WPFAPP.DEF        User-defined parameter settings for WordPerfect 4.1
+ WPF_STR.TXT       Conversion-specific messages for WordPerfect 4.1
+ WPFCONV.EXE       Executes WordPerfect 4.1 conversions
+
++WPF5APP.DEF       User-defined parameter settings for WordPerfect 5
++WPF51APP.DEF      User-defined parameter settings for WordPerfect 5.1
+ WPF5_STR.TXT      Conversion-specific messages for WordPerfect 5 and 
+                   5.1
+ WPF5CONV.EXE      Executes WordPerfect 5 and 5.1 conversions
+
++XYAPP.DEF         User-defined parameter settings for XyWrite III
++NBAPP.DEF         User-defined parameter settings for Nota Bene
+ XY_STR.TXT        Conversion-specific messages for XyWrite 
+ XYCONV.EXE        Executes XyWrite conversions
+
++DXAPP.DEF         User-defined parameter settings for DEC DX
+ DX_STR.TXT        Conversion-specific messages for DEC DX
+ DXCONV.EXE        Executes DEC DX conversions
+
++M11APP.DEF        User-defined parameter settings for Mass-11
+ M11_STR.TXT       Conversion-specific messages for Mass-11
+ M11CONV.EXE       Executes Mass-11 conversions
+
++IWPAPP.DEF        User-defined parameter settings for Wang IWP
+ IWP_STR.TXT       Conversion-specific messages for Wang IWP
+ IWPCONV.EXE       Executes Wang IWP conversions
+
++RTFAPP.DEF        User-defined parameter settings for RTF
+ RTF_STR.TXT       Conversion-specific messages for RTF
+ RTFCONV.EXE       Executes RTF conversions
+
+ MACMAP            Character filter file that converts Macintosh 
+		   quotation characters to DOS characters
+ MACDF.TBL         Font table for Macintosh conversions
+
++MWRTAPP.DEF       User-defined parameter settings for MacWrite II
+ MWRT_STR.TXT      Conversion-specific messages for MacWrite II
+ MWRTCONV.EXE      Executes MacWrite II conversions
+
++MWRD4APP.DEF      User-defined parameter settings for Microsoft Word 
+                   4 Macintosh
+ MWRD_STR.TXT      Conversion-specific messages for Microsoft Word 4 
+                   Macintosh
+ MWRDCONV.EXE      Executes Microsoft Word 4 Macintosh conversions
+
++MWPFAPP.DEF       User-defined parameter settings for WordPerfect 
+                   Macintosh
+ MWPFCONV.EXE      Executes WordPerfect Macintosh conversions
+
++MWP2APP.DEF       User-defined parameter settings for WordPerfect 
+                   Macintosh II
+ MWP2CONV.EXE      Executes WordPerfect Macintosh II conversions
+
+Spreadsheet Conversion Files:
+
++FCSS.DEF          User-defined parameter settings for First Choice
++MTWSS.DEF         User-defined parameter settings for Mosaic Twin
++PFSPSS.DEF        User-defined parameter settings for PFS:Plan
++QTRSS.DEF         User-defined parameter settings for Quattro
++SC5SS.DEF         User-defined parameter settings for Supercalc 5
++SMTSS.DEF         User-defined parameter settings for SmartWare II
++VPPSS.DEF         User-defined parameter settings for VP Planner 3D
++WK3SS.DEF         User-defined parameter settings for Lotus 123 3.x
++WKSSS.DEF         User-defined parameter settings for Lotus 123 2.x
++XLSS.DEF          User-defined parameter settings for Microsoft Excel
+
+Database Conversion Files:
+
++DATAEDB.DEF       User-defined parameter settings for DataEase
++DBASEDB.DEF       User-defined parameter settings for dBASE III and IV
++ENABLESS.DEF      User-defined parameter settings for Enable
++FCDB.DEF          User-defined parameter settings for First Choice
++FRAMEDB.DEF       User-defined parameter settings for Framework III
++PXDB.DEF          User-defined parameter settings for Paradox 3.x
++QADB.DEF          User-defined parameter settings for Q & A
++RBSDB.DEF         User-defined parameter settings for R:Base
++RFXDB.DEF         User-defined parameter settings for Reflex
++SMTDB.DEF         User-defined parameter settings for SmartWare II
++WORKSDB.DEF       User-defined parameter settings for Microsoft Works
+
++ For WordStar LAN, these files are installed in the \WS\SETUP
+  directory to be copied to users' directories. 
+
+PRINTER FILES  (\WS)
+
+ *.DTB             Data files for HP LaserJet and compatible printers
+ *.DTC             Data files for PostScript 
+ *.DTD             Data files for other lasers (neither HP nor Post
+                   Script)
+ *.DTE             Data files for HP DeskJet 
+ *.DTF             Data files for other printers A - D
+ *.DTG             Data files for other printers E - N
+ *.DTH             Data files for other printers O - R
+ *.DTI             Data files for other printers S - Z
+ ARROW.HP          HP sample file - draws arrow
+ CHEX.HP           HP sample file - inserts checkerboard
+ INDEX.*           Index for each set of data files
+ PLEAD.HP          HP sample file - legal pleading
+ SHADE.HP          HP sample file - shaded page
+ WSAST.HDR         Initialization files for AST TurboLaser
+ WSASTL.HDR        Initialization files for AST TurboLaser - landscape
+
+POSTSCRIPT FILES  (\WS)
+
+ 2250DUAL.PS       Feeder file
+ 2250DULB.PS       Feeder file
+ 2250DUTB.PS       Feeder file
+ 2DDUAL.PS         Feeder file
+ 2DDUPLB.PS        Feeder file
+ 2DDUPTB.PS        Feeder file
+ 3250DUAL.PS       Feeder file
+ 3250DULB.PS       Feeder file
+ 3250DUTB.PS       Feeder file
+ BORDER.PS         Sample file
+ BOX.PS            Sample file
+ BULLOPT.PS        Feeder file
+ CAN3R.PS          Feeder file
+ CAN3T.PS          Feeder file
+ CAN4.PS           Feeder file
+ CANIII.PS         Feeder file
+ DPSFEED.PS        Feeder file
+ DRIVERPS.OVR      Printer driver overlay
+ EHANDLER.PS       Error handler
+ IBM4019F.PS       Feeder file
+ IBM4029F.PS       Feeder file
+ IBMFEED.PS        Feeder file
+ LETTER.PS         Sample file
+ LOGO.PS           Sample file
+ LWFEED.PS         Feeder file
+ NECFEED.PS        Feeder file
+ OPTION.PS         Feeder file
+ PLEAD.PS          Sample file
+ POAPIINT.PS       Feeder file
+ PO4045.PS         Feeder file
+ POBRHL4.PS        Feeder file
+ POBRHL10.PS       Feeder file
+ POCMPAQ1.PS       Feeder file
+ PODC1150.PS       Feeder file
+ PODC2150.PS       Feeder file
+ PODP960.PS        Feeder file
+ POEICON1.PS       Feeder file
+ POEICON2.PS       Feeder file
+ POEICON3.PS       Feeder file
+ POEICON4.PS       Feeder file
+ POEICONL.PS       Feeder file
+ POEP4200.PS       Feeder file
+ POEP7500.PS       Feeder file
+ POEPSON1.PS       Feeder file
+ POHL8.PS          Feeder file
+ POHP32.PS         Feeder file
+ POHPLITE.PS       Feeder file
+ POK4455.PS        Feeder file
+ POLX4079.PS       Feeder file
+ PONEC290.PS       Feeder file
+ PONEC90.PS        Feeder file
+ PONEC95.PS        Feeder file
+ POO840SF.PS       Feeder file
+ QMS4OPT.PS        Feeder file
+ SETDTR.PS         DTR protocol handler
+ TIFEED.PS         Feeder file
+ UNAP9210.PS       Feeder file
+ WSHP.PS           HP PostScript initialization file
+ WSPROL.PS         Prologue file
+ WSPROL2.PS        Prologue file

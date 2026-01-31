@@ -1,0 +1,10 @@
+%  This switches the Apple Laserwriter to cassette feed.
+/cart {statusdict begin /manualfeed false store end} def
+
+%  This switches the Apple Laserwriter to manual feed.
+/manual {statusdict begin /manualfeed true store end 
+	usertime 10000 add {dup usertime lt { pop exit } if} loop} def
+
+%  Note: If you have trouble with manual feed timeout, 
+%        increase usertime until problem goes away.
+

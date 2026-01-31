@@ -1,0 +1,29 @@
+*EXCEPTION_STRINGS 0
+*ERROR_STRINGS 26
+*MESSAGE Successful completion
+*MESSAGE Input file could not be opened	
+*MESSAGE Output file could not be opened
+*MESSAGE Too many block in input document
+*MESSAGE Too many characters in current block
+*MESSAGE No format end
+*MESSAGE Error inside of title string
+*MESSAGE No header block
+*MESSAGE Unknown error
+*MESSAGE Unexpected EOF
+*MESSAGE Block synchronization error
+*MESSAGE Error seeking inside of the document
+*MESSAGE Unknown symbol inside of column mode
+*MESSAGE Unknown value for line spacing
+*MESSAGE Unknown format code
+*MESSAGE Undefined code
+*MESSAGE Undefined token
+*MESSAGE Input file is not a text document
+*MESSAGE Error updating format information
+*MESSAGE Unknown return from processing note
+*MESSAGE Unknown graphical character
+*MESSAGE Message file could not be opened
+*MESSAGE Error establishing indenting
+*MESSAGE Could not open working file
+*MESSAGE Unknown DNF token
+*MESSAGE Illegal DNF
+

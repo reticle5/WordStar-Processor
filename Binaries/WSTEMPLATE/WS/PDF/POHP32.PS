@@ -1,0 +1,1141 @@
+
+%  .bn1 pull letter/upper/no duplex on the HP3D.
+/ltruppnodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	false settumble
+	0 setpapertray
+	end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	false settumble
+	0 setpapertray
+	end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+
+	/pgsize 11 inch def
+}
+def
+
+%  .bn2 pull letter/lower/no duplex on the HP3D.
+/ltrlownodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	1 setpapertray
+	false settumble
+	end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	1 setpapertray
+	false settumble
+	end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn3 pull letter/manual/no duplex on the HP3D.
+/ltrmannodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble
+	end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble
+	end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn4 pull letter/upper/duplex long on the HP3D.
+/ltrupplodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false settumble
+	0 setpapertray
+	end
+	userdict begin
+	letter
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	false settumble
+	0 setpapertray
+	end
+	userdict begin
+	letter
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn5 pull letter/lower/duplex long on the HP3D.
+/ltrlowlodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false settumble
+	1 setpapertray
+	end
+	userdict begin 
+	letter
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	false settumble
+	1 setpapertray
+	end
+	userdict begin 
+	letter
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn6 pull letter/manual/duplex long on the HP3D.
+/ltrmanlodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble
+	end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble
+	end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn7 pull letter/upper/duplex short on the HP3D.
+/ltruppshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble
+	end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn8 pull letter/lower/duplex short on the HP3D.
+/ltrlowshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	1 setpapertray
+	true settumble
+	end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	1 setpapertray
+	true settumble
+	end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn9 pull letter/manual/duplex short on the HP3D.
+/ltrmanshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble 
+	end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble
+	end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+
+%  .bn10 pull legal/upper/no duplex on the HP3D.
+/lgluppnodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn11 pull legal/lower/no duplex on the HP3D.
+/lgllownodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	1 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	1 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn12 pull legal/manual/no duplex on the HP3D.
+/lglmannodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn13 pull legal/upper/duplex long on the HP3D.
+/lglupplodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn14 pull legal/lower/duplex long on the HP3D.
+/lgllowlodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	1 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	1 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn15 pull legal/manual/duplex long on the HP3D.
+/lglmanlodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn16 pull legal/upper/duplex short on the HP3D.
+/lgluppshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn17 pull legal/lower/duplex short on the HP3D.
+/lgllowshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	1 setpapertray
+	true settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode 
+	1 setpapertray
+	true settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn18 pull legal/manual/duplex short on the HP3D.
+/lglmanshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble
+	end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode 
+	0 setpapertray
+	true settumble
+	end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn19 pull a4/upper/no duplex on the HP3D.
+/a4uppnodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn20 pull a4/lower/no duplex on the HP3D.
+/a4lownodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	1 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	1 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn21 pull a4/manual/no duplex on the HP3D.
+/a4mannodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn22 pull a4/upper/duplex long on the HP3D.
+/a4upplodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn23 pull a4/lower/duplex long on the HP3D.
+/a4lowlodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	1 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	1 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn24 pull a4/manual/duplex long on the HP3D.
+/a4manlodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn25 pull a4/upper/duplex short on the HP3D.
+/a4uppshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn26 pull a4/lower/duplex short on the HP3D.
+/a4lowshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	1 setpapertray
+	true settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	1 setpapertray
+	true settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn27 pull a4/manual/duplex short on the HP3D.
+/a4manshdup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn28 pull letter/upper/no duplex/cont on the HP3D.
+/ltruppnodupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+
+	/pgsize 11 inch def
+}
+def
+
+%  .bn29 pull letter/upper/duplex long/cont on the HP3D.
+/ltrupplodupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn30 pull letter/upper/duplex short/cont on the HP3D.
+/ltruppshdupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble end
+	userdict begin letter 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble end
+	userdict begin letter 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+	
+	/pgsize 11 inch def
+}
+def
+
+%  .bn31 pull legal/upper/no duplex/cont on the HP3D.
+/lgluppnodupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+
+	/pgsize 14 inch def
+}
+def
+
+%  .bn32 pull legal/upper/duplex long/cont on the HP3D.
+/lglupplodupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn33 pull legal/upper/duplex short/cont on the HP3D.
+/lgluppshdupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble end
+	userdict begin legal 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble end
+	userdict begin legal 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+	
+	/pgsize 14 inch def
+}
+def
+
+%  .bn34 pull a4/upper/no duplex/cont on the HP3D.
+/a4uppnodupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn35 pull a4/upper/duplex long/cont on the HP3D.
+/a4upplodupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn36 pull a4/upper/duplex short/cont on the HP3D.
+/a4uppshdupcont
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	0 setpapertray
+	true settumble end
+	userdict begin a4 
+	end }
+	{ statusdict begin 
+	true setduplexmode
+	0 setpapertray
+	true settumble end
+	userdict begin a4 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch true def
+	/manualfeed false def
+	end
+	
+	/pgsize 11.66 inch def
+}
+def
+
+%  .bn37 pull comm10/envelope on the HP3D.
+/comm10envnodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	2 setpapertray
+	false settumble end
+	userdict begin com10envelope 
+	end }
+	{ statusdict begin 
+	2 setpapertray
+	false settumble end
+	userdict begin com10envelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+
+	/pgsize 9.5 inch def
+}
+def
+
+%  .bn38 pull monarch/envelope on the HP3D.
+/monarchenvnodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	2 setpapertray
+	false settumble end
+	userdict begin monarcenvelope 
+	end }
+	{ statusdict begin 
+	2 setpapertray
+	false settumble end
+	userdict begin monarcenvelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+
+	/pgsize 10.8 inch def
+}
+def
+
+%  .bn39 pull DL/envelope on the HP3D.
+/DLenvnodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	2 setpapertray
+	false settumble end
+	userdict begin dlenvelope 
+	end }
+	{ statusdict begin 
+	2 setpapertray
+	false settumble end
+	userdict begin dlenvelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+
+	/pgsize 8.75 inch def
+}
+def
+
+%  .bn40 pull C5/envelope on the HP3D.
+/C5envnodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	2 setpapertray
+	false settumble end
+	userdict begin c5envelope 
+	end }
+	{ statusdict begin 
+	2 setpapertray
+	false settumble end
+	userdict begin c5envelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed false def
+	end
+
+	/pgsize 9 inch def
+}
+def
+
+%  .bn41 pull comm10/manual on the HP3D.
+/comm10mannodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin com10envelope 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin com10envelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+
+	/pgsize 9.5 inch def
+}
+def
+
+%  .bn42 pull monarch/manual on the HP3D.
+/monarchmannodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin monarcenvelope 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin monarcenvelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+
+	/pgsize 10.8 inch def
+}
+def
+
+%  .bn43 pull DL/manual on the HP3D.
+/DLmannodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin dlenvelope 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin dlenvelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+
+	/pgsize 8.75 inch def
+}
+def
+
+%  .bn44 pull C5/manual on the HP3D.
+/C5mannodup
+{
+	currentpagedevice /Duplex get
+	{ statusdict begin 
+	false setduplexmode
+	0 setpapertray
+	false settumble end
+	userdict begin c5envelope 
+	end }
+	{ statusdict begin 
+	0 setpapertray
+	false settumble end
+	userdict begin c5envelope 
+	end } ifelse
+
+	statusdict begin
+	/trayswitch false def
+	/manualfeed true def
+	end
+
+	/pgsize 9 inch def
+}
+def
+

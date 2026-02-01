@@ -13,3 +13,9 @@ I went with this option as it's 64 bit. Unlike the standard Raspberry models, it
 
 ## Keychron K3 V3
 I already had one of these as my daily keyboard. Here I went with the banana switches as the red switch are too sensitive for touch typing.
+
+Another legacy feature of WordStar's design, was that the caps lock and the left control key were the other way around originally. IBM in the 80's swapped their positions. But when WordStar was first created, the control key was next to the A key. 
+
+Dosbox-x has a keyboard mapper, so you could swap the keys there. There are also a number of DOS switch.com type programs to do the same. But I wanted this machine to be a bit more hardcore. The great thing about the V3 is that they are fully QMK compatible. So I use launcher.keychron.com to remap the left control key to caps lock and vice versa.
+
+OK, but they still say caps lock and control. What about that? Well, I simply painted over the old names, and used white on clear labels from my Brother PT-750W to print out the caps lock and control labels for the "new" keys. If you're interested in doing this, you can find the file for the Brother in the "Brother P-Touch" folder. It's a close enough match to the font used on the Keychron.

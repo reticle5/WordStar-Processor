@@ -41,14 +41,15 @@ if [ -z "$SERVER" ]; then
 fi
 
 echo "Preparing tar file"
-tar --no-xattrs --no-mac-metadata -cjf ws.tgz "WSTEMPLATE"
+(cd Binaries ; tar --no-xattrs --no-mac-metadata -cjf /tmp/ws.tgz "WSTEMPLATE")
 
 if [ "$FULLINSTALL" = true ]; then
     echo "Sending over for a full install"
-    scp disable_ipv6.sh dosbox-x-2025.02.01.conf refresh_wordstar.sh setup_wordstar.sh upgrade_all.sh WordTsar ws.tgz ${SERVER}:.
+    scp Config/dosbox-x-2025.02.01.conf Scripts/refresh_wordstar.sh Scripts/setup_wordstar.sh Scripts/upgrade_all.sh Binaries/WordTsar /tmp/ws.tgz ${SERVER}:.
 else
     echo "Sending over for a lite install"
-    scp disable_ipv6.sh dosbox-x-2025.02.01.conf refresh_wordstar.sh setup_wordstar.sh upgrade_all.sh ws.tgz ${SERVER}:.
+    scp Config/dosbox-x-2025.02.01.conf Scripts/refresh_wordstar.sh Scripts/setup_wordstar.sh Scripts/upgrade_all.sh /tmp/ws.tgz ${SERVER}:.
 fi
 
-rm ws.tgz
+rm /tmp/ws.tgz
+

@@ -1,3 +1,3 @@
 cd ~/code
-rm -fr "WSLIVE"
-cp -R "WSTEMPLATE" "WSLIVE"
+rm -fr "WSLIVE/WS"
+cp -R "WSTEMPLATE/WS" "WSLIVE"

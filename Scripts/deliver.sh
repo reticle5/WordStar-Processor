@@ -12,20 +12,18 @@ usage() {
 unset -v SERVER
 FULLINSTALL=false
 
-while getopts ":s:f" options; do       # Loop: Get the next option;
-                                    # use silent error checking;
-                                    # options n and t take arguments.
+while getopts ":s:f" options; do		# Loop: Get the next option; use silent error checking; option s takes an argument.
 	case "${options}" in
-	    f)                          # If the option is n,
-			FULLINSTALL=true        # set $NAME to specified value.
+		f)
+			FULLINSTALL=true
 		;;
 
-		s)                          # If the option is n,
-			SERVER=$OPTARG          # set $NAME to specified value.
+		s)
+			SERVER=$OPTARG
 			;;
 
 		*)                          # If unknown (any other) option:
-		    usage
+			usage
 			exit                    # Exit abnormally.
 			;;
 
@@ -50,3 +48,4 @@ else
     echo "Sending over for a lite install"
     scp Config/dosbox-x-2025.02.01.conf Scripts/refresh_wordstar.sh Scripts/setup_wordstar_stage1.sh Scripts/setup_wordstar_stage2.sh Scritps/setup_mega.sh Scripts/upgrade_all.sh /tmp/ws.tgz ${SERVER}:.
 fi
+

@@ -38,14 +38,16 @@ if [ -z "$SERVER" ]; then
         exit 1
 fi
 
-echo "Preparing tar file"
-(cd Binaries ; tar --no-xattrs --no-mac-metadata -cjf /tmp/ws.tgz "WSTEMPLATE")
+if [ "$FULLINSTALL" = true ]; then
+	echo "Preparing tar file"
+	(cd Binaries ; tar --no-xattrs --no-mac-metadata -cjf /tmp/ws.tgz "WSTEMPLATE")
+fi
 
 if [ "$FULLINSTALL" = true ]; then
     echo "Sending over for a full install"
-    scp Config/dosbox-x-2025.02.01.conf Scripts/refresh_wordstar.sh Scripts/setup_wordstar_stage1.sh Scripts/setup_wordstar_stage2.sh Scritps/setup_mega.sh Scripts/upgrade_all.sh Binaries/WordTsar /tmp/ws.tgz ${SERVER}:.
+    scp Config/dosbox-x-2025.02.01.conf Scripts/refresh_wordstar.sh Scripts/setup_wordstar_stage1.sh Scripts/setup_wordstar_stage2.sh Scripts/setup_mega.sh Scripts/upgrade_all.sh Binaries/WordTsar /tmp/ws.tgz ${SERVER}:.
 else
     echo "Sending over for a lite install"
-    scp Config/dosbox-x-2025.02.01.conf Scripts/refresh_wordstar.sh Scripts/setup_wordstar_stage1.sh Scripts/setup_wordstar_stage2.sh Scritps/setup_mega.sh Scripts/upgrade_all.sh /tmp/ws.tgz ${SERVER}:.
+    scp Config/dosbox-x-2025.02.01.conf Scripts/refresh_wordstar.sh Scripts/setup_wordstar_stage1.sh Scripts/setup_wordstar_stage2.sh Scripts/setup_mega.sh Scripts/upgrade_all.sh ${SERVER}:.
 fi
 

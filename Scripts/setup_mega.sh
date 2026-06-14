@@ -59,5 +59,5 @@ login_to_mega
 setup_mega_sync
 wait_for_mega_sync
 
-"$PWD/megacmd-Debian_13_arm64.deb"
+rm "$PWD/megacmd-Debian_13_arm64.deb"
 
